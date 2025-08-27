@@ -1,3 +1,4 @@
+/* CSS for CSCE242 Main Page */
 /* Structure */
 body {
     font-family:jetbrains-mono, 'Courier New', Courier, monospace;
@@ -32,7 +33,7 @@ body {
 }
 
 #Description {
-    text-align: center;
+    text-align: left;
     font-size: 22px;
     width: 50%;
    
