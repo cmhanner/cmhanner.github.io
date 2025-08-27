@@ -3,4 +3,65 @@
 /*Structure*/
 body {
     font-family:Papyrus, 'Courier New', Courier, monospace;
+    background:url("images/Egyptian-desert.jpg");
+    background-size:cover; /*Make sure the background image covers the whole page*/
+
 }
+
+#Content {
+    background: lightblue;
+    margin: auto;
+    width:70%;
+    border-radius: 10px; /*rounded corners*/
+    padding: 20px; /*move text away from edges*/
+}
+
+/*Tables*/
+table {
+    border-collapse: collapse;
+}
+
+th {
+    background-color: salmon;
+}
+
+td {
+    background-color: lightgrey;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: left;
+
+}
+
+/*Images*/
+#Sphinx {
+    height: 200px;
+    width: auto;
+    box-shadow: 7px 7px salmon;
+}
+
+#Pyramids_Pic {
+    height: 200px;
+    width: auto;
+    float: right; /*float to the right of the text and box*/
+    box-shadow: 7px 7px salmon;
+}
+
+/*Typography*/
+#Heading {
+    text-align: center;
+}
+
+#Subheading {
+    text-align: center;
+}
+
+#PyramidsCaption{
+    text-align: right;
+
+}
+
+
