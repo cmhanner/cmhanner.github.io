@@ -1,0 +1,23 @@
+/* Structure */
+body {
+    font-family:jetbrains-mono, 'Courier New', Courier, monospace;
+    background: url("images_main/green_background.jpg");
+
+}
+
+p {
+    text-align: center;
+}
+
+/*Typography*/
+
+
+#WebApps {
+    color: rebeccapurple
+
+}
+
+#Name {
+    color: royalblue
+}
+    
