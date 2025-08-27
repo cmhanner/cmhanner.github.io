@@ -41,6 +41,7 @@ th, td {
     height: 200px;
     width: auto;
     box-shadow: 7px 7px salmon;
+    border-radius: 10px;
 }
 
 #Pyramids_Pic {
@@ -48,19 +49,29 @@ th, td {
     width: auto;
     float: right; /*float to the right of the text and box*/
     box-shadow: 7px 7px salmon;
+    border-radius: 10px;
 }
 
 /*Typography*/
 #Heading {
     text-align: center;
+    background-color: salmon;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 #Subheading {
     text-align: center;
 }
 
+p {
+    background-color: lightgrey;
+}
+
 #PyramidsCaption{
     text-align: right;
+    /* display: inline-flex; don't know how to line it up with the right*/
+   
 
 }
 
