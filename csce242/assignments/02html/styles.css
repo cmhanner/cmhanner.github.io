@@ -19,6 +19,7 @@ body {
 /*Tables*/
 table {
     border-collapse: collapse;
+    padding: 5px 10px;
 }
 
 th {
@@ -33,7 +34,6 @@ th, td {
     border: 1px solid black;
     padding: 5px;
     text-align: left;
-
 }
 
 /*Images*/
