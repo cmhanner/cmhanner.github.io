@@ -5,49 +5,44 @@ body {
 
 }
 
+#Content {
+    background: lavenderblush;    
+    margin: auto; /*centers it*/
+    border-radius: 20px; /*rounded corners*/
+    padding: 10px 10px; /*space inside border*/
+    width: 50%; /*width of whole thing*/
+
+}
+
 /*Typography*/
 
 #WebApps {
     color: rebeccapurple;
     text-align: center; 
     font-size: 40px;
-    background: lavenderblush;
-    border-radius: 20px; /*rounded corners*/
-    padding: 10px 10px; /*space inside border*/
-    width: 50%; /*width of whole thing*/
-    margin: auto; /*centers it*/
-
-
+   
 }
 
 #Name {
     color: royalblue;
     text-align: center;
     font-size: 30px;
-    background: lavenderblush;
-    border-radius: 20px; /*rounded corners*/
-    padding: 5px 5px; /*space inside border*/
-    width: 25%; /*width of whole thing*/
-    margin: auto; /*centers it*/
+    
+    
 }
 
 #Description {
     text-align: center;
     font-size: 22px;
-    background-color: lavenderblush;
-    width: 25%;
-    padding: 5px 5px;
-    border-radius: 20px;
+    width: 50%;
+   
 }
 
 #Assignment_Header {
     color: rgb(85, 13, 228);
     text-align: center;
-    font-size: 20px;
-    background: lavenderblush;
-    border-radius: 20px; /*rounded corners*/
-    padding: 5px 5px; /*space inside border*/
-    width: 25%; /*width of whole thing*/
+    font-size: 21px;
+   
     
 }
 
@@ -57,12 +52,12 @@ a {
 }
 
 #Assignment_1{
-    color: blanchedalmond;
+    color: royalblue;    
     font-size: 20px;
 }
 
 #Assignment_2{
-    color: bisque;
+    color: royalblue;
     font-size: 20px;
 
 }
