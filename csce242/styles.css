@@ -11,8 +11,53 @@ body {
     margin: auto; /*centers it*/
     border-radius: 20px; /*rounded corners*/
     padding: 10px 10px; /*space inside border*/
-    width: 50%; /*width of whole thing*/
+    width: 95%; /*width of whole thing*/
 
+}
+
+#main-header {
+    background: lightskyblue;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+
+/*Main Navigation*/
+
+#main-nav  {
+    display: flex;
+    list-style-type: none; /*remove bullet points*/
+    padding-left: 0;
+    /*flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;*/
+   
+
+}
+
+#main-nav li {
+    display: inline-block; /*display assignments side by side*/
+    border-bottom: 1px solid rebeccapurple; /*underlines the Assignments*/
+    margin-right: 30px;
+}
+
+#main-nav li {
+    border-top:1px solid rebeccapurple; /*adds a top the Assignments*/
+    margin: 10px 20px;
+}
+
+#main-nav a { /*Assignment Links themselves*/
+    text-decoration: none; /*removes underline from links*/
+    color: royalblue; /*colors of the Assignment links*/
+    padding: 8px 16px;
+    font-size: 18px;
+
+}
+
+#main-nav a:hover { /*when we hover over the assignment block*/
+    background:white;
+    color:#4F5902;
 }
 
 /*Typography*/
@@ -26,41 +71,38 @@ body {
 
 #Name {
     color: royalblue;
-    text-align: center;
+    text-align: left;
     font-size: 30px;
     
     
 }
 
-#Description {
-    color: royalblue;
-    text-align: left;
-    font-size: 22px;
-    width: 50%;
-   
-}
 
 #Assignment_Header {
     color: rgb(85, 13, 228);
     text-align: center;
-    font-size: 21px;
+    font-size: 30px;
    
     
 }
 
-a {
-    text-decoration: none; /*removes underline from links*/
-    
+#columns {
+      
+    font-size: 30px;
+
 }
 
 #Assignment_1{
-    color: royalblue;    
-    font-size: 20px;
+   
 }
 
 #Assignment_2{
-    color: royalblue;
-    font-size: 20px;
+   
+    
+
+}
+
+#Assignment_3 {
 
 }
     
