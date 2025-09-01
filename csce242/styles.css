@@ -32,9 +32,12 @@ body {
     
 }
 
-#main-nav {
+#main-nav ul {
     display: flex;
+    justify-content: center; /* space the list */
+    flex-wrap: wrap; /* so they move better when looking at mobile device*/
 }
+
 
 #main-nav li { /*Effects the list or blocks*/
     text-align: center; /*Centers the contents inside the block*/
@@ -111,11 +114,7 @@ body {
 /* Larger devices */
 @media only screen and (min-width: 768px) {
 
-    #Conent {
-        width: 70%;
-        display: flex;
-    }
-
+    
     #main-nav {
         display:flex;
     }
