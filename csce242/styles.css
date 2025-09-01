@@ -67,16 +67,20 @@ body {
     font-weight: bold;
     padding: 8px 16px;
     font-size: 18px;
+    text-decoration: none; /*removes underline from links*/
 
 }
 
-#mian-nav p {
+#main-nav p {
     color: rebeccapurple;
+    font-weight: bold;
+    text-decoration: none; /*removes underline from links*/
 }
 
-#main-nav a:hover { /*when we hover over the assignment block*/
-    background:white;
-    color:#4F5902;
+
+#main-nav li:hover { /*when we hover over the assignment block*/
+    background:rgb(168, 191, 21);
+    color:#09b7a5;
 }
 
 /*Typography*/
@@ -98,23 +102,25 @@ body {
 
 
 #Assignment_Header {
-    color: rgb(85, 13, 228);
+    color: rebeccapurple;
     text-align: center;
     font-size: 30px;
    
     
 }
 
-/* #assignments-list {
-    display: inline-block;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-} */
+/* Larger devices */
+@media only screen and (min-width: 768px) {
 
-#columns {
-      
-    font-size: 30px;
+    #Conent {
+        width: 70%;
+        display: flex;
+    }
+
+    #main-nav {
+        display:flex;
+    }
 
 }
+
+
