@@ -30,11 +30,10 @@ body {
     list-style-type: none; /*remove bullet points*/
     text-decoration: none; /*removes underline from links*/
     
-    /*flex-wrap: wrap;
-    width: 100%;
-    margin: 0 auto;*/
-   
+}
 
+#main-nav {
+    display: flex;
 }
 
 #main-nav li { /*Effects the list or blocks*/
