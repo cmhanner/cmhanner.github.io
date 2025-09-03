@@ -6,22 +6,45 @@ body {
 
 #content { /*everything above the ^body^ background */
     width: 95%;
-    margin: auto;
+    margin: 0;
     border-radius: 5px;
     padding: 5px;
 }
 
+#main-content section, #main-content aside {
+    padding:5px;
+}
+
+
 /*Main Navigation*/
 
-#main-nav ul {
+
+#main-nav ul { /*Home, About, Stuff, Account*/
     list-style-type: none;  /* remove the bullets */
-    padding-left:0;
+    padding-left: 0;
+    display:flex; /*lines them across the screen*/
+    width: 100%;
+    
 }
 
 #main-nav li {
-    border-bottom: 1px black;
+    flex: 1; /*this fills main nav horizontally evenly where you get class*/
+    text-align: center;
+    border-top: 1px solid black ;
+    border-left: 1px solid black ;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: white;
+    
 }
 
+#main-nav a {
+    display: block;
+    background-color:  rgb(155, 59, 59);
+    text-decoration: none; /*remove the underlines*/
+    padding:10px 5px;
+    
+}
 
 /*Typography*/
 h1 {
@@ -29,5 +52,21 @@ h1 {
 
 }
 
+/* Larger devices */
+@media only screen and (min-width: 320px) {
+    body {
+        
+    }
+
+    #content {
+        width:70%;
+    }
+
+    /* Columns */
+    .columns {
+        display:flex;
+    }
 
 
+
+}
