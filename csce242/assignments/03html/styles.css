@@ -1,1 +1,33 @@
 /*Assignment 3 Styles Sheet*/
+body {
+    background: beige;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content { /*everything above the ^body^ background */
+    width: 95%;
+    margin: auto;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/*Main Navigation*/
+
+#main-nav ul {
+    list-style-type: none;  /* remove the bullets */
+    padding-left:0;
+}
+
+#main-nav li {
+    border-bottom: 1px black;
+}
+
+
+/*Typography*/
+h1 {
+    text-align: center;
+
+}
+
+
+
