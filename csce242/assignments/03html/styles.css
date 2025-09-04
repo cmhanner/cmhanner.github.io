@@ -26,7 +26,7 @@ body {
     gap: 30px;
 }
 
-.one-idea { /*to line the things inside the section/box up*/
+.one-idea { 
     background: white; 
     flex: 1; /* allows multiple idea boxes to fit evenly */
     padding: 10px;
@@ -84,31 +84,24 @@ body {
 /*Seconday Nav*/
 
 
-aside.one {
-    background: rgb(145, 108, 108);
-   
-
-}
-
-#one-nav {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  padding: 0;
+.one-nav {
+  flex: 1;
+  background:rgb(121, 75, 75);;
+  padding: 15px;
+  text-align: center;
+  height: fit-content; /*make nav box be as big as contents*/
   
   
 }
 
 #secondary-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
+  list-style-type: none;
   padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
-#secondary-nav li {
-  margin: 0 15px;
-}
 
 #secondary-nav a {
   text-decoration: none;
@@ -116,12 +109,33 @@ aside.one {
   font-weight: bold;
 }
 
-
-
-#secondary-nav ul {
-    display: flex; 
-    list-style-type: none;
+#articles-wrapper {
+    display: flex; /* puts nav beside articles */
+    gap: 20px;
+    margin-top: 20px;
 }
+
+/*Articles*/
+#articles {
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+
+.one-article {
+    flex: 1 1 300px; /* flexible width, min 300px */
+    background: white;
+    padding: 10px;
+    border: 1px solid #cd8d8d;
+}
+
+/* Gallery */
+
+
+
+
 
 /*Typography*/
 h1 {
