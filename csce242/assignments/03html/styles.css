@@ -5,7 +5,7 @@ body {
 }
 
 #content { /*everything above the ^body^ background */
-    width: 95;
+    width: 95%;
     margin: auto;
     border-radius: 5px;
     padding: 5px;
@@ -18,27 +18,26 @@ body {
 }
 
 
-
-.one-idea {
-  /* flex: 1 1 300px;
-  max-width: 300px;
-  margin: 0 10px; */
-    background: white;
-  width: 100%;
-}
-
-.one-idea .columns { /*to line the things inside the section/box up*/
-        
-    display: flex;
-    /* flex-direction: column; */
-    align-items: center;
-}
-
-#idea-list.columns {
+/*Idea List*/
+#idea-list {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 30px; /* space between ideas */
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.one-idea { /*to line the things inside the section/box up*/
+    background: white; 
+    flex: 1; /* allows multiple idea boxes to fit evenly */
+    padding: 10px;
+    border: 1px solid rgb(155, 155, 127);
+    
+}
+
+.one-idea .columns {
+   display: flex;
+   align-items: center;
+   gap: 10px;
 }
 
 /* #main-content section, #main-content aside {
@@ -91,9 +90,13 @@ aside.one {
 
 }
 
-#secondary-nav {
-  margin-top: 20px; /* space below idea list */
-  text-align: center;
+#one-nav {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  
+  
 }
 
 #secondary-nav ul {
