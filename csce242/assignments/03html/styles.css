@@ -86,7 +86,7 @@ body {
 
 .one-nav {
   flex: 1;
-  background:rgb(121, 75, 75);;
+  background:rgb(121, 75, 75);
   padding: 15px;
   text-align: center;
   height: fit-content; /*make nav box be as big as contents*/
@@ -111,7 +111,7 @@ body {
 
 #articles-wrapper {
     display: flex; /* puts nav beside articles */
-    gap: 20px;
+    gap: 5px;
     margin-top: 20px;
 }
 
@@ -120,7 +120,7 @@ body {
     flex: 3;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 5px;
     
 }
 
@@ -133,7 +133,20 @@ body {
 
 /* Gallery */
 
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 20px;
+}
 
+#gallery section {
+    flex: 1 1 250px; /* flexible width, min 250px */
+    background: white;
+    padding: 10px;
+    border: 1px solid #cd8d8d;
+    text-align: center;
+}
 
 
 
@@ -143,12 +156,15 @@ h1 {
 
 }
 
-/* Larger devices */
-@media only screen and (min-width: 320px) {
-    body {
-        
-    }
+footer {
+    text-align: center;
+    background-color: rgb(121, 75, 75);
+    color: white;
+    margin-top: 10%;
+}
 
+/* Larger devices */
+@media only screen and (max-width: 768px) {
     #content {
         width:70%;
     }
@@ -158,26 +174,47 @@ h1 {
         display:flex;
     }
 
-    .one {
-        flex:1;
+    #main-nav ul {
+        flex-direction: column;
+
     }
 
-    .two {
-        flex:2;
-    }
-
-    .three {
-        flex:3;
-    }
-
-    .four {
-        flex:4;
-    }
-
-    .five {
-        flex:5;
+    #idea-list {
+        flex-direction: column;
     }
 
 
 
+
+     /* Keep nav stacked on top instead of beside */
+    #articles-wrapper {
+        flex-direction: column;
+    }
+
+    /* Secondary nav full width */
+    .one-nav {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Articles stacked one per row */
+    #articles {
+        flex-direction: column;
+    }
+
+    .one-article {
+        flex: 1 1 100%; /* each article takes full width */
+    }
+
+    /* Gallery stacked one per row */
+    #gallery {
+        flex-direction: column;
+    }
+
+    #gallery section {
+        flex: 1 1 100%;
+    }
 }
+    
+
+
