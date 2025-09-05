@@ -1,6 +1,12 @@
 /*Flex Example Css*/
+
+:root {
+    --primary-color: #BABF2A;
+    --secondary-color: #595924;
+}
+
 body {
-    background: #BABF2A;
+    background: (--primary-color);
     font-family: Arial, Helvetica, sans-serif;
 
 }
@@ -18,6 +24,17 @@ body {
     color: white;
     border-radius: 5px;
     padding:5px;
+    position: relative;
+
+}
+
+#main-header img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75px;
+    border-radius: 50px;
 
 }
 
@@ -26,11 +43,28 @@ body {
 }
 
 .squirrel {
-    background: #595924;
+    background: (--secondary-color);
     padding: 5px;
     border-radius: 5px;
     margin: 5px; /*so they have litte space on each side*/
 
+}
+
+/*Showcose*/
+
+#showcase {
+    position: relative; /*the parent is relative*/
+}
+
+#showcase p {
+    background-color: aquamarine;
+    color: black;
+    padding: 10px;
+    width: fit-content;
+
+    position: absolute; /*the child is absolute*/
+    top: 20%;
+    left: 5%;
 }
 
 /*Gallery*/
@@ -61,30 +95,58 @@ img {
 
 /* Main Navigation */
 
-#main-nav ul {
+nav ul {
     list-style: none; /*removes default bullets */
     padding-left: 0; /*removes default padding */
-     justify-content: center; /* space the list */
+
+}
+
+nav a {
+    text-decoration: none;
 }
 
 #main-nav li {
     border-bottom: 1px solid white;
-    display: inline-block; /*display assignments side by side*/
     
+}
+
+#main-nav li:first-child {
+    border-top:1px solid white;
 }
 
 
 #main-nav a {
     color: white;
     padding: 10px 5px;
-    padding: 5px;
     display: block; /*entire area clickable */
-    text-decoration: none; /*removes underline */
 }
 
 #main-nav a:hover {
     background: white;
     color: #85BFF2;
+}
+
+#login-nav {
+    position: absolute;
+    top: 2.5%;
+    right: 2.5%;
+    
+}
+
+#login-nav a {
+    color: white;
+    background: black;
+    display: block;
+}
+
+
+
+#login-nav a:hover {
+    border-bottom: 1px solid white;
+}
+
+#login-nav a::after {
+    content: " | ";
 }
 
 
@@ -117,7 +179,7 @@ h1 {
     /*Columns*/
     .columns { /*dot signifys class multiple class per elemtents */
         display:flex;
-         justify-content: center; /* space the list */
+    
     }
 
     .one {
@@ -157,6 +219,15 @@ h1 {
     #main-nav a:hover {
         background : goldenrod;
         color: white;
+        border-bottom:1px solid white;
+    }
+
+     #login-nav a {
+        display:inline;
+    }
+
+    #login-nav li:not(:last-child)::after {
+        content: " | ";
     }
 
     .hide-small {
