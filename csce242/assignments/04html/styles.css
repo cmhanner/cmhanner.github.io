@@ -1,0 +1,66 @@
+/*Assignment 4 Recreating USC Webpage https://sc.edu/study/colleges_schools/artsandsciences/*/
+:root {
+    --black:black;
+    --garnet:#75000A;
+    --white: white;
+}
+
+body {
+    background:var(--black);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+    color: white;
+}
+
+.top-bar {
+    background-color: black;
+
+}
+
+
+/*Navs in General*/
+
+
+
+nav ul {
+    list-style-type: none; /*removes bullets from ALL list*/
+    
+    
+    
+}
+
+nav a {
+    text-decoration: none; /*removes underline from ALL links in list*/
+     
+    
+}
+
+li {
+    
+}
+
+/*Main Nav at the very top*/
+
+.main-nav {
+    padding-left: 20%;
+}
+
+
+
+/* h1 {
+    color: white;
+} */
+
+@media only screen and (min-width: 768px) {
+
+    .columns {
+        display: flex; /*Display in a line*/
+        justify-content: space-between;
+        
+    
+    
+    }
+
+}
