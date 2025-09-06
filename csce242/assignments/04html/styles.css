@@ -16,31 +16,38 @@ body {
 }
 
 .top-bar {
+    display: grid;
     background-color: black;
-    width: 2313px;
-    height: 115px;
-    display: flex;
-    position: relative; /* Makes it the ancestor */
-    /* justify-content: space-between; */
-    /* align-items: center; */
-    /* padding: 10px 20px; */
+    grid-template-columns: repeat(3, 1fr);
+    
+    /* grid-template-rows: 1fr 0.5fr 2fr; */
+    border: 2px dashed darkcyan;
+    align-items: center;
+    /* gap: 20px; */
+    color: white;
+    /*padding: 10px ; /* space inside bar */
+    width: 100%; /* full width, responsive */
+
+   
 }
+
+.top-bar > * {
+    border: 1px solid lawngreen;
+}
+
 
 .top-bar img {
-    width: auto;
-    position: absolute;  
-    left: 450px;
-    top: 40px;
+    justify-self:flex-start;
+    width: fit-content;
+    height: auto;
+    grid-column: 2; 
+    /* solute;   */
+    
 
 
 }
 
-
-
-
 /*Navs in General*/
-
-
 
 nav ul {
     list-style-type: none; /*removes bullets from ALL list*/
@@ -55,14 +62,15 @@ nav a {
     
 }
 
-
-
 /*Main Nav at the very top*/
 
 .main-nav {
     padding-left: 20%;
     font-size:8px;
-    position: absolute; 
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    /* solute;  */
     /* border-right: 1px solid white; */
    
 }
@@ -74,10 +82,6 @@ nav a {
   
 }
 
-/* .main-nav li {
-    border-right: 1px solid white;
-
-} */
 
 .main-nav a {
     color: var(--white);
@@ -91,18 +95,22 @@ nav a {
 }
 
 /*USC Logo + School Name*/
+
 .logo_text {
     display: flex;
     flex-direction: column;
-    position: absolute;  
-    left: 500px;
-    top: 40px;
+    /* solute;   */
+    margin: 0;
     color: var(--white);
+    width: fit-content;
+    grid-column: 2;
+    
 }
 
 .logo_text #UOF {
     font-size: 12px;
     margin: 0;
+    
 }
 
 
@@ -113,14 +121,12 @@ nav a {
 }
 
 #college {
-    position: absolute;  
     font-size: 18px;
-    left: 1000px;
-    top: 40px;
+    grid-column: 2;
+    justify-self: end;
      color: var(--white);
 }
-    /* margin: 0; */
-    /* white-space: nowrap; */
+   
 
 #second-nav {
     background-color: var(--garnet);
@@ -159,26 +165,25 @@ nav a {
 }
 
 
-
-
-/* h1 {
-    color: white;
-} */
-
-@media only screen and (min-width: 768px) {
-
-    .content {
-        width: 70%;
-        
-    }
-
+@media only screen and (max-width: 768px) {
+     
     .top-bar {
-        display: flex;
+        grid-template-columns: 1fr;
+        text-align: center;
     }
 
-    .main-nav {
-        flex: 1;
+    #college {
+        justify-self: center;
+        white-space: normal;
     }
+
+    .top-bar img {
+        height: auto;
+    }
+
+    
+
+    
 
     .main-nav li:not(:last-child)::after { 
         content:" |";
