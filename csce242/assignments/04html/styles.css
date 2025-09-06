@@ -220,20 +220,26 @@ nav a {
     
 }
 
-.first-paragraph > * { /*to see elements inside the top bar*/
+.first-paragraph > * { /*to see elements inside the top bar DELTE ME LATER*/
     border: 1px solid lawngreen;
 }
 
 /*Prepared For Future & Pic Section*/
+
 .PreparedForFuture_Image {
     background-color: var(--garnet);
+    display: grid;
+    grid-template-columns: auto, auto 1fr;
+    grid-template-rows:auto, auto;
 }
 
 .PreparedForFuture_Image #Text {
     display: flex;
+    grid-column: 1;
     flex-direction: column;
-    justify-content: center; /* center the text horizontally*/
+    justify-content: left; /* center the text horizontally*/
     align-items: center; /* center the text vertically*/
+    margin:auto;
 
 }
 
@@ -253,6 +259,11 @@ nav a {
     background-color: var(--white);
     color: var(--garnet);
 
+}
+
+.PreparedForFuture_Image img {
+    display: flex;
+    grid-column: 3;
 }
 
 /* .PreparedForFuture_Image nav {
