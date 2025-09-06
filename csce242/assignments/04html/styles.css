@@ -159,9 +159,6 @@ nav a {
     justify-content: flex-start; /* pushes links to the left */
     grid-column: 3;
 
-
-
-
 }
 
 #second-nav ul {
@@ -177,8 +174,11 @@ nav a {
 
 }
 
+
+
 #second-nav li a{
     display: block;
+    padding: 5px;
 }
 
 #second-nav li a:hover {
@@ -252,7 +252,6 @@ nav a {
 
 }
 
-
 .PreparedForFuture_Image p {
     max-width: 75ch;
     text-align: start;
@@ -279,6 +278,134 @@ nav a {
     grid-column: 2;
     justify-self: end;
 }
+/* Find a Program Section */
+
+.Find-A-Program {
+    display: flex;
+    flex-direction: column;
+    background-color:#EDEDED ;
+    align-items: center;
+
+}
+
+.Find-A-Program h2 {
+    color: var(--garnet);
+
+}
+
+.Find-A-Program p {
+    font-size: 10px;
+    color: var(--black);
+    max-width: 80ch;
+    line-height: 1.5;
+    text-align: center;
+
+}
+
+.Find-A-Program nav ul {
+  display: flex;
+  justify-content: flex-start; 
+  gap: 20px;
+
+}
+
+.Find-A-Program nav li {
+    background-color: var(--garnet);
+    
+
+}
+
+.Find-A-Program  li a {
+    display: block;
+    padding: 10px 15px;   /*adds more paddding to click*/
+
+
+}
+
+.Find-A-Program nav a {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+
+
+}
+
+.Find-A-Program nav a:hover {
+    color: var(--garnet);
+    background-color: var(--white);
+
+
+}
+
+/*Floating Block To the Right*/
+
+.Impacting-SC {
+    background: white;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%; /*Stretch the length of the page*/
+   
+   
+}
+
+.Impacting-SC #Text {
+    background-color: var(--black);
+    padding: 20px;
+    text-align: left;
+   
+}
+
+.Impacting-SC p {
+    font-size: 12px;
+    line-height: 1.5;
+    max-width: 78ch;
+
+}
+
+.Impacting-SC nav li {
+    background-color: var(--garnet);
+    width: fit-content;
+    justify-content: left;
+
+}
+
+.Impacting-SC  li a {
+    display: block;
+    padding: 10px 15px;   /*adds more paddding to click*/
+
+
+}
+
+.Impacting-SC nav a {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+
+
+}
+
+.Impacting-SC nav a:hover {
+    color: var(--garnet);
+    background-color: var(--white);
+    font-size: 12px;
+    font-weight: bold;
+
+
+}
+
+.The-Quote {
+    display:block;
+    /* flex-direction: columns; */
+    background-color: var(--garnet);
+}
+
+.The-Quote img {
+    width:fit-content;
+    border-radius: 100px;
+}
+
 
 
 
@@ -311,8 +438,6 @@ nav a {
 
     
 
-    
-
     .main-nav li:not(:last-child)::after { 
         content:" |";
         margin-left: 10px; /*to put space between pipe and text*/
@@ -322,6 +447,23 @@ nav a {
     .logo_text {
         grid-column: 1;
     }
+
+    .PreparedForFuture_Image {
+        grid-template-columns: 1fr;
+        display: flex;
+    }
+
+    .PreparedForFuture_Image #Text {
+        grid-column: 1;
+        justify-self: center;
+
+    }
+
+    .PreparedForFuture_Image img {
+        grid-column: 1;
+        margin: 0 auto;
+    }
+
 
 
 }
