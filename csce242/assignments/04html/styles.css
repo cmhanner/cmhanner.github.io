@@ -294,7 +294,7 @@ nav a {
 }
 
 .Find-A-Program p {
-    font-size: 10px;
+    font-size: 13px;
     color: var(--black);
     max-width: 80ch;
     line-height: 1.5;
@@ -326,6 +326,10 @@ nav a {
     color: white;
     font-size: 12px;
     font-weight: bold;
+    border-top: 1px solid var(--garnet);
+    border-left: 1px solid var(--garnet);
+    border-right: 1px solid var(--garnet);
+    border-bottom: 1px solid var(--garnet);
 
 
 }
@@ -337,7 +341,7 @@ nav a {
 
 }
 
-/*Floating Block To the Right*/
+/*Lab Guy and Floating Block To the Right*/
 
 .Impacting-SC {
     background: white;
@@ -389,6 +393,10 @@ nav a {
     color: white;
     font-size: 12px;
     font-weight: bold;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
 
 
 }
@@ -398,9 +406,15 @@ nav a {
     background-color: var(--white);
     font-size: 12px;
     font-weight: bold;
+    border-top: 1px solid var(--garnet);
+    border-left: 1px solid var(--garnet);
+    border-right: 1px solid var(--garnet);
+    border-bottom: 1px solid var(--garnet);
 
 
 }
+
+/*The Quote*/
 
 .The-Quote {
     display:flex;
@@ -428,6 +442,75 @@ nav a {
    font-size: 11px;
 
 }
+
+/*A Powerful Network of Connections*/
+.A-Powerful-Network-Of-Connections {
+    background-color: #1F404D;
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    /* grid-template-rows:auto, auto; */
+    gap: 20px; /*space between text and inmage*/
+    align-items: center;
+}
+
+.A-Powerful-Network-Of-Connections h2 {
+    text-align: start;
+
+}
+
+.A-Powerful-Network-Of-Connections #Text {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    grid-column: 1;
+    justify-self: end;
+    text-align: left;
+    margin: 0;
+    
+
+}
+
+.A-Powerful-Network-Of-Connections p {
+    max-width: 75ch;
+    text-align: start;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.A-Powerful-Network-Of-Connections ul {
+    width: fit-content;
+   
+
+}
+
+.A-Powerful-Network-Of-Connections a {
+    background-color: var(--garnet);
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    width: fit-content;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.A-Powerful-Network-Of-Connections a:hover {
+    background-color: var(--white);
+    color: var(--garnet);
+    border-top: 1px solid var(--garnet);
+    border-left: 1px solid var(--garnet);
+    border-right: 1px solid var(--garnet);
+    border-bottom: 1px solid var(--garnet);
+
+}
+
+.A-Powerful-Network-Of-Connections img {
+    display: flex;
+    grid-column: 2;
+    justify-self: end;
+}
+
 
 
 
