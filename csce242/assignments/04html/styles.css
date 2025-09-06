@@ -10,13 +10,13 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#content {
-    color: white;
+.content {
+    color: var(--white);
     
 }
 
-#top-bar {
-    background: black;
+.top-bar {
+    background-color: black;
     width: 2313px;
     height: 115px;
     display: flex;
@@ -26,7 +26,7 @@ body {
     /* padding: 10px 20px; */
 }
 
-#top-bar img {
+.top-bar img {
     width: auto;
     position: absolute;  
     left: 450px;
@@ -80,13 +80,13 @@ nav a {
 } */
 
 .main-nav a {
-    color: white;
+    color: var(--white);
     
 }
 
 .main-nav a:hover {
     background: red;
-    color: white;
+    color: var(--white);
 
 }
 
@@ -97,6 +97,7 @@ nav a {
     position: absolute;  
     left: 500px;
     top: 40px;
+    color: var(--white);
 }
 
 .logo_text #UOF {
@@ -116,9 +117,46 @@ nav a {
     font-size: 18px;
     left: 1000px;
     top: 40px;
+     color: var(--white);
 }
     /* margin: 0; */
     /* white-space: nowrap; */
+
+#second-nav {
+    background-color: var(--garnet);
+    width:2313px;
+    display:flex;
+    color: var(--white);
+    
+    
+}
+
+#second-nav nav {
+    margin-left: 1000px;
+}
+
+#second-nav ul {
+    display: flex;
+    justify-content: flex-end; /* pushes links to the right */
+    gap: 20px;
+}
+
+#second-nav a {
+    color: var(--white);
+    font-size: 10px;
+    font-weight: bold;
+    display: block;
+
+}
+
+#second-nav li a{
+    display: block;
+}
+
+#second-nav li a:hover {
+    background-color: #4a0006;
+
+}
 
 
 
@@ -129,16 +167,27 @@ nav a {
 
 @media only screen and (min-width: 768px) {
 
-    .main-nav {
-        display: flex; /*Display in a line*/
-        justify-content: space-between;
+    .content {
+        width: 70%;
         
+    }
+
+    .top-bar {
+        display: flex;
+    }
+
+    .main-nav {
+        flex: 1;
     }
 
     .main-nav li:not(:last-child)::after { 
         content:" |";
         margin-left: 10px; /*to put space between pipe and text*/
         
+    }
+
+    .logo_text {
+        flex: 2;
     }
 
 
