@@ -195,7 +195,7 @@ nav a {
 .first-pic #text-over-pic {
     position: absolute;
     top: 600px;
-    background-color: aliceblue;
+    background-color: #E7E4E2;
     color: var(--garnet);
 }
 
@@ -229,23 +229,35 @@ nav a {
 .PreparedForFuture_Image {
     background-color: var(--garnet);
     display: grid;
-    grid-template-columns: auto, auto 1fr;
-    grid-template-rows:auto, auto;
+    grid-template-columns: 1fr, 1fr;
+    /* grid-template-rows:auto, auto; */
+    gap: 20px; /*space between text and inmage*/
+    align-items: center;
+}
+
+.PreparedForFuture_Image h2 {
+    text-align: start;
+
 }
 
 .PreparedForFuture_Image #Text {
     display: flex;
-    grid-column: 1;
+    justify-content: flex-end;
     flex-direction: column;
-    justify-content: left; /* center the text horizontally*/
-    align-items: center; /* center the text vertically*/
-    margin:auto;
+    grid-column: 1;
+    justify-self: end;
+    text-align: right;
+    margin: 0;
+    
 
 }
 
 
 .PreparedForFuture_Image p {
+    max-width: 75ch;
+    text-align: start;
     font-size: 12px;
+    line-height: 1.5;
 }
 
 .PreparedForFuture_Image button {
@@ -253,6 +265,7 @@ nav a {
     color: white;
     padding: 10px 20px;
     font-weight: bold;
+    width: fit-content;
 }
 
 .PreparedForFuture_Image button:hover {
@@ -263,24 +276,11 @@ nav a {
 
 .PreparedForFuture_Image img {
     display: flex;
-    grid-column: 3;
+    grid-column: 2;
+    justify-self: end;
 }
 
-/* .PreparedForFuture_Image nav {
-    background-color: var(--black);
-    justify-content: center;
-}
 
-.PreparedForFuture_Image ul {
-    align-items: center;
-}
-
-.PreparedForFuture_Image a {
-    font-weight: bold;
-    color: var(--white);
-    background-color: var(--black);
-    
-}  */
 
 
 
