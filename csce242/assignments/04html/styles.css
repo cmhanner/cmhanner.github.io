@@ -211,8 +211,6 @@ nav a {
     height: 220px;
     /* padding: 20px; */
     
-   
-
 }
 
 .first-paragraph p {
@@ -225,6 +223,53 @@ nav a {
 .first-paragraph > * { /*to see elements inside the top bar*/
     border: 1px solid lawngreen;
 }
+
+/*Prepared For Future & Pic Section*/
+.PreparedForFuture_Image {
+    background-color: var(--garnet);
+}
+
+.PreparedForFuture_Image #Text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* center the text horizontally*/
+    align-items: center; /* center the text vertically*/
+
+}
+
+
+.PreparedForFuture_Image p {
+    font-size: 12px;
+}
+
+.PreparedForFuture_Image button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.PreparedForFuture_Image button:hover {
+    background-color: var(--white);
+    color: var(--garnet);
+
+}
+
+/* .PreparedForFuture_Image nav {
+    background-color: var(--black);
+    justify-content: center;
+}
+
+.PreparedForFuture_Image ul {
+    align-items: center;
+}
+
+.PreparedForFuture_Image a {
+    font-weight: bold;
+    color: var(--white);
+    background-color: var(--black);
+    
+}  */
 
 
 
