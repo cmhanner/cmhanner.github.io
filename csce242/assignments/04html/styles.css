@@ -350,10 +350,17 @@ nav a {
    
 }
 
+.Impacting-SC img{
+    position: relative;
+   
+}
+
 .Impacting-SC #Text {
     background-color: var(--black);
     padding: 20px;
-    text-align: left;
+    position: absolute;
+    top: 2600px;
+    left:1100px;
    
 }
 
@@ -396,14 +403,30 @@ nav a {
 }
 
 .The-Quote {
-    display:block;
-    /* flex-direction: columns; */
+    display:flex;
+    flex-direction: row; /*puts image and text side by side*/
     background-color: var(--garnet);
+    gap: 10px;
+    align-items:center;
+    justify-content: center;
+    text-align: left;
+    padding: 20px;
+
 }
 
 .The-Quote img {
     width:fit-content;
-    border-radius: 100px;
+    border-radius: 100px; 
+}
+
+.The-Quote h4 {
+    max-width: 80ch;
+
+}
+
+.The-Quote p {
+   font-size: 11px;
+
 }
 
 
