@@ -187,6 +187,46 @@ nav a {
 }
 
 /*First Picture*/
+.first-pic {
+    position:relative;
+    
+}
+
+.first-pic #text-over-pic {
+    position: absolute;
+    top: 600px;
+    background-color: aliceblue;
+    color: var(--garnet);
+}
+
+/*First Paragraph after First Pic*/
+
+.first-paragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* center the text horizontally*/
+    align-items: center; /* center the text vertically*/
+    background-color: var(--white);
+    color: var(--black);
+    height: 220px;
+    /* padding: 20px; */
+    
+   
+
+}
+
+.first-paragraph p {
+    font-weight: bold;
+    line-height: 1.5;
+    max-width: 63ch; /* Limits the width to about 60 characters */
+    
+}
+
+.first-paragraph > * { /*to see elements inside the top bar*/
+    border: 1px solid lawngreen;
+}
+
+
 
 
 
