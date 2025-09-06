@@ -19,7 +19,20 @@ body {
     background: black;
     width: 2313px;
     height: 115px;
+    display: flex;
     position: relative; /* Makes it the ancestor */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* padding: 10px 20px; */
+}
+
+#top-bar img {
+    width: auto;
+    position: absolute;  
+    left: 450px;
+    top: 40px;
+
+
 }
 
 
@@ -49,7 +62,8 @@ nav a {
 .main-nav {
     padding-left: 20%;
     font-size:8px;
-    border-right: 1px solid white;
+    position: absolute; 
+    /* border-right: 1px solid white; */
    
 }
 
@@ -57,6 +71,7 @@ nav a {
   display: flex;
   justify-content: flex-end; /* pushes links to the right */
   gap: 20px;
+  
 }
 
 /* .main-nav li {
@@ -78,61 +93,33 @@ nav a {
 /*USC Logo + School Name*/
 .logo_text {
     display: flex;
-    align-items: center;
-    position: absolute;
-    
-}
-
-.logo_text img {
-    position: absolute;
-    left: 455px;
-    top: 5px;
-
-
+    flex-direction: column;
+    position: absolute;  
+    left: 500px;
+    top: 40px;
 }
 
 .logo_text #UOF {
-    position: absolute;
-    font-size: 10px;
-    left: 500px;
-    top: 5px;
-    color: (--white);
-    display: flex;
-    justify-content: flex-end;
-    width:fit-content;
-
-
+    font-size: 12px;
+    margin: 0;
 }
 
-.logo_text #SC {
-    position: absolute;
-    font-size: 20px;
-    left: 500px;
-    top: 20px;
-    color: (--white);
-    display: flex;
-    justify-content: flex-end;
-    width:fit-content;
 
+.logo_text  #SC {
+    font-size: 18px;
+    margin: 0;
+    font-weight: bold;
 }
 
-.logo_text h2 {
-    position: absolute;
-    top:25%;
-    /* text-align: right; */
-    /* bottom: 10px; */
-    font-size: 20px;
-    left: 1200px;
-    color: (--white);
-    display: flex;
-    justify-content: flex-end;
-    /* width:fit-content; */
-    color: red;
-    
-
-
-
+#college {
+    position: absolute;  
+    font-size: 18px;
+    left: 1000px;
+    top: 40px;
 }
+    /* margin: 0; */
+    /* white-space: nowrap; */
+
 
 
 
