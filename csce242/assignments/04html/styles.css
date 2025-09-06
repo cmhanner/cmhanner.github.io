@@ -511,6 +511,89 @@ nav a {
     justify-self: end;
 }
 
+#news-header {
+    color: var(--garnet);
+    font-weight: bold;
+    text-align: center;
+    padding-top: 80px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.News {
+    display: flex;
+    
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background-color: var(--white);
+    margin-top: 80px;
+}
+
+.News section {
+    display:flex ; /* flexible width, min 250px */
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: fit-content;
+    /* gap: 20px; */
+}
+
+.News h4 {
+    color: var(--garnet);
+    font-weight: bold;
+
+}
+
+.News p {
+    width: 300px;
+    font-size: 14px;
+    color: black;
+    max-width: 75ch;
+    text-align: start;
+    line-height: 1.5;
+
+}
+.News nav {
+    display: block;
+}
+
+.News ul {
+    padding: 10px 10px;
+}
+
+.News li {
+   display: block;
+   
+  
+}
+
+.News a {
+   background-color: var(--garnet);
+   color: var(--white);
+    padding: 10px 10px;
+    font-weight: bold;
+    font-size: 10px;
+    box-shadow: 0 1px 3px var(--garnet);
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.News a:hover {
+    background-color: var(--white);
+    color: var(--garnet);
+    border-top: 1px solid var(--garnet);
+    border-left: 1px solid var(--garnet);
+    border-right: 1px solid var(--garnet);
+    border-bottom: 1px solid var(--garnet);
+
+}
+
+
+
 
 
 
