@@ -188,6 +188,9 @@ nav a {
 /*First Picture*/
 .first-pic {
     position:relative;
+    max-width: 100px;
+    width: 100%;
+    height: auto;
     
 }
 
@@ -291,6 +294,9 @@ nav a {
     display: flex;
     grid-column: 2;
     justify-self: end;
+    max-width: 100px;
+    width: 100%;
+    height: auto;
 }
 /* Find a Program Section */
 
@@ -370,6 +376,9 @@ nav a {
 
 .Impacting-SC img{
     position: relative;
+    max-width: 100px;
+    width: 100%;
+    height: auto;
    
 }
 
@@ -647,6 +656,9 @@ nav a {
     grid-column: 2;
     flex-direction: row;
     align-items: right;
+    max-width: 100px;
+    width: 100%;
+    height: auto;
 
 }
 
@@ -944,6 +956,10 @@ nav a {
 
 
 @media only screen and (max-width: 768px) {
+
+    img {
+        max-width: 80%;
+    }
     .top-bar {
         display: flex;
         flex-direction: column;
