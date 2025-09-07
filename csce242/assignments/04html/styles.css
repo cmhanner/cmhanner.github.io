@@ -595,6 +595,8 @@ nav a {
 
 }
 
+/*Empowering Next Gen*/
+
 .EmpoweringNextGen {
     background-color: var(--black);
     gap: 20px;
@@ -658,6 +660,123 @@ nav a {
     border-bottom: 1px solid var(--garnet);
     
 }
+
+/*Name and Socials*/
+
+.NameAndSocials {
+    background-color: #EDEDED;
+    display: grid;
+    grid-template-columns: 1fr, 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    color: var(--garnet);
+    grid-template-rows:auto, auto;
+    padding:50px 50px ;
+
+}
+
+.NameAndSocials #Name {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+   
+}
+
+.NameAndSocials #MyMcCausland a {
+    color: var(--white);
+    background-color: var(--black);
+    font-size: 10px;
+    padding: 10px 10px;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    box-shadow: 0 1px 3px var(--black);
+}
+
+.NameAndSocials #MyMcCausland a:hover {
+    color: var(--garnet);
+    background-color: var(--white);
+    font-size: 10px;
+    padding: 10px 10px;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.NameAndSocials #Socials {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2;
+   
+}
+
+/* .NameAndSocials #Name, #Socials {
+    display: flex;
+   justify-content: flex-end;
+    
+   
+} */
+
+
+
+
+.NameAndSocials #Socials a {
+    color: #75000A;
+    text-decoration: none;
+    font-size: 30px;
+   
+}
+
+.NameAndSocials #bottom-nav ul {
+   display: grid;
+  /* justify-content: flex-end; /* pushes links to the right */
+  grid-template-columns: repeat(2, 1fr); /*puts the links in seperate columns*/
+    gap: 10px 30px; /* row and column gap */
+    justify-items: center;
+    grid-column: 1;
+   
+}
+
+.NameAndSocials #bottom-nav a {
+    color: var(--garnet);
+    font-size: 12px;
+    font-weight: bold;
+     text-align: center;
+   
+}
+
+.NameAndSocials #bottom-nav a:hover {
+    color: var(--white);
+    background-color: red;
+   
+   
+}
+
+.NameAndSocials #Petigru {
+    grid-column: 3;
+   
+}
+
+/*Before The Footer*/
+
+.Before-Footer {
+    background-color: var(--garnet);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.7fr 2fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+
+}
+
+
 
 
 
