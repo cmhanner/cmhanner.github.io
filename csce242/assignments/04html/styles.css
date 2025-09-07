@@ -323,7 +323,7 @@ nav a {
 
 .Find-A-Program  li a {
     display: block;
-    padding: 10px 15px;   /*adds more paddding to click*/
+    padding: 10px 15px;   /*add more paddding to click*/
 
 
 }
@@ -879,7 +879,7 @@ nav a {
 .Before-Footer #Tools ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns to make list stretch out */
-    gap: 10px 30px; /* row and column gap */
+    gap: 10px 30px; /* row and column gap so they dont touch */
     width: 100%; /* stretches the list to fill the container */
 }
 
