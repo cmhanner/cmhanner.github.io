@@ -444,6 +444,7 @@ nav a {
 }
 
 /*A Powerful Network of Connections*/
+
 .A-Powerful-Network-Of-Connections {
     background-color: #1F404D;
     display: grid;
@@ -510,6 +511,8 @@ nav a {
     grid-column: 2;
     justify-self: end;
 }
+
+/*News Section*/
 
 #news-header {
     color: var(--garnet);
@@ -590,6 +593,70 @@ nav a {
     border-right: 1px solid var(--garnet);
     border-bottom: 1px solid var(--garnet);
 
+}
+
+.EmpoweringNextGen {
+    background-color: var(--black);
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 60px;
+
+}
+
+.EmpoweringNextGen #Text {
+    display: flex;
+    grid-column: 1/2;
+    justify-content: flex-end;
+    flex-direction: column;
+    justify-self: end;
+    margin: 0;
+
+}
+
+.EmpoweringNextGen h2 {
+   max-width: 21ch;
+   font-size: 30px;
+  
+
+}
+
+.EmpoweringNextGen p {
+    max-width: 75ch;
+    font-size: 12px;
+}
+
+.EmpoweringNextGen img {
+    display: flex;
+    grid-column: 2;
+    flex-direction: row;
+    align-items: right;
+
+}
+
+.EmpoweringNextGen li {
+    display: block;
+
+}
+
+.EmpoweringNextGen a {
+    color: var(--white);
+    background-color: var(--garnet);
+    padding: 10px 10px;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.EmpoweringNextGen a:hover {
+    color: var(--garnet);
+    background-color: var(--white);
+    border-top: 1px solid var(--garnet);
+    border-left: 1px solid var(--garnet);
+    border-right: 1px solid var(--garnet);
+    border-bottom: 1px solid var(--garnet);
+    
 }
 
 
