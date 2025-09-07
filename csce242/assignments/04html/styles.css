@@ -109,7 +109,7 @@ nav a {
 
 .logo_text {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     /* solute;   */
     margin: 0;
     color: var(--white);
@@ -126,11 +126,6 @@ nav a {
 }
 
 
-.logo_text  #SC {
-    font-size: 18px;
-    margin: 0;
-    font-weight: bold;
-}
 
 #college {
     font-size: 18px;
@@ -929,15 +924,20 @@ nav a {
 
 
 
-@media only screen and (max-width: 768px) {
-     
-    .top-bar {
+@media only screen and (min-width: 768px) {
+
+    .content {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto auto;
         text-align: center;
     }
+     
+    .top-bar {
+        grid-column: 1;
+        
+    }
 
-    .main-nav {
+    /* .main-nav {
         grid-column: 1;
     }
 
@@ -958,11 +958,11 @@ nav a {
         content:" |";
         margin-left: 10px; /*to put space between pipe and text*/
         
-    }
+    
 
     .logo_text {
         grid-column: 1;
-    }
+    } */
 
     .PreparedForFuture_Image {
         grid-template-columns: 1fr;
