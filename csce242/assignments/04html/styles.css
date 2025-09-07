@@ -776,7 +776,7 @@ nav a {
     grid-row-gap: 20px; */
     justify-items: center;
     align-items: center;
-    gap: 20px;
+    /* gap: 20px; */
     
     border: 2px dashed darkcyan; /*DELTE LATER*/
 }
@@ -793,17 +793,27 @@ nav a {
 .Before-Footer h1, h3 {
     width: fit-content;
     height: fit-content;
+    border-bottom: 1px solid white;
 }
 
-.Before-Footer img {
+/* .Before-Footer img {
     grid-column: 1/2;
     grid-row: 1;
-}
+    justify-self: center;
+} */
 
 .Before-Footer #logo_text {
     grid-column: 1/2;
     grid-row: 1;
+    display: flex;
+    flex-direction: row; /*to stack title on list*/
+    justify-self: center;
 }
+
+.Before-Footer h5 {
+    max-width: 30ch;
+}
+
 
 .Before-Footer #Socials {
     grid-column: 3;
@@ -813,27 +823,44 @@ nav a {
 .Before-Footer #Schools {
      grid-column: 1/2;
      grid-row: 2;
-     justify-self: end; /*to align with end of row*/
+     justify-self: center; /*to align with center of row*/
      display: flex;
      flex-direction: column; /*to stack title on list*/
      font-size: 10px;
+     width: 75%;
 
 }
 
+.Before-Footer #Schools ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 10px 30px; /* row and column gap */
+    width: 100%; /* stretches the list to fill the container */
+}
+
+
+
 .Before-Footer #Offices-Divisions {
-    grid-column: 2/3;
+    grid-column: 2;
     grid-row: 2;
-    justify-self: end;
+    justify-self: center;
     display: flex;
     flex-direction: column; /*to stack title on list*/
     font-size: 10px;
 
 }
 
+.Before-Footer #Offices-Divisions ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns to make list stretch out */
+    gap: 10px 30px; /* row and column gap */
+    width: 100%; /* stretches the list to fill the container */
+}
+
 .Before-Footer #Tools {
-    grid-column: 3/4;
+    grid-column: 3;
     grid-row: 2;
-    justify-self: start;
+    justify-self: center;
     display: flex;
     flex-direction: column; /*to stack title on list*/
     font-size: 10px;
@@ -847,6 +874,47 @@ nav a {
 .Before-Footer a:hover {
     background-color: var(--white);
     color: red;
+}
+
+.Before-Footer #Socials a {
+    text-decoration: none;
+    font-size:40px;
+}
+
+/*Footer*/
+
+.footer {
+    background-color: var(--black);
+    padding:0.5px 0.5px;
+    font-size: 10px;
+    
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.footer a {
+    color: var(--white);
+
+
+}
+
+.footer a:hover {
+    color: var(--white);
+    background-color: red;
+
+
+}
+
+.footer li:not(:last-child)::after { 
+    content:" |";
+    margin-left: 10px; /*to put space between pipe and text*/
+        
 }
 
 
