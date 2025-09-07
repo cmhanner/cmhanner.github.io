@@ -21,7 +21,7 @@ body {
     grid-template-columns: auto, auto 1fr;
     
     grid-template-rows:auto, auto;
-    border: 2px dashed darkcyan;
+    /* border: 2px dashed darkcyan; to outline of div */
     align-items: center;
     /* gap: 20px; */
     color: white;
@@ -31,9 +31,10 @@ body {
    
 }
 
-.top-bar > * { /*to see elements inside the top bar*/
+/*to see elements inside the top bar*/
+/* .top-bar > * { 
     border: 1px solid lawngreen;
-}
+} */
 
 
 .top-bar img {
@@ -215,9 +216,10 @@ nav a {
     
 }
 
-.first-paragraph > * { /*to see elements inside the top bar DELTE ME LATER*/
+/*to see elements inside the top bar DELTE ME LATER*/
+/* .first-paragraph > * { 
     border: 1px solid lawngreen;
-}
+} */
 
 /*Prepared For Future & Pic Section*/
 
@@ -773,12 +775,12 @@ nav a {
     align-items: center;
     /* gap: 20px; */
     
-    border: 2px dashed darkcyan; /*DELTE LATER*/
+    /* border: 2px dashed darkcyan; */
 }
-
-.Before-Footer > * { /*to see elements inside the top bar*/ /*DELTE LATER*/
+/*to see elements inside the top bar*/ /*DELTE LATER*/
+/* .Before-Footer > * { 
     border: 1px solid lawngreen;
-}
+} */
 
 .Before-Footer div {
     width: fit-content;
@@ -924,20 +926,15 @@ nav a {
 
 
 
-@media only screen and (min-width: 768px) {
-
-    .content {
+@media only screen and (max-width: 768px) {
+     
+    .top-bar {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto auto;
         text-align: center;
     }
-     
-    .top-bar {
-        grid-column: 1;
-        
-    }
 
-    /* .main-nav {
+    .main-nav {
         grid-column: 1;
     }
 
@@ -958,11 +955,11 @@ nav a {
         content:" |";
         margin-left: 10px; /*to put space between pipe and text*/
         
-    
+    }
 
     .logo_text {
         grid-column: 1;
-    } */
+    }
 
     .PreparedForFuture_Image {
         grid-template-columns: 1fr;
