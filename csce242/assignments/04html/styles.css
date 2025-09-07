@@ -768,12 +768,41 @@ nav a {
 
 .Before-Footer {
     background-color: var(--garnet);
+   
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.7fr 2fr 1fr;
+    grid-template-rows: 0.7fr 2fr 0fr;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
+    
+    border: 2px dashed darkcyan; /*DELTE LATER*/
+}
 
+.Before-Footer > * { /*to see elements inside the top bar*/ /*DELTE LATER*/
+    border: 1px solid lawngreen;
+}
+
+.Before-Footer div {
+    width: fit-content;
+    height: fit-content;
+}
+
+.Before-Footer h1, h3 {
+    width: fit-content;
+    height: fit-content;
+}
+
+.Before-Footer #logo_text {
+    grid-column: 1;
+}
+
+.Before-Footer a {
+    color: var(--white);
+}
+
+.Before-Footer a:hover {
+    background-color: var(--white);
+    color: red;
 }
 
 
