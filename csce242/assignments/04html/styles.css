@@ -196,6 +196,14 @@ nav a {
     top: 600px;
     background-color: #E7E4E2;
     color: var(--garnet);
+    padding: 10px 10px;
+    width: 600px;
+    
+}
+
+.first-pic #text-over-pic h3 {
+    float: right;
+    
 }
 
 /*First Paragraph after First Pic*/
