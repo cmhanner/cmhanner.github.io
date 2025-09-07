@@ -117,12 +117,15 @@ nav a {
     width: fit-content;
     grid-column: 2;
     grid-row: 2;
+    gap: 8px;
+    
     
 }
 
 .logo_text #UOF {
     font-size: 12px;
     margin: 0;
+    max-width: 8ch;
     
 }
 
@@ -255,6 +258,12 @@ nav a {
     font-size: 12px;
     line-height: 1.5;
 }
+
+.PreparedForFuture_Image ul {
+   align-items: center;
+}
+
+
 
 .PreparedForFuture_Image a {
     background-color: black;
@@ -805,6 +814,9 @@ nav a {
     display: flex;
     flex-direction: row; /*to stack title on list*/
     justify-self: center;
+    max-width: 8ch;
+    padding-top: 10px;
+    gap: 8px;
 }
 
 .Before-Footer h5 {
