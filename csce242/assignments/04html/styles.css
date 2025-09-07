@@ -143,7 +143,7 @@ nav a {
     display: grid;
     grid-template-columns: auto, auto 1fr;
     grid-template-rows:auto;
-    border: 2px dashed darkcyan;
+    /* border: 2px dashed darkcyan; */
     background-color: var(--garnet);
     color: var(--white);
     
@@ -256,7 +256,7 @@ nav a {
     line-height: 1.5;
 }
 
-.PreparedForFuture_Image button {
+.PreparedForFuture_Image a {
     background-color: black;
     color: white;
     padding: 10px 20px;
@@ -264,7 +264,7 @@ nav a {
     width: fit-content;
 }
 
-.PreparedForFuture_Image button:hover {
+.PreparedForFuture_Image a:hover {
     background-color: var(--white);
     color: var(--garnet);
 
@@ -864,6 +864,13 @@ nav a {
 
 }
 
+.Before-Footer #Tools ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns to make list stretch out */
+    gap: 10px 30px; /* row and column gap */
+    width: 100%; /* stretches the list to fill the container */
+}
+
 .Before-Footer a {
     color: var(--white);
 }
@@ -916,67 +923,226 @@ nav a {
 
 
 
-
-
-
-
-
-
-
-
-
-
 @media only screen and (max-width: 768px) {
-     
     .top-bar {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .main-nav {
+        order: 1;
+        width: 100%;
+    }
+    
+    .main-nav ul {
+        flex-direction: column; /* stack instead of row */
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .logo_text {
+        order: 2;
+        text-align: center;
+    }
+    
+    .logo_text img {
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    
+    #college {
+        order: 3;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        margin-top: 5px;
+    
+    }
+    
+    #second-nav {
+        order: 4;
+        width: 100%;
+    }
+    
+    #second-nav ul {
+        flex-direction: column; /* stack nav items */
+        align-items: center;
+        gap: 10px;
+    }
+
+    .first-pic {
+        display: flex;
+        flex-direction: center;
+        text-align: center;
+        width: 100%;
+    }
+     
+    /*A Powerful Network of Connections*/
+
+    .PreparedForFuture_Image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .PreparedForFuture_Image #Text {
+        order: 1; /* text first */
+        width: 100%;
+        text-align: center;
+    }
+    .PreparedForFuture_Image img {
+        order: 2; /* image second */
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .A-Powerful-Network-Of-Connections {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .A-Powerful-Network-Of-Connections #Text {
+        order: 1; /* text first */
+        width: 100%;
+        text-align: center;
+    }
+    .A-Powerful-Network-Of-Connections img {
+        order: 2; /* image second */
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /*News*/
+
+    #news-header {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*Empowering Next Gen*/
+
+    .EmpoweringNextGen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .EmpoweringNextGen #Text {
+        order: 1; /* text first */
+        width: 100%;
         text-align: center;
     }
 
-    .main-nav {
-        grid-column: 1;
-    }
-
-    #college {
-        grid-column: 1;
-        justify-self: center;
-        white-space: normal;
-    }
-
-    .top-bar img {
-        grid-column: 1;
+    .EmpoweringNextGen img {
+        order: 2; /* image second */
+        width: 100%;
         margin: 0 auto;
     }
 
+    /*Name and Socials*/
+
+    .NameAndSocials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .NameAndSocials #Name{
+        order: 1; /* text first */
+        width: 100%;
+        text-align: center;
+    }
+    .NameAndSocials #MyMcCausland a {
+        order: 2; /* image second */
+        width: 100%;
+        text-align: center;
+    }
+
+     .NameAndSocials #Socials {
+        order: 3; /* image second */
+        width: 100%;
+        text-align: center;
+    }
+
+    .NameAndSocials #bottom-nav {
+        order: 4; /* image second */
+        width: 100%;
+        text-align: center;
+    }
+
+    .NameAndSocials #Petigru {
+       order: 5;
+       width: 100%;
+        text-align: center;
+   
+    }
+
+    /*Before The Footer*/
+
+    .Before-Footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Before-Footer #logo_text {
+        order: 1; /* text first */
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .Before-Footer #Socials {
+        order: 2; /* text first */
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .Before-Footer #Schools {
+        order: 3; /* text first */
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .Before-Footer #Offices-Divisions{
+        order: 4; /* text first */
+        width: 100%;
+        text-align: center;
+
+    }
     
 
-    .main-nav li:not(:last-child)::after { 
-        content:" |";
-        margin-left: 10px; /*to put space between pipe and text*/
-        
+    .Before-Footer #Tools{
+        order: 5; /* text first */
+        width: 100%;
+        text-align: center;
+
     }
 
-    .logo_text {
-        grid-column: 1;
-    }
+    /*Footer*/
 
-    .PreparedForFuture_Image {
-        grid-template-columns: 1fr;
+    .footer {
         display: flex;
-    }
-
-    .PreparedForFuture_Image #Text {
-        grid-column: 1;
-        justify-self: center;
+        flex-direction: column;
+        align-items: center;
 
     }
 
-    .PreparedForFuture_Image img {
-        grid-column: 1;
-        margin: 0 auto;
+    .footer ul {
+        flex-direction: column; /* stack nav items */
+        align-items: center;
+        gap: 10px;
     }
 
+
+
+
+
+
+
+    
 
 
 }
