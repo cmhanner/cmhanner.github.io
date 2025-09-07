@@ -772,8 +772,11 @@ nav a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 0.7fr 2fr 0fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    /* grid-column-gap: 20px;
+    grid-row-gap: 20px; */
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
     
     border: 2px dashed darkcyan; /*DELTE LATER*/
 }
@@ -792,8 +795,49 @@ nav a {
     height: fit-content;
 }
 
+.Before-Footer img {
+    grid-column: 1/2;
+    grid-row: 1;
+}
+
 .Before-Footer #logo_text {
-    grid-column: 1;
+    grid-column: 1/2;
+    grid-row: 1;
+}
+
+.Before-Footer #Socials {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.Before-Footer #Schools {
+     grid-column: 1/2;
+     grid-row: 2;
+     justify-self: end; /*to align with end of row*/
+     display: flex;
+     flex-direction: column; /*to stack title on list*/
+     font-size: 10px;
+
+}
+
+.Before-Footer #Offices-Divisions {
+    grid-column: 2/3;
+    grid-row: 2;
+    justify-self: end;
+    display: flex;
+    flex-direction: column; /*to stack title on list*/
+    font-size: 10px;
+
+}
+
+.Before-Footer #Tools {
+    grid-column: 3/4;
+    grid-row: 2;
+    justify-self: start;
+    display: flex;
+    flex-direction: column; /*to stack title on list*/
+    font-size: 10px;
+
 }
 
 .Before-Footer a {
