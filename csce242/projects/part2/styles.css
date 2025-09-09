@@ -7,6 +7,8 @@ body {
 }
 
 iframe {
-    width: 80%;     
-    height: 80%;    
+    width: 80vw;     /* so it don't take up too much of the window*/
+    height: 80vh;
+    border: 2px solid #ccc; 
+    border-radius: 8px;
 }
