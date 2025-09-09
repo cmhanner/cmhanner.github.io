@@ -102,14 +102,27 @@ body {
     
 }
 
+h2 {
+    color: rebeccapurple;
+    text-align: center;
+    font-size: 30px;
+}
 
-#Assignment_Header {
+
+/* #Assignment_Header {
     color: rebeccapurple;
     text-align: center;
     font-size: 30px;
    
     
 }
+
+#Projects_Header {
+    color: rebeccapurple;
+    text-align: center;
+    font-size: 30px;
+
+} */
 
 /* Larger devices */
 @media only screen and (min-width: 768px) {
