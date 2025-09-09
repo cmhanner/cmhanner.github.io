@@ -23,6 +23,10 @@ body {
 
 }
 
+a {
+    text-decoration: none;
+}
+
 /*Main Navigation*/
 
 #main-nav  {
@@ -85,6 +89,68 @@ body {
     color:#09b7a5;
 }
 
+/*Project Nav*/
+#main-nav  {
+    display: flex;
+    list-style-type: none; /*remove bullet points*/
+    text-decoration: none; /*removes underline from links*/
+    
+}
+
+#project_nav ul {
+    display: flex;
+    justify-content: center; /* space the list */
+    flex-wrap: wrap; /* so they move better when looking at mobile device*/
+}
+
+
+#project_nav li { /*Effects the list or blocks*/
+    text-align: center; /*Centers the contents inside the block*/
+    display: inline-block; /*display assignments side by side*/
+    border-top:1px solid rebeccapurple; /*adds a top the Assignments*/
+    border-left:1px solid rebeccapurple;
+    border-right: 1px solid rebeccapurple;    
+    border-bottom: 1px solid rebeccapurple; /*underlines the Assignments*/
+    border-radius: 10px;
+    background: beige;
+    margin: 20px;
+    width: 500px;
+    box-shadow: 0 10px 10px rgb(72, 122, 72);
+    
+}
+
+#project_nav img {
+    width: 80%;
+    display: center;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+
+#project_nav span { /*Assignment Links themselves*/
+    display:block; 
+    
+    color:   #4D3D35; /*colors of the Assignment links*/
+    font-weight: bold;
+    padding: 8px 16px;
+    font-size: 18px;
+    text-decoration: none; /*removes underline from links*/
+
+}
+
+#project_nav p {
+    color:  #4D3D35;
+    font-weight: bold;
+    text-decoration: none; /*removes underline from links*/
+}
+
+
+#project_nav li:hover { /*when we hover over the assignment block*/
+    background:#05F7EB;
+    color:#09b7a5;
+}
+
+
 /*Typography*/
 
 #CSCE242 {
@@ -109,6 +175,13 @@ h2 {
 }
 
 
+ #Projects_Header {
+    color: #4D3D35;
+    
+
+}
+
+
 /* #Assignment_Header {
     color: rebeccapurple;
     text-align: center;
@@ -116,13 +189,7 @@ h2 {
    
     
 }
-
-#Projects_Header {
-    color: rebeccapurple;
-    text-align: center;
-    font-size: 30px;
-
-} */
+/*
 
 /* Larger devices */
 @media only screen and (min-width: 768px) {
@@ -130,6 +197,10 @@ h2 {
     
     #main-nav {
         display:flex;
+    }
+
+    #project_nav {
+        display: flex;
     }
 
 }
