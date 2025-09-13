@@ -1,0 +1,66 @@
+/*Project Part 3: Home Page Styles*/
+:root {
+    --primaryColor:black;
+    --secondaryColor: #808080;
+    --thirdColor: white;
+    
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+    background-color: white;
+}
+
+#main-header {
+    background-color: var(--primaryColor);
+    display: flex;
+    flex-direction: row; /* to display in row*/
+    gap: 30px; /* put space in between contents in header*/
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+#Title {
+    background-color: var(--secondaryColor);
+    width:max-content;
+    height: max-content;
+    padding: 10px 20px;
+    display: block;
+}
+
+#search-bar-part {
+    background-color: var(--primaryColor);
+    
+}
+
+#title-link a {
+    text-decoration: none;
+    color: var(--secondaryColor)
+
+
+}
+
+#button-list nav {
+    justify-content: right;
+    
+}
+
+#button-list nav ul {
+    display: flex;
+    justify-content: flex-start;
+    gap: 60px; /*space Settings and Logout*/
+
+
+}
+
+#button-list a {
+    text-decoration: none;
+    color: var(--secondaryColor)
+
+
+}
+
