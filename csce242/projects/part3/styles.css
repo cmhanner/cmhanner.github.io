@@ -2,7 +2,7 @@
 :root {
     --primaryColor:black;
     --secondaryColor: #808080;
-    --thirdColor: white;
+    --thirdColor: green;
     
 }
 
@@ -63,4 +63,45 @@ body {
 
 
 }
+
+/*Navigation to other pages*/
+
+#page-changer {
+    background-color: var(--thirdColor);
+    
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: fit-content;
+}
+
+#page-changer ul {
+  list-style: none;
+  display: block;
+  padding: 10px 20px;
+  gap: 10px;
+  
+}
+
+#page-changer li {
+  
+  display: block;
+  padding: 10px 20px;
+  
+}
+
+#page-changer nav a {
+   text-decoration: none;
+   color: var(--primaryColor);
+    border-top: gray;
+    border-left: gray;
+    border-right: gray;
+    border-bottom: gray;
+}
+
+#page-changer a:hover{
+   text-decoration: none;
+   color: white;
+}
+
 
