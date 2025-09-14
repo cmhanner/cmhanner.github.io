@@ -260,6 +260,17 @@ body {
     height: fit-content;
 }
 
+#app-form {
+    align-items: right;;
+}
+
+.form-group {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: right;
+
+}
+
 
 /* 
  border-top: black;

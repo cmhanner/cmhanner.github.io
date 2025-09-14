@@ -52,15 +52,53 @@
                     <img src = https://picsum.photos/144/144>
                 </div>
 
+                <!--for: links lable to inpit field, click label it starts cursor-->
+                <!--type: defines the type of input-->
+                <!--name: the data when the form is submitted-->
+                <!--required: makes the field mandatory-->
+
+
+
                 <div class = "description">
                     <form action = "/submit_description" method = "post">
                         <label for = "app_description">App's Description:</label><br>
                         <textarea id = "app_description" name = "description_text" rows = "5" cols="40"></textarea><br>
-                        <input type = "submit" value = "Submit Description">
+                        <input type = "submit" value = "Save">
                     </form>
                 </div>
 
-               <form></form>
+               <form id = "app-form">
+                 <div class = "form-group">
+                    <label for="appName">App Name:</label>
+                    <input type="text" id="appName" name="appName" required>
+                 </div>
+
+                 <div class = "form-group">
+                    <label for="company">Company:</label>
+                    <input type="text" id="company" name="company" required>
+                 </div>
+
+                 <div class = "form-group">
+                    <label for="industry">Industry:</label>
+                    <input type="text" id="industry" name="industry" required>
+                 </div>
+
+                 <div class = "form-group">
+                    <label for="reviews">Reviews:</label>
+                    <input type="text" id="reviews" name="reviews" required>
+                 </div>
+
+                 <div class = "form-group">
+                    <label for="link">Link to App:</label>
+                    <input type="url" id="link" name="link" required>
+                 </div>
+
+                 <div class = "form-group">
+                    <label for="developer">Developer:</label>
+                    <input type="url" id="developer" name="developer" required>
+                 </div>
+
+               </form>
 
 
             </div>
