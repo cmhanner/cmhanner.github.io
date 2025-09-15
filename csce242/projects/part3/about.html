@@ -1,8 +1,8 @@
-<!--Project Part 3: Database Page-->
+<!--Project Part 3: About Page-->
 <!DOCTYPE html>
 <html lang = "en">
 <head>
-    <title>App Prospecter: Home</title>
+    <title>App Prospecter: About</title>
     <link rel = "stylesheet" href = "styles.css">
 </head>
     <body>
@@ -27,7 +27,7 @@
                         </ul>
                     </nav>
                 </div>
-            </header> <!--Top Navigation Bar-->
+         </header> <!--Top Navigation Bar-->
         <div id = "content">
             
             <div id = "page-changer">
@@ -42,8 +42,64 @@
                 </nav>
             </div>
 
-         </div>
-           
+            <div id = contact>
+            <div class = "Why">
+                <h2>Why?</h2>
+                <img src = https://picsum.photos/144/144>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. 
+                    Quisque faucibus ex sapien vitae pellentesque sem placerat. 
+                    In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. 
+                    Pulvinar vivamus fringilla lacus nec metus bibendum egestas. 
+                    Iaculis massa nisl malesuada lacinia integer nunc posuere. 
+                    Ut hendrerit semper vel class aptent taciti sociosqu. 
+                    Ad litora torquent per conubia nostra inceptos himenaeos.
+                </p>
+            </div>
+             <div class = "About-Me">
+                <h2>About Me</h2>
+                <img src = https://picsum.photos/144/144>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. 
+                    Quisque faucibus ex sapien vitae pellentesque sem placerat. 
+                    In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. 
+                    Pulvinar vivamus fringilla lacus nec metus bibendum egestas. 
+                    Iaculis massa nisl malesuada lacinia integer nunc posuere. 
+                    Ut hendrerit semper vel class aptent taciti sociosqu. 
+                    Ad litora torquent per conubia nostra inceptos himenaeos.
+                </p>
+            </div>
+            <div class = "Feedback">
+                <h2>Feddback</h2>
+                <form action = "/submit_feedback" method = "post">
+                        <label for = "feedback"></label><br>
+                        <textarea id = "feedback" name = "feedback" rows = "5" cols="40"></textarea><br>
+                        <input type = "submit" value = "Submit">
+                </form>
+                    <!--Citation-->
+                    <!--
+                        Title: How TO - Social Media Buttons
+                        Author: w3 schools
+                        Date: 2025-09-1
+                        Source: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
+                    -->
+                <h3>Reach Out On:</h3>
+                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                 <!-- Add font awesome icons -->
+                  <div id = "social-nav">
+                        <nav>
+                            <ul>
+                                <a href="#" class="fa fa-github"></a>
+                                <a href="#" class="fa fa-linkedin"></a>
+                            </ul>
+                        </nav>
+                  </div>
+
+
+
+            </div>
+
+       
+
         </div>
    </body>
 </html>
