@@ -239,10 +239,24 @@ body {
 #change-modes {
     display: flex;
     flex-direction: column;
+    gap:10px;
     margin: 10px;
     height:fit-content;
-    
-    align-items: center;
+    align-items: flex-start;
+    flex: 1;
+}
+
+#left-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#app-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .a-e-buttons button {
@@ -263,9 +277,7 @@ body {
     height: fit-content;
 }
 
-#app-form {
-    align-items: right;;
-}
+
 
 .form-group {
     display:flex;
@@ -360,6 +372,100 @@ body {
    color:white;
 }
 
+@media only screen and (max-width: 768px) {
+
+  #main-header {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #button-list nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  
+  #content {
+    flex-direction: column;
+    width: 63%;
+  }
+
+
+  #page-changer {
+    flex: 1;
+    width: 63%; /* Sidebar nav takes widthin row*/
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #page-changer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+
+  #page-changer li {
+    padding: 10px;
+  }
+
+  /* Home page */
+  .main-header-row, .second-area {
+    flex-direction: column;
+    width:62%;
+    gap: 20px;
+  }
+
+  /* Database */
+  .database-table {
+   flex-direction: column;
+   width: 62%;
+    margin: 10px;
+  }
+
+  #database {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 62%;
+    margin: 10px;
+
+  }
+
+  /* Add/Edit Page */
+  #change-modes {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #left-section, #app-form {
+    width: 63%;
+  }
+
+  .a-e-buttons button {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  /* Prospect List */
+  #currentList h2, #currentList h3 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* About/Contact Page */
+  #contact {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #contact > div {
+    width: 100%;
+  }
+}
 
 
 /* 
