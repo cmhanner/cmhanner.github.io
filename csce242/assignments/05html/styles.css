@@ -88,6 +88,20 @@ h1, h3 {
     justify-content: flex-start;
 }
 
+/*Image Change*/
+.image-change button {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+
+}
+
+@media only screen and (min-width: 768px) {
+    
+
+}
+
 
 
 

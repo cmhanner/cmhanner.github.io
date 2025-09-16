@@ -23,3 +23,16 @@ colorInput.addEventListener ( "input", () => {
     // console.log("Picked Color:" ,colorInput.value);
 
 });
+
+const sunImage = "images/sun.jpg";
+const cloudImage = "images/clouds.jpg";
+const changedImage = document.getElementById("cloud-pic");
+
+document.getElementById("change-image-button").onclick = () => {
+    
+    if (changedImage.src.includes("clouds.jpg")) {
+        changedImage.src = sunImage;
+    } else {
+        changedImage.src = cloudImage;
+    }
+}
