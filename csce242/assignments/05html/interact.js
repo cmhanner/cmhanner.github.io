@@ -1,11 +1,11 @@
-document.getElementById("sunny-times-button").onclick = (event) => {
+document.getElementById("sunny-times-column").addEventListener ("click", () => {
     console.log("Clicked")
     document.getElementById("p-Here-comes").innerHTML = "Here comes the sun"
     document.getElementById("p-Sun").innerHTML = "Sun"
     document.getElementById("p-Sun1").innerHTML = "Sun"
     document.getElementById("p-Sun2").innerHTML = "Sun"
     document.getElementById("p-Here-it").innerHTML = "Here it comes"
-}
+});
 
 const textTocolor = document.getElementById("coloring-text");
 const colorInput = document.getElementById ("pickcolor");
@@ -29,7 +29,7 @@ const cloudImage = "images/clouds.jpg";
 const changedImage = document.getElementById("cloud-pic");
 
 document.getElementById("change-image-button").onclick = () => {
-    
+
     if (changedImage.src.includes("clouds.jpg")) {
         changedImage.src = sunImage;
     } else {

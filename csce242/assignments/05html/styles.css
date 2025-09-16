@@ -1,7 +1,7 @@
 /*Assignment 5: JavaScript */
 :root {
-    --background-color: rgb(122, 67, 122);
-    --title-color: rgb(29, 29, 61);
+    --background-color: #CAB6CD;
+    --title-color: #724678;
     --column-color: rgb(188, 188, 181);
 }
 
@@ -39,7 +39,7 @@ h1, h3 {
 
 .columns h3 {
     
-    display: inline-block;
+    display: block;
     
 }
 
@@ -47,17 +47,27 @@ h1, h3 {
     list-style: none;
     display: flex;
     gap: 20px;
+    
+    
 }
 
 .columns li {
-   flex: 1;
-   background-color: var(--column-color);
-   padding: 20px;
+    flex: 1;
+    background-color: var(--column-color);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-top: 2px solid var(--title-color);
+    border-left:  2px solid var(--title-color);
+    border-right: 2px solid var(--title-color);
+    border-bottom: 2px solid var(--title-color);
+    
 }
 
 /*Sunny Times Button*/
 
-#sunny-times-button {
+/* #sunny-times-button {
     background-color: var(--column-color) ;
     padding: 20px;
     border-top: none;
@@ -65,6 +75,10 @@ h1, h3 {
     border-right: none;
     border-bottom: none;
     
+} */
+
+#sunny-times-column {
+    cursor: pointer;
 }
 
 .sunny-times p{
@@ -88,17 +102,46 @@ h1, h3 {
     justify-content: flex-start;
 }
 
+#pickcolor {
+    cursor: pointer;
+}
+
 /*Image Change*/
 .image-change button {
     border-top: none;
     border-left: none;
     border-right: none;
     border-bottom: none;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
 
 }
 
-@media only screen and (min-width: 768px) {
+/*Footer*/
+footer {
+   display: flex;
+   justify-content: center;
+   margin-left: 40px;
+   color: var(--title-color);
+}
+
+@media only screen and (max-width: 768px) {
+    .columns ul {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .columns li {
+        width: 100%;
+        margin: 0;
+        top: 0;
+        margin-top: -20px;
+    }
+
     
+
 
 }
 
