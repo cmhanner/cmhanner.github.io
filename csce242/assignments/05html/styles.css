@@ -37,6 +37,12 @@ h1, h3 {
     
 }
 
+.columns h3 {
+    
+    display: inline-block;
+    
+}
+
 .columns ul {
     list-style: none;
     display: flex;
@@ -46,16 +52,43 @@ h1, h3 {
 .columns li {
    flex: 1;
    background-color: var(--column-color);
-   padding: 15px;
+   padding: 20px;
 }
+
+/*Sunny Times Button*/
 
 #sunny-times-button {
     background-color: var(--column-color) ;
+    padding: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    
 }
 
-#p-Here-comes {
-    text-align: left;
+.sunny-times p{
+   text-align: left;
 }
+
+/*Moves the text in Sunny Times as of right now*/
+.sunny-times #p-Sun{
+   margin-left: 5px;
+}
+
+.sunny-times #p-Sun1{
+   margin-left: 10px;
+}
+
+.sunny-times #p-Sun2{
+   margin-left: 15px;
+}
+
+.select-color {
+    justify-content: flex-start;
+}
+
+
 
 
 
