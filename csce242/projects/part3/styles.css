@@ -1,57 +1,77 @@
 /*Project Part 3: Home Page Styles*/
 :root {
-    --primaryColor:black;
-    --secondaryColor: #808080;
-    --thirdColor: green;
+  --primaryColor: #0E0F33;
+  --secondaryColor: #B8B8D9;
+  --thirdColor: #81B337;
     
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  
 }
 
 #main-header {
-    background-color: var(--primaryColor);
-    display: flex;
-    flex-direction: row; /* to display in row*/
-    gap: 30px; /* put space in between contents in header*/
-    align-items: center;
-    justify-content: space-evenly;
+  background-color: var(--primaryColor);
+  display: flex;
+  flex-direction: row; /* to display in row*/
+  gap: 10px; /* put space in between contents in header*/
+  align-items: center;
+  justify-content: space-evenly;
     
 }
 
 #content {
-    background-color: white;
-    display: flex;
+  background-color: white;
+  /* display: flex;
+  flex-direction: row;
+  min-width: 100vh; */
+  display: flex;
     flex-direction: row;
-    min-width: 100vh;
+    /* align-items: center; */
+    width: 100%;
+    max-width: 100vw;
 }
 
 
 
 #Title {
-    background-color: var(--secondaryColor);
-    width:max-content;
-    height: max-content;
-    padding: 10px 20px;
-    display: block;
+  background-color: var(--secondaryColor);
+  flex: 0 0 150px;
+  padding: 10px 10px;
+  text-align: center;
+  /* display: block; */
 }
+
+/*Search Bar*/
 
 #search-bar-part {
-    background-color: var(--primaryColor);
+  background-color: var(--primaryColor);
     
 }
 
-#title-link a {
-    text-decoration: none;
-    color: var(--secondaryColor)
-
-
+#search-bar-part button {
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor);
 }
+
+
+#main-logo {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  color: var(--secondaryColor);
+}
+
+/*Settings and Logout*/
 
 #button-list nav {
-    justify-content: right;
-    
+  justify-content: right;
+   
+}
+
+#button-list li {
+  list-style: none;
 }
 
 #button-list nav ul {
@@ -103,7 +123,7 @@ body {
 #page-changer a:hover{
    text-decoration: none;
    color: white;
-   background: var(--primaryColor);
+   background: #2f4908;
 }
 
 /* Home Page*/
@@ -113,24 +133,24 @@ body {
    flex-direction: column;
    /* justify-content: space-evenly; */
    /* padding: 20px; */
-   width: fit-content;
+   flex-wrap: wrap;
    
    
 }
 
-.main-header-row {
+.why-header {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
    
-    gap: 100px;
+    /* gap: 100px; */
     background: rgb(168, 139, 139);
 
 
 }
 
-.second-area {
+.answer-area {
     /* flex: 1;  */
     display: flex;
     flex-direction: row;
@@ -374,12 +394,28 @@ body {
 
 @media only screen and (max-width: 768px) {
 
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+
+  }
+
+  #Title {
+    width: 100%;
+    flex: 0px;
+
+  }
+
   #main-header {
     flex-direction: column;
     gap: 10px;
     justify-content: center;
     text-align: center;
   }
+
+
 
   #button-list nav ul {
     flex-direction: column;
@@ -389,37 +425,44 @@ body {
   
   #content {
     flex-direction: column;
-    width: 63%;
+    align-items: center;
+
   }
 
 
   #page-changer {
-    flex: 1;
-    width: 63%; /* Sidebar nav takes widthin row*/
+   display: flex;
     height: auto;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
+    width: 100vh;
+    align-items: center;
   }
 
   #page-changer ul {
     display: flex;
+    flex-direction: column; /*lines the nav downwards in mobile view*/
     flex-wrap: wrap;
-    justify-content: center;
-    padding: 0;
+   /* justify-content: center; */
+    /* padding: 0; */
   }
 
-  #page-changer li {
-    padding: 10px;
-  }
 
   /* Home page */
-  .main-header-row, .second-area {
+
+  #main-area {
+   width: 100%;
+   text-align: center;
+  
+    
+   } 
+
+  .why-header {
     flex-direction: column;
-    width:62%;
-    gap: 20px;
+    text-align:center;
   }
 
+  
+
+  
   /* Database */
   .database-table {
    flex-direction: column;

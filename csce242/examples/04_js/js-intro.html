@@ -41,12 +41,52 @@
                 </section>
                 <section>
                     <button id = "happy-button">Happy</button>
-                    <p id = "yay-message"></p>
                     <button id = "sad-button">Sad</button>
-                    <p id = "sad-message"></p>
-                    <button id = "clear-button"></button>
-                    <p id = "clear-message"></p>
-                   
+                    <button id = "clear-button"></button>   
+                    
+                    <p id = "p-feeling"></p>
+                </section>
+                <section>
+                    <p>
+                        <label for = "txt-emotion">Enter Emotion:</label>
+                        <input type = "text" id = "txt-emotion">
+                    </p>
+                    <p id = "p-emotion"></p>
+                    <img id = "img-emotion" src = "https://dummyimage.com/100x100/000/fff" class="hidden">
+                </section>
+                <section>
+                    <h3>Mood Ring</h3>
+                    <p>
+                        <label for = "txt-color">Color:</label>
+                        <inpiut type = "text" id = "txt-color">
+                        <span id = "error-color" class = "error"></span>
+                    </p>
+                    <button id = "btn-mood-ring">Show</button>
+                    <p id = "p-mood-result"></p>
+                </section>
+                <section>
+                    <h3>Animation Fun</h3>
+                    <button id = "btn-bounce">Start</button>
+                    <div id = "ball"></div>
+                </section>
+                <section>
+                    <button id = "btn-count-start">Start</button>
+                    <button id = "btn-count-pause">Pause</button>
+                    <p id = "p-Count"></p>
+                </section>
+                <section>
+                    <h3>Charity Goal: $10,000<span id = "goal-span"></span></h3>
+                    <p>
+                        <label for = "txt-donations">Donations:</label>
+                        <input type = "text" id = "txt-donations">
+                        <span id = "donation-error" class = "error"></span>
+                    </p>
+
+                    <button id = "btn-donations">Add Donation</button>
+                    <p id = "p-donaitionMessage"></p>
+                    <div id = "themometer"></div>
+                        <!-- <progress id = "my-progres" value></progress> -->
+
                 </section>
                 
             </main>
@@ -55,5 +95,6 @@
             </footer>
         </div>
         <script src = "js/intro.js"></script> <!--put at the end so page can load first-->
+        <script src = "js/toggle-nav.js"></script>
     </body>
 </html>
