@@ -15,7 +15,10 @@
                     </form>
                 </div>
 
-                <li id = "title-link"><a href = "index.html" >📱App Prospecter</a></li>
+                <h1 id = "main-logo">
+                   <img src="images/logo.svg" alt="App Prospecter Logo" id="main-logo-img"> 
+                   App Prospecter
+               </h1>
 
 
                 <div id = "button-list">
@@ -44,17 +47,29 @@
 
             <div id = "database">
                 <div class = "filter-sort">
-                    <nav>
-                        <ul>
-                            <li><a href = "#" >&triangledown;Filter</a></li>
-                            <li><a href = "#" >&UpArrowDownArrow; Sort</a></li>
-                        </ul>
-                    </nav>
+                    <label for="filter">Filter by:</label>
+                    <select id="filter" name="filter"> <!--The dropdown itself-->
+                        <option value="">-- Select Industry --</option>
+                        <option value="automotive">Automotive</option>
+                        <option value="finance">Finance</option>
+                        <option value="restaurant">Restaurant</option>
+                    </select>
+
+                    <label for="sort">Sort by:</label>
+                    <select id="sort" name="sort">
+                        <option value="name">Name</option>
+                        <option value="reviews">Reviews</option>
+                        <option value="developer">Developer</option>
+                    </select>
                 </div>
 
                 <div id = "buttonsForPages">
                     <button> << Previous Page</button>
                     <button>Next Page >> </button>
+                </div>
+
+                <div class = "db-summary">
+                    <p>Showing 1 of 25 apps</p>
                 </div>
 
                 <div class = "database-table">
@@ -64,6 +79,7 @@
                             <th>Company</th>
                             <th>Industry</th>
                             <th>Reviews</th>
+                            <th>Developer</th>
                             <th>Options</th>
                         </tr>
                         <tr>
@@ -71,35 +87,66 @@
                             <td>Car Company</td>
                             <td>Automotive</td>
                             <td>&star;</td>
-                            <td><button>Add to a List</button><button>Edit App</button><button>About App</button></td>
+                            <td>ChanceHimself</td>
+                            <td class = "options">
+                                <button title = "Add to a List">➕</button>
+                                <button title = "Edit App">📝</button>
+                                <button title = "About App">ℹ️</button>
+                            </td>
                         </tr>
                         <tr>
                             <td>Bank App</td>
                             <td>Bank Company</td>
                             <td>Finance</td>
                             <td>&star;</td>
-                            <td><button>Add to a List</button><button>Edit App</button><button>About App</button></td>
+                            <td>ChanceHimself</td>
+                            <td class = "options">
+                                <button title = "Add to a List">➕</button>
+                                <button title = "Edit App">📝</button>
+                                <button title = "About App">ℹ️</button>
+                            </td>
                         </tr>
                         <tr>
                             <td>Food App</td>
                             <td>Food Company</td>
                             <td>Resturaunt</td>
                             <td>&star;&star;</td>
-                            <td><button>Add to a List</button><button>Edit App</button><button>About App</button></td>
+                            <td>ChanceHimself</td>
+                            <td class = "options">
+                                <button title = "Add to a List">➕</button>
+                                <button title = "Edit App">📝</button>
+                                <button title = "About App">ℹ️</button>
+                            </td>
                         </tr>
                         <tr>
                             <td>Soda App</td>
                             <td>Soda Company</td>
                             <td>Beverage</td>
                             <td>&star;</td>
-                            <td><button>Add to a List</button><button>Edit App</button><button>About App</button></td>
+                            <td>ChanceHimself</td>
+                            <td class = "options">
+                                <button title = "Add to a List">➕</button>
+                                <button title = "Edit App">📝</button>
+                                <button title = "About App">ℹ️</button>
+                            </td>
                         </tr>
                         <tr>
                             <td>Game App</td>
                             <td>Game Company</td>
                             <td>Beverage</td>
                             <td>&star;&star;</td>
-                            <td><button>Add to a List</button><button>Edit App</button><button>About App</button></td>
+                            <td>ChanceHimself</td>
+                            <td class = "options">
+                                <button title = "Add to a List">➕</button>
+                                <button title = "Edit App">📝</button>
+                                <button title = "About App">ℹ️</button>
+                            </td>
+                        </tr>
+                        <tr> <!--Default row-->
+                            <td colspan = "6">
+                                No apps found. Try adding one!
+                            </td>
+
                         </tr>
                     </table>
                 </div>

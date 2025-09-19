@@ -171,56 +171,27 @@ body {
     gap: 5px;
 }
 
+/*Database Filter*/
+
 .filter-sort {
     background-color: var(--secondaryColor);
     display: flex;
+    align-items: left;
     flex-direction: column;
     width: fit-content;
     height: fit-content;
     gap: 10px; 
 }
 
-.filter-sort nav {
-    
-  text-align: center;
-  align-items: center;
- 
-}
-.filter-sort ul {
-    text-align: left;
-     
-}
 
-.filter-sort li {
-    list-style: none;
-   justify-content: center;
-   display: block;
-   padding: 5px;
-    
-    
-}
 
-.filter-sort a {
-    text-decoration: none;
-    color: black;
-    
-}
-
-.filter-sort a:hover{
-    background: yellow;
-    
-}
 
 #buttonsForPages {
    text-align: center;
 }
 
-/*Database Table*/
-#database {
-    gap: 20px;
-    display:flex;
-   
-}
+/*Database Table*/                                      /*Database Table*/
+
 .database-table  {
    width: 100vh;
    text-align: center;
@@ -242,17 +213,22 @@ body {
 }
 
 .database-table th  {
+  position: sticky;
    height:fit-content;
    padding: 5px 5px;
+   background-color: var(--primaryColor);
+   color: var(--secondaryColor);
    
 }
 
 .database-table button  {
    display: flex;
    flex-direction: column;
-   
-   
-   
+  
+}
+
+.database-table tr:nth-child(even) { /* to help scan rows faster using zebra color :)*/
+  background-color: var(--secondaryColor);
 }
 
 /*Add or Edit Page*/
