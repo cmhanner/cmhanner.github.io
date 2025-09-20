@@ -58,7 +58,7 @@
                         <div class = "add-search-bar">
                             <form id = "search-bar" action = "#" method = "get">
                                 <button type = "submit" >🔍</button>
-                                <input type = "text" placeholder = "find app to edit...">
+                                <input type = "text" placeholder = "does it exist or edit...">
                             </form>
                         </div>
 
@@ -86,7 +86,7 @@
                             <form action = "/submit_description" method = "post">
                                 <label for = "app_description">App's Description:</label><br>
                                 <textarea id = "app_description" name = "description_text" rows = "5" cols="40"></textarea><br>
-                                <input type = "submit" value = "Save">
+                                <input type = "submit" value = "Save" disabled>
                             </form>
                         </div><!--Left Section-->
                         <div class = "right-section">
@@ -125,6 +125,14 @@
                                     <label for="developer">Developer:</label>
                                     <input type="url" id="developer" name="developer" required>
                                 </div>
+                                <div class = "form-group note-block">
+                                    <form action = "/submit-note" method = "post">
+                                        <label for = "note">Note:</label><br>
+                                        <textarea id = "note" name = "note" rows = "5" cols="40"></textarea><br>
+                                        <input type = "submit" value = "Save Note" disabled>
+                                    </form>
+                                </div>
+                                
                                 
 
                             </form>

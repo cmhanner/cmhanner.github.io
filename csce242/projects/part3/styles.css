@@ -19,6 +19,7 @@ body {
   gap: 10px; /* put space in between contents in header*/
   align-items: center;
   justify-content: space-evenly;
+  box-shadow: 0 2px 5px #0E0F33;
     
 }
 
@@ -41,19 +42,35 @@ body {
   flex: 0 0 150px;
   padding: 10px 10px;
   text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px white;
   /* display: block; */
 }
 
 /*Search Bar*/
 
 #search-bar-part {
-  background-color: var(--primaryColor);
+  background-color: var(--secondaryColor);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px white;
+    
+}
+
+#search-bar-part input {
+   width: 300px;
+   font-size: 14px;
+  padding: 5px;
+  border-radius: 5px;
+  
     
 }
 
 #search-bar-part button {
   background-color: var(--secondaryColor);
   color: var(--primaryColor);
+  font-size: 14px;
+  padding: 5px;
 }
 
 
@@ -85,8 +102,19 @@ body {
 
 #button-list a {
     text-decoration: none;
-    color: var(--secondaryColor)
+    color: var(--secondaryColor);
+    background-color: var(--primaryColor);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px white;
 
+}
+
+#button-list a:hover {
+    text-decoration: none;
+    color: var(--primaryColor);
+    background-color: white;
+    
 
 }
 
@@ -111,6 +139,7 @@ body {
   border-left: 2px solid var(--pageChangerO);
   border-right: 2px solid var(--pageChangerO);
   border-bottom: 2px solid var(--pageChangerO);
+  box-shadow: 0 2px 5px #0E0F33;
  
   
 }
@@ -122,6 +151,7 @@ body {
   border-left: 2px solid var(--pageChangerO);
   border-right: 2px solid var(--pageChangerO);
   border-bottom: 2px solid var(--pageChangerO);
+  box-shadow: 0 2px 5px #0E0F33;
 
 }
 
@@ -181,14 +211,18 @@ body {
   flex-direction: column;
   padding: 10px;
   gap: 10px;
+  box-shadow: 0 2px 5px #0E0F33;
 }
 
 .filter label {
   font-weight: bold;
+  text-align: center;
+  
 }
 
 .filter option {
   background-color: var(--secondaryColor);
+  
 }
 
 
@@ -199,6 +233,7 @@ body {
     align-items: center;
     margin: auto;
     gap: 10px;
+    
 }
 
 /*Database Filter*/
@@ -207,7 +242,8 @@ body {
     background-color: var(--secondaryColor);
     display: flex;
     padding: 10px;
-    flex-direction: row;
+    margin: 20px;
+    flex-direction: column;
     border-radius: 5px;
     width: fit-content;
     height: fit-content;
@@ -216,7 +252,12 @@ body {
     border-left: 2px solid var(--primaryColor);
     border-right: 2px solid var(--primaryColor);
     border-bottom: 2px solid var(--primaryColor);
+    box-shadow: 0 2px 5px #0E0F33;
 
+}
+
+.db-sort label {
+  text-align: center;
 }
 
 
@@ -225,18 +266,25 @@ body {
 #buttonsForPages {
    text-align: center;
    gap: 10px;
+  
    
    
 }
 
-#buttonsForPages  button{
+#buttonsForPages button {
    
    background: var(--primaryColor);
    color:var(--secondaryColor);
    padding: 10px;
    border-radius: 5px;
    font-weight: bold;
+    box-shadow: 0 2px 5px #0E0F33;
    
+}
+
+#buttonsForPages button:hover {
+   color: var(--primaryColor);
+   background-color: white;
 }
 
 
@@ -250,6 +298,7 @@ body {
    text-align: center;
    justify-content: center;
     margin: 50px;
+    box-shadow: 0 2px 5px #0E0F33;
     
 }
 
@@ -274,18 +323,30 @@ body {
    
 }
 
-.database-table button  {
-   display: flex;
-   flex-direction: column;
-  
+.database-table td.options button {
+  display: flex;
+    margin: 3px;
+    padding: 5px;
+}
+
+.database-table td.options button:hover {
+  background-color: var(--thirdColor);
 }
 
 .database-table tr:nth-child(even) { /* to help scan rows faster using zebra color :)*/
   background-color: var(--secondaryColor);
 }
 
-.database-table #table-star {
-  font-size: 30px;
+.table-star {
+  
+}
+
+.table-star button {
+  padding: 10px;
+}
+
+.table-star button:hover {
+  background-color: var(--thirdColor);
 }
 
 /*Add or Edit Page*/
@@ -295,6 +356,11 @@ body {
   gap: 20px;
   /* align-items: flex-start; */
   width: 100vw;
+  
+}
+
+.add-edit-area h3 {
+  box-shadow: 0 2px 5px #0E0F33;
   
 }
 
@@ -309,7 +375,14 @@ body {
   background-color: var(--secondaryColor);
   padding: 20px;
   border-radius: 10px;
+  box-shadow: 0 2px 5px #0E0F33;
   
+}
+
+.add-search-bar {
+  box-shadow: 0 2px 5px #0E0F33;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .add-search-bar input {
@@ -365,25 +438,47 @@ body {
 }
 
 
+
 .left-section {
   /* flex: 1; */
   display: flex; 
   flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
+  align-items: center;
+  /* align-items: stretch; */
   gap: 5px;
-  padding: 15px;
+  padding: 5px;
   background-color: rgb(180, 180, 180);
+  box-shadow: 0 2px 5px #0E0F33;
 
+}
+
+
+
+.left-section form {
+  display: flex;
+  flex-direction: column;
 }
 
 
 .left-section label {
   /* flex: 1; */
   background-color: white;
+  width: fit-content;
   padding: 5px;
   font-weight: bold;
+  box-shadow: 0 2px 5px white;
+  border-radius: 5px;
 
+}
+
+.left-section img {
+  display: block;
+  border-radius: 5px;
+  background-color: black;
+  padding: 10px;
+  width: fit-content;
+  height: fit-content;
+  
 }
 
 
@@ -398,6 +493,7 @@ body {
     padding: 10px;
     border: 1px solid #ccc;
     background-color: rgb(125, 198, 198);
+    box-shadow: 0 2px 5px #0E0F33;
 }
 
 .list-sidebar {
@@ -408,6 +504,7 @@ body {
   padding: 10px;
   border-radius: 5px;
   height: 100vh;
+  box-shadow: 0 2px 5px #0E0F33;
  
 }
 
@@ -460,6 +557,7 @@ body {
     padding: 5px;
     font-weight: bold;
     text-align: center;
+    box-shadow: 0 2px 5px var(--primaryColor);
     
 }
 
@@ -467,22 +565,19 @@ body {
     flex: 2;
    padding: 5px;
    gap: 5px;
-    
+  box-shadow: 2px 2px 5px var(--primaryColor);    
 }
 
-
-
-.description .dummy-app-ratio {
-    align-items: left;
+.form-group.note-block {
+  display: flex;
+  flex-direction: column;
+  
 }
 
-.dummy-app-ratio {
-    border-radius: 5px;
-    background-color: black;
-    padding: 10px;
-    width: fit-content;
-    height: fit-content;
+.form-group.note-block textarea {
+  box-shadow: 0 2px 5px var(--primaryColor); 
 }
+  
 
 
 
@@ -598,12 +693,34 @@ body {
   }
 
 
+  /*Settings and Login*/
+
+  #button-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
 
   #button-list nav ul {
+    display: flex;
     flex-direction: column;
+    padding: 10px;
     gap: 10px;
   }
 
+  #button-list nav li {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  #button-list a {
+   gap: 5px;
+
+  }
+
+  /*Content for Each Page*/
   
   #content {
     flex-direction: column;
@@ -611,20 +728,21 @@ body {
 
   }
 
+  /*Page Changer*/
+
 
   #page-changer {
    display: flex;
     height: auto;
     width: 100vh;
     align-items: center;
+    padding: 10px;
   }
 
   #page-changer ul {
     display: flex;
     flex-direction: column; /*lines the nav downwards in mobile view*/
     flex-wrap: wrap;
-   /* justify-content: center; */
-    /* padding: 0; */
   }
 
 
@@ -646,19 +764,102 @@ body {
 
   
   /* Database */
-  .database-table {
-   flex-direction: column;
-   width: 62%;
-    margin: 10px;
+ .filter {
+  display: flex;
+  margin: 20px;
+  width: 300px;
+ }
+
+
+ .filter select {
+  font-size: 20px;
+  padding: 10px;
+ }
+
+ .db-sort {
+  width: 200px;
+  margin: 20px;
+ }
+
+ .db-sort select {
+  font-size: 20px;
+  padding: 10px;
+ }
+
+ #buttonsForPages button {
+    width: 200px;
+    font-size: 20px;
+ }
+
+.database-table {
+  width: fit-content;
+  box-shadow: 0px;
+}
+
+  .database-table table,
+  .database-table thead,
+  .database-table tbody,
+  .database-table th,
+  .database-table td,
+  .database-table tr {
+    display: block;
+    width: 100%;
+
   }
 
-  #database {
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 62%;
-    margin: 10px;
-
+  /*Hide Headers*/
+  .database-table th {
+    display: none;
+    
   }
+
+  .database-table tr {
+    padding: 15px;
+    width:fit-content;
+    border: 1px solid black;
+    border-radius: 8px;
+  }
+
+  .database-table td {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 8px 10px; */
+    width: 100%;
+    
+  }
+
+  .database-table td::before {
+    content: attr(data-label); /* adds heading before cell content*/
+    font-weight: bold;
+    margin: 3px;
+  }
+
+  .database-table td.options button {
+    margin: 3px;
+    padding: 30px;
+  }
+
+
+  /*Collapsing Table Idea*/
+
+  /* .database-table td:nth-child(3),
+  .database-table th:nth-child(3),
+  .database-table td:nth-child(4),
+  .database-table th:nth-child(4),
+  .database-table td:nth-child(6),
+  .database-table th:nth-child(6) {
+    display: none;
+    
+  } */
+
+  /*Collapsing Table Idea*/
+
+  /* .database-table table {
+    min-width: 600px;
+    border-collapse: collapse;
+  } */
+
+  
 
   /* Add/Edit Page */
   .add-edit-area {
