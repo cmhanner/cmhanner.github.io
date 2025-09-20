@@ -6,12 +6,12 @@
     <link rel = "stylesheet" href = "styles.css">
 </head>
     <body>
-        <header id = "main-header"> <!--Top Navigation Bar-->
+            <header id = "main-header"> <!--Top Navigation Bar-->
                 <h2 id = "Title">Add/Edit</h2>
                 <div id = "search-bar-part">
                     <form id = "search-bar" action = "#" method = "get">
-                        <button type = "submit" disabled>🔍</button>
-                        <input type = "text" placeholder = "Please enter" disabled>
+                        <button type = "submit" >🔍</button>
+                        <input type = "text" placeholder = "app name..." >
                     </form>
                 </div>
 
@@ -26,92 +26,130 @@
                         <ul>
                             
                             <li><a href = "#" >⚙️ Settings</a></li>
-                            <li><a href = "#" >👤 Logout</a></li>
+                            <li><a href = "#" >👤 Login</a></li>
                         </ul>
                     </nav>
                 </div>
             </header> <!--Top Navigation Bar-->
-        <div id = "content">
-            
-            <div id = "page-changer">
-                <nav>
-                    <ul>
-                        <li><a href = "index.html" >&#8962 Home</a></li>
-                        <li><a href = "database.html" >&#9923 Database</a></li>
-                        <li><a href = "#" >&#9998 Add / Edit</a></li>
-                      <li><a href = "prospectList.html" > = Prospect List</a></li>
-                        <li><a href = "about.html" >? About / Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div id = "change-modes"> <!--Change from Edit to Add-->
-                <div class = a-e-buttons>
-                    <button>Add</button>
-                    <button>Edit</button>
+         <div id = "content">
+                <div id = "page-changer">
+                    <nav>
+                        <ul>
+                            <li><a href = "index.html" >&#8962 Home</a></li>
+                            <li><a href = "database.html" >&#9923 Database</a></li>
+                            <li><a href = "#" >&#9998 Add / Edit</a></li>
+                        <li><a href = "prospectList.html" > = Prospect List</a></li>
+                            <li><a href = "about.html" >? About / Contact</a></li>
+                        </ul>
+                    </nav>
                 </div>
 
-                <div class = "left-section">
-                    
-                    <div class = dummy-app-ratio>
-                        <img src = https://picsum.photos/144/144>
+                
+
+
+                
+
+
+                <div class = "add-edit-area">
+
+                        <!--Top Buttons-->
+                    <div class = "top-row">
+                        <!--Search Bar-->
+                        <div class = "add-search-bar">
+                            <form id = "search-bar" action = "#" method = "get">
+                                <button type = "submit" >🔍</button>
+                                <input type = "text" placeholder = "find app to edit...">
+                            </form>
+                        </div>
+
+                        <h4>Search the App to see if it exist!</h4>
+                        
+                        <!--Change from Edit to Add-->
+                        <div class = a-e-buttons>
+                            <button>Add</button>
+                            <button>Edit</button>
+                        </div>
+
+                        
                     </div>
 
-                    <div class = "description">
-                    <form action = "/submit_description" method = "post">
-                        <label for = "app_description">App's Description:</label><br>
-                        <textarea id = "app_description" name = "description_text" rows = "5" cols="40"></textarea><br>
-                        <input type = "submit" value = "Save">
-                    </form>
-                </div>
+                    <div class = "bottom-row">
+                        
 
-                </div>
+                        <div class = "left-section">
+                            <h3 id = "app-name">[App Name]</h3>
+                        <div class = dummy-app-ratio>
+                            <img src = https://picsum.photos/144/144>
+                        </div>
+                    
+                            
+                            <form action = "/submit_description" method = "post">
+                                <label for = "app_description">App's Description:</label><br>
+                                <textarea id = "app_description" name = "description_text" rows = "5" cols="40"></textarea><br>
+                                <input type = "submit" value = "Save">
+                            </form>
+                        </div><!--Left Section-->
+                        <div class = "right-section">
+                            <!--for: links lable to inpit field, click label it starts cursor-->
+                            <!--type: defines the type of input-->
+                            <!--name: the data when the form is submitted-->
+                            <!--required: makes the field mandatory-->
+                            <h3>App Form:</h3>
+                            <form id = "app-form">
+                                <div class = "form-group">
+                                    <label for="appName">App Name:</label>
+                                    <input type="text" id="appName" name="appName" required>
+                                </div>
 
-                <!--for: links lable to inpit field, click label it starts cursor-->
-                <!--type: defines the type of input-->
-                <!--name: the data when the form is submitted-->
-                <!--required: makes the field mandatory-->
+                                <div class = "form-group">
+                                    <label for="company">Company:</label>
+                                    <input type="text" id="company" name="company" required>
+                                </div>
 
-               <form id = "app-form">
-                 <div class = "form-group">
-                    <label for="appName">App Name:</label>
-                    <input type="text" id="appName" name="appName" required>
-                 </div>
+                                <div class = "form-group">
+                                    <label for="industry">Industry:</label>
+                                    <input type="text" id="industry" name="industry" required>
+                                </div>
 
-                 <div class = "form-group">
-                    <label for="company">Company:</label>
-                    <input type="text" id="company" name="company" required>
-                 </div>
+                                <div class = "form-group">
+                                    <label for="reviews">Reviews:</label>
+                                    <input type="text" id="reviews" name="reviews" required>
+                                </div>
 
-                 <div class = "form-group">
-                    <label for="industry">Industry:</label>
-                    <input type="text" id="industry" name="industry" required>
-                 </div>
+                                <div class = "form-group">
+                                    <label for="link">Link to App:</label>
+                                    <input type="url" id="link" name="link" required>
+                                </div>
 
-                 <div class = "form-group">
-                    <label for="reviews">Reviews:</label>
-                    <input type="text" id="reviews" name="reviews" required>
-                 </div>
+                                <div class = "form-group">
+                                    <label for="developer">Developer:</label>
+                                    <input type="url" id="developer" name="developer" required>
+                                </div>
+                                
 
-                 <div class = "form-group">
-                    <label for="link">Link to App:</label>
-                    <input type="url" id="link" name="link" required>
-                 </div>
+                            </form>
+                        </div> <!--Right Section-->
+                    
+                        <aside class = "list-sidebar">
+                           <h3>Quick Actions</h3>
+                            <ul>
+                                <li><a href="#">Last Viewed</a></li>
+                                <li><a href="#">Last Saved</a></li>
+                                <li><a href="#">Last Edited</a></li>
+                            </ul>
+                            <h3>Lists</h3>
+                            <ul>
+                                <li><a href="#">Prospect List</a></li>
+                                <li><a href="#">Follow-Up List</a></li>
+                                <li><a href="#">Custom List</a></li>
+                            </ul> 
+                        </aside>
 
-                 <div class = "form-group">
-                    <label for="developer">Developer:</label>
-                    <input type="url" id="developer" name="developer" required>
-                 </div>
+                    </div> <!--Bottom Row-->
 
-               </form>
+                    
 
-
-            </div>
-
-           
-
-         </div>
-
-        </div>
+               </div> <!--Add-Edit-Area-->
+            </div> <!--Content-->
    </body>
 </html>

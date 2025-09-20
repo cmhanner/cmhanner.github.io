@@ -10,8 +10,8 @@
                 <h2 id = "Title">Database</h2>
                 <div id = "search-bar-part">
                     <form id = "search-bar" action = "#" method = "get">
-                        <button type = "submit" disabled>🔍</button>
-                        <input type = "text" placeholder = "Please enter" disabled>
+                        <button type = "submit" >🔍</button>
+                        <input type = "text" placeholder = "app name..." >
                     </form>
                 </div>
 
@@ -26,7 +26,7 @@
                         <ul>
                             
                             <li><a href = "#" >⚙️ Settings</a></li>
-                            <li><a href = "#" >👤 Logout</a></li>
+                            <li><a href = "#" >👤 Login</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -45,16 +45,33 @@
                 </nav>
             </div>
 
-            <div id = "database">
-                <div class = "filter-sort">
-                    <label for="filter">Filter by:</label>
+            <div class = "filter">
+                <label for="filter">Filter by:</label>
                     <select id="filter" name="filter"> <!--The dropdown itself-->
-                        <option value="">-- Select Industry --</option>
+                        <option value="Select">-- Select Industry --</option>
                         <option value="automotive">Automotive</option>
                         <option value="finance">Finance</option>
                         <option value="restaurant">Restaurant</option>
+                        <option value="gaming">Gaming</option>
+                        <option value="fitness">Fitness</option>
                     </select>
+                    <select id="filter" name="filter"> <!--The dropdown itself-->
+                        <option value="Select">-- Select Reviews --</option>
+                        <option value="5star">&star;&star;&star;&star;&star;</option>
+                        <option value="4star">&star;&star;&star;&star;</option>
+                        <option value="3star">&star;&star;&star;</option>
+                        <option value="2star">&star;&star;</option>
+                        <option value="1star">&star;</option>
+                    </select>
+                    <select id="filter" name="filter"> <!--The dropdown itself-->
+                        <option value="Select">-- Select Developer --</option>
+                        <option value="placetext">Krumware</option>
+                        <option value="placetext">ChanceHimself</option>
+                    </select>
+                </div>
 
+            <div id = "database">
+                <div class = "db-sort">
                     <label for="sort">Sort by:</label>
                     <select id="sort" name="sort">
                         <option value="name">Name</option>
@@ -75,6 +92,7 @@
                 <div class = "database-table">
                     <table>
                         <tr>
+                            <th>Favorite</th>
                             <th>Name</th>
                             <th>Company</th>
                             <th>Industry</th>
@@ -83,6 +101,7 @@
                             <th>Options</th>
                         </tr>
                         <tr>
+                            <td id = "table-star"><button>&star;</button></td>
                             <td>Car App</td>
                             <td>Car Company</td>
                             <td>Automotive</td>
@@ -95,6 +114,7 @@
                             </td>
                         </tr>
                         <tr>
+                            <td id = "table-star"><button>&star;</button></td>
                             <td>Bank App</td>
                             <td>Bank Company</td>
                             <td>Finance</td>
@@ -107,6 +127,7 @@
                             </td>
                         </tr>
                         <tr>
+                            <td id = "table-star"><button>&star;</button></td>
                             <td>Food App</td>
                             <td>Food Company</td>
                             <td>Resturaunt</td>
@@ -119,6 +140,7 @@
                             </td>
                         </tr>
                         <tr>
+                            <td id = "table-star"><button>&star;</button></td>
                             <td>Soda App</td>
                             <td>Soda Company</td>
                             <td>Beverage</td>
@@ -131,6 +153,7 @@
                             </td>
                         </tr>
                         <tr>
+                            <td id = "table-star"><button>&star;</button></td>
                             <td>Game App</td>
                             <td>Game Company</td>
                             <td>Beverage</td>
