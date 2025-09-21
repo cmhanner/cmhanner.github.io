@@ -1,9 +1,10 @@
+const range = document.getElementById("plantRange");
+const count = document.getElementById("day-count");
 
 
 document.getElementById("exercise-1").onclick = (event) => {
-    const range = document.getElementById("plantRange");
+    
     const img = document.getElementById("plant-img");
-    const count = document.getElementById("day-count");
     const status = document.getElementById("status");
     
 
@@ -37,11 +38,36 @@ document.getElementById("exercise-1").onclick = (event) => {
 }
 
 
-document.getElementById("exercise-2").onclick = (event) => {
+
+function constantTime () {
     const date = new Date();
-    const time = date.getTime;
-    const display = document.getElementById("display");
+    const time = date.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'}); //  format time to display with no seconds
+    // time.setSeconds(0,0);
+    count.innerHTML = time;
+
+}
+
+const display = document.getElementById("display"); //   label variable
+const exercise2 = document.getElementById("exercise-2");
+const slider = document.querySelector(".slider");
+const sliderParent = slider.parentNode;
+
+exercise2.addEventListener('click', function () {
+    console.log("exercise 2 clicked");
+    display.innerHTML = "Our Digital Clock";
+    sliderParent.removeChild(slider); //  removes slider
+    constantTime();
+    setInterval(constantTime, 1000);
+
+})
+
+
+
+// document.getElementById("exercise-2").onclick = (event) => {
+    
+
+
 
     
 
-}
+// }
