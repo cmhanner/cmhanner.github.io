@@ -17,6 +17,10 @@ body {
     margin: auto;
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid rgb(147, 147, 70);
+    box-shadow: 0 2px 5px rgb(147, 147, 70);
+    margin-top: 20px;
     
 }
 
@@ -69,6 +73,7 @@ header {
     min-height: 100px;
     background-color: rgb(210, 210, 137);
     border: 1px solid rgb(147, 147, 70);
+    border-radius: 5px;
 }
 
 #menu-close,
@@ -107,6 +112,12 @@ h1 {
 
 h2 {
     color: var(--subtitle-color);
+}
+
+footer {
+    text-align: center;
+    color:var(--title-color);
+    padding: 20px;
 }
 
 @media (min-width: 769px) {
