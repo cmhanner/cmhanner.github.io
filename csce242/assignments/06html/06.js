@@ -15,6 +15,22 @@ const img = document.getElementById("plant-img");
 const status = document.getElementById("status");
 const clock = document.getElementById("clock");
 
+//  removes triangle once leaving mobile to desktop
+function resetMenu() {
+    if (window.matchMedia("(min-width: 769px)").matches) {
+        openbtn.style.display = "none";
+        closebtn.style.display = "none";
+        exerciseMenu.classList.remove("open");
+    } else {
+        openbtn.style.display = "none";
+        closebtn.style.display = "flex";
+       exerciseMenu.classList.remove("open");
+    }
+
+}
+
+window.addEventListener("resize", resetMenu);
+resetMenu();
 
 //opening exercise menu
 closebtn.addEventListener("click", () => {
