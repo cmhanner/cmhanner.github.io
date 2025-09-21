@@ -29,6 +29,15 @@ header {
     text-align:  center;
 }
 
+#menu-close,
+#menu-open {
+    /* display: none; */
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
 #exercise-menu ul {
     list-style: none;
     display: flex;
@@ -67,6 +76,7 @@ header {
     min-height: 100px;
     background-color: rgb(210, 210, 137);
     border: 1px solid rgb(147, 147, 70);
+    position: relative;
 }
 
 #exercise-1-form {
@@ -100,6 +110,24 @@ h2 {
 
 @media only screen and (max-width: 768px) {
 
+    #exercise-menu {
+        display: none;
+    }
+
+    #menu-close {
+        display:flex; /*down triangle will show when nav is closed*/
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    #menu-open {
+        display:none; /*up triangle hidden until nav is open*/
+    }
+
+    #exercise-menu.open {
+        display: block; /*adding open in js, when clicked it will show*/
+    }
+
 
     #exercise-menu ul {
         display: flex;
@@ -107,7 +135,7 @@ h2 {
        justify-content: flex-start;
         align-items: flex-start; 
         padding: 0;
-        margin: 0;
+        margin-left: 5px;
         gap: 5px;
     }
 
@@ -119,4 +147,6 @@ h2 {
         padding: 2rem;
         max-width: 90%;
     }
+
+
 }

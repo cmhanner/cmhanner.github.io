@@ -1,3 +1,8 @@
+const exerciseMenu = document.getElementById("exercise-menu");
+const mobileCheck = window.matchMedia("(max-width: 768px)");
+const openbtn = document.getElementById("menu-open"); //^
+const closebtn = document.getElementById("menu-close"); // v
+
 const exercise1 = document.getElementById("exercise-1");  //  stores exercise list to click
 const exercise2 = document.getElementById("exercise-2");
 
@@ -9,6 +14,22 @@ const count = document.getElementById("day-count");
 const img = document.getElementById("plant-img");
 const status = document.getElementById("status");
 const clock = document.getElementById("clock");
+
+
+//opening exercise menu
+closebtn.addEventListener("click", () => {
+    exerciseMenu.classList.add("open");
+    closebtn.style.display = "none";
+    openbtn.style.display = "flex";
+});
+
+//closing exercise menu
+openbtn.addEventListener("click", () => {
+    exerciseMenu.classList.remove("open");
+    openbtn.style.display = "none";
+    closebtn.style.display = "flex";
+});
+
 
 exercise1.addEventListener("click", () => {
 
@@ -70,13 +91,3 @@ exercise2.addEventListener('click', function () {
 
 })
 
-
-
-// document.getElementById("exercise-2").onclick = (event) => {
-    
-
-
-
-    
-
-// }
