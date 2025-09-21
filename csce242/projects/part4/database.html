@@ -1,0 +1,190 @@
+<!--Project Part 4: Database Page-->
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>App Prospecter: Database</title>
+    <link rel = "stylesheet" href = "styles.css">
+</head>
+    <body>
+        <header id = "main-header"> <!--Top Navigation Bar-->
+                <h2 id = "Title">Database</h2>
+                <div id = "search-bar-part">
+                    <form id = "search-bar" action = "#" method = "get">
+                        <button type = "submit" >🔍</button>
+                        <input type = "text" placeholder = "app name..." >
+                    </form>
+                </div>
+
+                <h1 id = "main-logo">
+                   <img src="images/logo.svg" alt="App Prospecter Logo" id="main-logo-img"> 
+                   App Prospecter
+               </h1>
+
+
+                <div id = "button-list">
+                    <nav>
+                        <ul>
+                            
+                            <li><a href = "#" >⚙️ Settings</a></li>
+                            <li><a href = "#" >👤 Login</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header> <!--Top Navigation Bar-->
+        <div id = "content">
+            
+            <div id = "page-changer">
+                <nav>
+                    <ul>
+                        <li><a href = "index.html" >&#8962 Home</a></li>
+                        <li><a href = "#" >&#9923 Database</a></li>
+                        <li><a href = "addEdit.html" >&#9998 Add / Edit</a></li>
+                      <li><a href = "prospectList.html" > = Prospect List</a></li>
+                        <li><a href = "about.html" >? About / Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class = "filter">
+                <label for="filter">Filter by:</label>
+                    <select id="filter" name="filter"> <!--The dropdown itself-->
+                        <option value="Select">-- Select Industry --</option>
+                        <option value="automotive">Automotive</option>
+                        <option value="finance">Finance</option>
+                        <option value="restaurant">Restaurant</option>
+                        <option value="gaming">Gaming</option>
+                        <option value="fitness">Fitness</option>
+                    </select>
+                    <select id="filter" name="filter"> <!--The dropdown itself-->
+                        <option value="Select">-- Select Reviews --</option>
+                        <option value="5star">&star;&star;&star;&star;&star;</option>
+                        <option value="4star">&star;&star;&star;&star;</option>
+                        <option value="3star">&star;&star;&star;</option>
+                        <option value="2star">&star;&star;</option>
+                        <option value="1star">&star;</option>
+                    </select>
+                    <select id="filter" name="filter"> <!--The dropdown itself-->
+                        <option value="Select">-- Select Developer --</option>
+                        <option value="placetext">Krumware</option>
+                        <option value="placetext">ChanceHimself</option>
+                    </select>
+                </div>
+
+            <div id = "database">
+                <div class = "db-sort">
+                    <label for="sort">Sort by:</label>
+                    <select id="sort" name="sort">
+                        <option value="name">Name</option>
+                        <option value="reviews">Reviews</option>
+                        <option value="developer">Developer</option>
+                    </select>
+                </div>
+
+                <div id = "buttonsForPages">
+                    <button> << Previous Page</button>
+                    <button>Next Page >> </button>
+                </div>
+
+                <div class = "db-summary">
+                    <p>Showing 5 of 5 apps</p>
+                </div>
+
+                <div class = "database-table">
+                    <table class = "table-style">
+                        <tr>
+                            <th data-label="Favorite: ">Favorite</th>
+                            <th data-label="Name: ">Name</th>
+                            <th data-label="Company: ">Company</th>
+                            <th data-label="Industry: ">Industry</th>
+                            <th data-label="Reviews: ">Reviews</th>
+                            <th data-label="Developer: ">Developer</th>
+                            <th data-label="Options: ">Options</th>
+                        </tr>
+                        <tr>
+                            <td data-label="Favorite: " class = "table-star"><button>&star;</button></td>
+                            <td data-label="Name: ">Car App</td>
+                            <td data-label="Company: ">Car Company</td>
+                            <td data-label="Industry: ">Automotive</td>
+                            <td data-label="Reviews: ">&star;</td>
+                            <td data-label="Developer: ">ChanceHimself</td>
+                            <td data-label="Options: " class = "options">
+                                <button title = "Add to a List">➕</button>
+                                <button title = "Edit App">📝</button>
+                                <button title = "About App">ℹ️</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="Favorite: " class = "table-star"><button>&star;</button></td>
+                            <td data-label="Name: ">Bank App</td>
+                            <td data-label="Company: ">Bank Company</td>
+                            <td data-label="Industry: ">Finance</td>
+                            <td data-label="Reviews: ">&star;</td>
+                            <td data-label="Developer: ">ChanceHimself</td>
+                            <td data-label="Options: " class = "options">
+                                <button title = "Add to a List">➕</button>
+                                <button title = "Edit App">📝</button>
+                                <button title = "About App">ℹ️</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="Favorite: " class = "table-star"><button>&star;</button></td>
+                            <td data-label="Name: ">Food App</td>
+                            <td data-label="Company: ">Food Company</td>
+                            <td data-label="Industry: ">Resturaunt</td>
+                            <td data-label="Reviews: ">&star;&star;</td>
+                            <td data-label="Developer: ">ChanceHimself</td>
+                            <td data-label="Options: " class = "options">
+                                <button title = "Add to a List">➕</button>
+                                <button title = "Edit App">📝</button>
+                                <button title = "About App">ℹ️</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="Favorite: " class = "table-star"><button>&star;</button></td>
+                            <td data-label="Name: ">Soda App</td>
+                            <td data-label="Company: ">Soda Company</td>
+                            <td data-label="Industry: ">Beverage</td>
+                            <td data-label="Reviews: ">&star;</td>
+                            <td data-label="Developer: ">ChanceHimself</td>
+                            <td data-label="Options: " class = "options">
+                                <button title = "Add to a List">➕</button>
+                                <button title = "Edit App">📝</button>
+                                <button title = "About App">ℹ️</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="Favorite: " class = "table-star"><button>&star;</button></td>
+                            <td data-label="Name: ">Game App</td>
+                            <td data-label="Company: ">Game Company</td>
+                            <td data-label="Industry: ">Gaming</td>
+                            <td data-label="Reviews: ">&star;&star;</td>
+                            <td data-label="Developer: ">ChanceHimself</td>
+                            <td data-label="Options: " class = "options">
+                                <button title = "Add to a List">➕</button>
+                                <button title = "Edit App">📝</button>
+                                <button title = "About App">ℹ️</button>
+                            </td>
+                        </tr>
+                        <tr> <!--Default row-->
+                            <td colspan = "6">
+                                No apps found. Try adding one!
+                            </td>
+
+                        </tr>
+                    </table>
+                </div> <!--Database Table-->
+                    <div id = "buttonsForPages">
+                    <button> << Previous Page</button>
+                    <button>Next Page >> </button>
+                </div>
+
+                <div class = "db-summary">
+                    <p>Showing 1 of 25 apps</p>
+                </div>
+            </div>
+
+         </div>
+           
+        </div>
+   </body>
+</html>

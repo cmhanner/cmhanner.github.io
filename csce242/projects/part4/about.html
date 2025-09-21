@@ -1,0 +1,102 @@
+<!--Project Part 4: About Page-->
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>App Prospecter: About</title>
+    <link rel = "stylesheet" href = "styles.css">
+</head>
+    <body>
+        <header id = "main-header"> <!--Top Navigation Bar-->
+                <h2 id = "Title">About / Contact</h2>
+                <div id = "search-bar-part">
+                    <form id = "search-bar" action = "#" method = "get">
+                        <button type = "submit" >🔍</button>
+                        <input type = "text" placeholder = "app name..." >
+                    </form>
+                </div>
+
+                <h1 id = "main-logo">
+                   <img src="images/logo.svg" alt="App Prospecter Logo" id="main-logo-img"> 
+                   App Prospecter
+               </h1>
+
+
+                <div id = "button-list">
+                    <nav>
+                        <ul>
+                            
+                            <li><a href = "#" >⚙️ Settings</a></li>
+                            <li><a href = "#" >👤 Login</a></li>
+                        </ul>
+                    </nav>
+                </div>
+         </header> <!--Top Navigation Bar-->
+        <div id = "content">
+            
+            <div id = "page-changer">
+                <nav>
+                    <ul>
+                        <li><a href = "index.html" >&#8962 Home</a></li>
+                        <li><a href = "database.html" >&#9923 Database</a></li>
+                        <li><a href = "addEdit.html" >&#9998 Add / Edit</a></li>
+                      <li><a href = "prospectList.html" > = Prospect List</a></li>
+                        <li><a href = "#" >? About / Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div id = contact>
+            <div class = "Why">
+                <h2>Why?</h2>
+                <img src = https://picsum.photos/144/144>
+                <p> I obtained a internship at Krumware, a company that makes custom software and mobile apps for companies. 
+                    I'm a sales intern with the task of finding comapnies to prospect. 
+                    A big issue I run into is finding a company who's showing a need for custom software. 
+                    That's where this idea came from, a way to find companies who need mobile app work done.
+                </p>
+            </div>
+             <div class = "About-Me">
+                <h2>About Me</h2>
+                <img src = https://picsum.photos/144/144>
+                <p> Hello, my name is Chance Hanner, a Computer Informations Systems major from Darlington, South Carolina.
+                    I graduated high school in 2020, and went straight into the work force to become a Head Teller at a local bank.
+                    I decided to go back to school to further my education and develop more tangible skills in today's world.
+                    I'm currently minoring in Business and African American Studies. I enjoy video games, fashion, technology and history.
+                </p>
+            </div>
+            <div class = "Feedback">
+                <h2>Feedback</h2>
+                <form action = "/submit_feedback" method = "post">
+                        <label for = "feedback"></label><br>
+                        <textarea id = "feedback" name = "feedback" rows = "5" cols="40"></textarea><br>
+                        <input type = "submit" value = "Submit">
+                </form>
+                    <!--Citation-->
+                    <!--
+                        Title: How TO - Social Media Buttons
+                        Author: w3 schools
+                        Date: 2025-09-1
+                        Source: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
+                    -->
+                <h3>Reach Out On:</h3>
+                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                 <!-- Add font awesome icons -->
+                  <div id = "social-nav">
+                        <nav>
+                            <ul>
+                                <a href="#" class="fa fa-github"></a>
+                                <a href="#" class="fa fa-linkedin"></a>
+                            </ul>
+                        </nav>
+                  </div>
+
+
+
+            </div>
+
+       
+
+        </div>
+   </body>
+</html>
