@@ -1,13 +1,24 @@
+const exercise1 = document.getElementById("exercise-1");  //  stores exercise list to click
+const exercise2 = document.getElementById("exercise-2");
+
+const exe1form = document.getElementById("exercise-1-form"); //  stores form 
+const exe2form = document.getElementById("exercise-2-form");
+
 const range = document.getElementById("plantRange");
 const count = document.getElementById("day-count");
+const img = document.getElementById("plant-img");
+const status = document.getElementById("status");
+const clock = document.getElementById("clock");
 
+exercise1.addEventListener("click", () => {
 
-document.getElementById("exercise-1").onclick = (event) => {
+     console.log("exercise 1 clicked");
+
+    //  show exercise 1 and hide exercise 2
+
+    exe1form.style.display = "flex";
+    exe2form.style.display = "none";
     
-    const img = document.getElementById("plant-img");
-    const status = document.getElementById("status");
-    
-
     //  live updates
     range.addEventListener("click", () => {
         const days = parseInt(range.value); //  takes actual slider value
@@ -32,32 +43,30 @@ document.getElementById("exercise-1").onclick = (event) => {
 
 
     });
-
-
-
-}
-
+});
 
 
 function constantTime () {
     const date = new Date();
-    const time = date.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'}); //  format time to display with no seconds
+    clock.innerHTML = date.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'}); //  format time to display with no seconds
     // time.setSeconds(0,0);
-    count.innerHTML = time;
+    // count.innerHTML = time;
 
 }
 
-const display = document.getElementById("display"); //   label variable
-const exercise2 = document.getElementById("exercise-2");
-const slider = document.querySelector(".slider");
-const sliderParent = slider.parentNode;
+// const display = document.getElementById("display"); //   label variable
+
+// const slider = document.querySelector(".slider");
+// const sliderParent = slider.parentNode;
 
 exercise2.addEventListener('click', function () {
     console.log("exercise 2 clicked");
-    display.innerHTML = "Our Digital Clock";
-    sliderParent.removeChild(slider); //  removes slider
+
+    //  show exercise 2 and hide exercise 1
+    exe2form.style.display = "flex";
+    exe1form.style.display = "none";
     constantTime();
-    setInterval(constantTime, 1000);
+    clockInterval = setInterval(constantTime, 1000);
 
 })
 
