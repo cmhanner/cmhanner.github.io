@@ -9,6 +9,9 @@
 body {
     background-color: var(--main-background-color);
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #content {
