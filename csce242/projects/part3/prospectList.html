@@ -69,7 +69,7 @@
 
                         <div class = "List-Info">
                             <h2 id = "ListSelected">List Selected: </h2>
-                            <h3 id = "displayedList">Low Rated Apps</h3>
+                            <h3 id = "displayedList">📉 Low Rated Apps</h3>
                             <form action = "/submit_description" method = "post">
                                 <label for = "list_description">List Description:</label><br>
                                 <textarea id = "list_description" name = "list_text" rows = "5" cols="40"></textarea><br>
@@ -127,7 +127,19 @@
 
                     
                     <div class = "ListTable">
-                            <table>
+
+                        <div class = "list-summary">
+                            <p>Showing 5 of 5 apps</p>
+                        </div>
+
+                        <div id = "buttonsForPages">
+                            <button> << Previous Page</button>
+                            <button>Next Page >> </button>
+                        </div>
+
+                        
+
+                            <table class = "table-style">
                                 <tr>
                                     <th data-label="Favorite: ">Favorite</th>
                                     <th data-label="Name: ">Name</th>

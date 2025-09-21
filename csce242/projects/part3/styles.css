@@ -264,8 +264,10 @@ body {
 
 
 #buttonsForPages {
+  display: flex;
    text-align: center;
-   gap: 10px;
+   justify-content: center;
+   gap: 20px;
   
    
    
@@ -287,13 +289,17 @@ body {
    background-color: white;
 }
 
+.db-summary {
+  font-weight: bold;
+}
+
 
 
 
 
 /*Database Table*/                                      /*Database Table*/
 
-.database-table  {
+.table-style  {
    width: 100vh;
    text-align: center;
    justify-content: center;
@@ -302,19 +308,19 @@ body {
     
 }
 
-.database-table table {
+.table-style table {
    width: 100%;
    border-collapse: collapse;
    
    
 }
 
-.database-table th, td {
+.table-style th, td {
     border: 1px solid;
     padding: 5px;
 }
 
-.database-table th  {
+.table-style th  {
   position: sticky;
    height:fit-content;
    padding: 5px 5px;
@@ -323,17 +329,17 @@ body {
    
 }
 
-.database-table td.options button {
+.table-style td.options button {
   display: flex;
     margin: 3px;
     padding: 5px;
 }
 
-.database-table td.options button:hover {
+.table-style td.options button:hover {
   background-color: var(--thirdColor);
 }
 
-.database-table tr:nth-child(even) { /* to help scan rows faster using zebra color :)*/
+.table-style tr:nth-child(even) { /* to help scan rows faster using zebra color :)*/
   background-color: var(--secondaryColor);
 }
 
@@ -592,6 +598,7 @@ body {
   margin-left: 5px;
 }
 
+/*Saved List*/
 
 #savedList {
   display: flex;
@@ -644,6 +651,8 @@ body {
     background-color: white;
 }
 
+/*Current List*/
+
 #CurrentList {
   display: flex;
   flex-direction: column;
@@ -657,6 +666,8 @@ body {
   border-radius: 5px;
 }
 
+/*List Search Bar*/
+
 .list-search-bar {
   background-color: var(--secondaryColor);
   padding: 10px;
@@ -668,6 +679,8 @@ body {
     border-bottom: 2px solid var(--primaryColor);
 
 }
+
+/*List Filter*/
 
 .list-filter {
   background-color:var(--secondaryColor);
@@ -684,6 +697,8 @@ body {
 
 }
 
+/*List Sort*/
+
 .list-sort {
   background-color: var(--secondaryColor);
     display: flex;
@@ -699,6 +714,8 @@ body {
     box-shadow: 0 2px 5px #0E0F33;
 
 }
+
+/*List Table and Description*/
 
 .List-Info h2, h3 {
   text-align: center;
@@ -727,51 +744,13 @@ body {
 
 
 /*The List Table Itself*/
-
-.ListTable  {
-   width: 100vh;
-   text-align: center;
-   justify-content: center;
-    margin: 50px;
-    box-shadow: 0 2px 5px #0E0F33;
-    
-}
-
-.ListTable  table {
-   width: 100%;
-   border-collapse: collapse;
-   
-   
-}
-
-.ListTable  th, td {
-    border: 1px solid;
-    padding: 5px;
-}
-
-.ListTable  th  {
-  position: sticky;
-   height:fit-content;
-   padding: 5px 5px;
-   background-color: var(--primaryColor);
-   color: var(--secondaryColor);
-   
-}
-
-.ListTable  td.options button {
+.list-summary {
   display: flex;
-    margin: 3px;
-    padding: 5px;
+ justify-content: center;
+ font-weight: bold;
 }
 
-.ListTable  td.options button:hover {
-  background-color: var(--thirdColor);
-}
-
-.ListTable  tr:nth-child(even) { /* to help scan rows faster using zebra color :)*/
-  background-color: var(--secondaryColor);
-}
-
+/* 
 /*About Contact Page*/
 #contact {
   flex: 1;
@@ -945,36 +924,36 @@ body {
     font-size: 20px;
  }
 
-.database-table {
+.table-style {
   width: fit-content;
   box-shadow: 0px;
 }
 
-  .database-table table,
-  .database-table thead,
-  .database-table tbody,
-  .database-table th,
-  .database-table td,
-  .database-table tr {
+  .table-style table,
+  .table-style thead,
+  .table-style tbody,
+  .table-style th,
+  .table-style td,
+  .table-style tr {
     display: block;
     width: 100%;
 
   }
 
   /*Hide Headers*/
-  .database-table th {
+  .table-style th {
     display: none;
     
   }
 
-  .database-table tr {
+  .table-style tr {
     padding: 15px;
     width:fit-content;
     border: 1px solid black;
     border-radius: 8px;
   }
 
-  .database-table td {
+  .table-style td {
     display: flex;
     justify-content: space-between;
     /* padding: 8px 10px; */
@@ -982,13 +961,13 @@ body {
     
   }
 
-  .database-table td::before {
+  .table-style td::before {
     content: attr(data-label); /* adds heading before cell content*/
     font-weight: bold;
     margin: 3px;
   }
 
-  .database-table td.options button {
+  .table-style td.options button {
     margin: 3px;
     padding: 30px;
   }
@@ -996,19 +975,19 @@ body {
 
   /*Collapsing Table Idea*/
 
-  /* .database-table td:nth-child(3),
-  .database-table th:nth-child(3),
-  .database-table td:nth-child(4),
-  .database-table th:nth-child(4),
-  .database-table td:nth-child(6),
-  .database-table th:nth-child(6) {
+  /* .table-style td:nth-child(3),
+  .table-style th:nth-child(3),
+  .table-style td:nth-child(4),
+  .table-style th:nth-child(4),
+  .table-style td:nth-child(6),
+  .table-style th:nth-child(6) {
     display: none;
     
   } */
 
   /*Collapsing Table Idea*/
 
-  /* .database-table table {
+  /* .table-style table {
     min-width: 600px;
     border-collapse: collapse;
   } */
@@ -1059,10 +1038,30 @@ body {
   }
 
   /* Prospect List */
-  #currentList h2, #currentList h3 {
+  .list-page-layout {
+    display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
+    gap: 20px;
+    
+    width: fit-content;
   }
+
+  #savedList {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #CurrentList {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  /*List Table Itself*/
+
+
+  
 
   /* About/Contact Page */
   #contact {
