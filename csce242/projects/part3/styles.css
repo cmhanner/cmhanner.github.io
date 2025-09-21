@@ -337,9 +337,9 @@ body {
   background-color: var(--secondaryColor);
 }
 
-.table-star {
+/* .table-star {
   
-}
+} */
 
 .table-star button {
   padding: 10px;
@@ -350,6 +350,7 @@ body {
 }
 
 /*Add or Edit Page*/
+
 .add-edit-area {
   display: flex;
   flex-direction: column;
@@ -584,18 +585,57 @@ body {
 
 
 /*Prospect List Page*/
+.list-page-layout {
+  display: flex;
+  gap: 5px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+
 #savedList {
-    background: var(--secondaryColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--secondaryColor);
+  border: 2px solid #76769f;
+  padding: 10px;
+  border-radius: 5px;
     
 }
+
+#savedList ul {
+  padding: 10px 20px;
+  gap: 15px;
+  margin: 2px;
+  border-top: 2px solid #76769f;
+  border-left: 2px solid #76769f;
+  border-right: 2px solid #76769f;
+  border-bottom: 2px solid #76769f;
+  box-shadow: 0 2px 5px #0E0F33;
+  border-radius: 5px;
+   
+}
+
 #savedList li {
    list-style: none;
+   display: block;
    padding: 5px;
+   border-top: 2px solid #76769f;
+  border-left: 2px solid #76769f;
+  border-right: 2px solid #76769f;
+  border-bottom: 2px solid #76769f;
+  border-radius: 5px;
+   
 }
 
 #savedList a {
     text-decoration: none;
     color: black;
+    display: block;
+    font-size: 20px;
+    width: 100;
+    /* padding: 20px; */
 }
 
 #savedList a:hover {
@@ -604,18 +644,132 @@ body {
     background-color: white;
 }
 
-#currentList h2, h3{
+#CurrentList {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(161, 157, 157);
+  padding: 10px;
+  gap: 20px;
+  border-top: 2px solid  rgb(84, 80, 80);
+  border-left: 2px solid  rgb(84, 80, 80);
+  border-right: 2px solid  rgb(84, 80, 80);
+  border-bottom: 2px solid  rgb(84, 80, 80);
+  border-radius: 5px;
+}
+
+.list-search-bar {
+  background-color: var(--secondaryColor);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #0E0F33;
+  border-top: 2px solid var(--primaryColor);
+    border-left: 2px solid var(--primaryColor);
+    border-right: 2px solid var(--primaryColor);
+    border-bottom: 2px solid var(--primaryColor);
+
+}
+
+.list-filter {
+  background-color:var(--secondaryColor);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 5px;
+   border-top: 2px solid var(--primaryColor);
+    border-left: 2px solid var(--primaryColor);
+    border-right: 2px solid var(--primaryColor);
+    border-bottom: 2px solid var(--primaryColor);
+  box-shadow: 0 2px 5px #0E0F33;
+
+}
+
+.list-sort {
+  background-color: var(--secondaryColor);
     display: flex;
-    flex-direction: row;
+    padding: 10px;
+    margin: 20px;
+    flex-direction: column;
+    border-radius: 5px;
+    gap: 10px; 
+    border-top: 2px solid var(--primaryColor);
+    border-left: 2px solid var(--primaryColor);
+    border-right: 2px solid var(--primaryColor);
+    border-bottom: 2px solid var(--primaryColor);
+    box-shadow: 0 2px 5px #0E0F33;
+
 }
 
-#currentList h3 {
-    align-items: right;
+.List-Info h2, h3 {
+  text-align: center;
+  background-color: var(--secondaryColor);
+  padding: 10px;
+  border-radius: 10px;
+  border-top: 2px solid var(--primaryColor);
+    border-left: 2px solid var(--primaryColor);
+    border-right: 2px solid var(--primaryColor);
+    border-bottom: 2px solid var(--primaryColor);
+    box-shadow: 0 2px 5px #0E0F33;
 }
 
-.ListTable {
+.List-Info label {
+  font-weight: bold;
+
+}
+
+.List-Info #list_description {
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #0E0F33;
+
+}
+
+
+
+
+/*The List Table Itself*/
+
+.ListTable  {
+   width: 100vh;
+   text-align: center;
+   justify-content: center;
+    margin: 50px;
+    box-shadow: 0 2px 5px #0E0F33;
     
-    margin-top: 70px;
+}
+
+.ListTable  table {
+   width: 100%;
+   border-collapse: collapse;
+   
+   
+}
+
+.ListTable  th, td {
+    border: 1px solid;
+    padding: 5px;
+}
+
+.ListTable  th  {
+  position: sticky;
+   height:fit-content;
+   padding: 5px 5px;
+   background-color: var(--primaryColor);
+   color: var(--secondaryColor);
+   
+}
+
+.ListTable  td.options button {
+  display: flex;
+    margin: 3px;
+    padding: 5px;
+}
+
+.ListTable  td.options button:hover {
+  background-color: var(--thirdColor);
+}
+
+.ListTable  tr:nth-child(even) { /* to help scan rows faster using zebra color :)*/
+  background-color: var(--secondaryColor);
 }
 
 /*About Contact Page*/
@@ -862,9 +1016,32 @@ body {
   
 
   /* Add/Edit Page */
+
   .add-edit-area {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  
+  }
+
+  .top-row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .bottom-row {
+    display: flex;
     flex-direction: column;
   }
+
+  .left-section,
+  .right-section,
+  .list-sidebar {
+   width: 100%;
+   max-width: 100%;
+  }
+
 
   .form-group {
     flex-direction: column;
