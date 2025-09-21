@@ -204,6 +204,33 @@ body {
     font-weight: bold;
 }
 
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+
+.dashboard-search input {
+  flex: 1;
+  padding: 8px;
+  
+}
+
+.dashboard-apps {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  text-decoration: none;
+}
+
+.app-overview {
+  display: flex;
+  flex-direction: column;
+}
+
 /*Database Page*/
 .filter {
   background-color: rgb(154, 149, 149);

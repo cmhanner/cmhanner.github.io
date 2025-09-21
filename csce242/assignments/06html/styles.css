@@ -1,0 +1,89 @@
+/*Assignment 6*/
+:root {
+    --main-background-color: #233D28;
+    --title-color: #694A50;
+    --subtitle-color: #E83151;
+    --exercise-color: #233D28;
+}
+
+body {
+    background-color: var(--main-background-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+    width: 70%;
+    background-color: beige;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* #exercise-menu nav {
+    display: flex;
+    flex-direction: row;
+} */
+
+header {
+    text-align:  center;
+}
+
+#exercise-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+
+}
+
+#exercise-menu li {
+    display: inline;
+}
+
+#exercise-menu li + li::before { /*when placing pipe only targets the space between the list elements*/
+    content: '|';
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#exercise-menu a {
+    text-decoration: none;
+    color: var(--exercise-color);
+    padding: 5px;
+}
+
+#exercise-menu a:hover {
+    color: var(--subtitle-color);
+    background-color: white;
+}
+
+#exercise-forms {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    background-color: rgb(210, 210, 137);
+    border: 1px solid rgb(147, 147, 70);
+}
+
+#exercise-form {
+   display: flex;
+   margin-top:50px;
+   flex-direction: column;
+   align-items: center;
+   gap: 5px;
+   
+}
+
+
+
+h1 {
+    color: var(--title-color);
+}
+
+h2 {
+    color: var(--subtitle-color);
+}
