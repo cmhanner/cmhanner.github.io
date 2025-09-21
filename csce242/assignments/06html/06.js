@@ -20,7 +20,7 @@ exercise1.addEventListener("click", () => {
     exe2form.style.display = "none";
     
     //  live updates
-    range.addEventListener("click", () => {
+    range.addEventListener("input", () => {
         const days = parseInt(range.value); //  takes actual slider value
 
         if (days >= 1 && days <= 2) {
@@ -47,7 +47,7 @@ exercise1.addEventListener("click", () => {
 
 
 function constantTime () {
-    const date = new Date();
+    const date = new Date(); //  https://www.shecodes.io/athena/13276-how-to-get-current-day-and-time-in-javascript#:~:text=To%20get%20the%20current%20day%20and%20time%20in%20JavaScript%2C%20you,the%20built%2Din%20Date%20object.&text=const%20now%20=%20new%20Date();,%60);
     clock.innerHTML = date.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'}); //  format time to display with no seconds
     // time.setSeconds(0,0);
     // count.innerHTML = time;
