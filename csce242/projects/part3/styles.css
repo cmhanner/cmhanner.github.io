@@ -915,6 +915,7 @@ body {
 
 .Feedback {
     background-color: rgb(90, 89, 89);
+    text-align: center;
 }
 
 .Feedback #social-nav a {
@@ -1226,13 +1227,27 @@ body {
 
   /* About/Contact Page */
   #contact {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
     flex-direction: column;
     gap: 20px;
   }
 
   #contact > div {
     width: 100%;
+    border-radius: 10px;
   }
+
+  .Feedback #social-nav a {
+   display: flex;
+   flex-direction: column;
+}
+
+  .Feedback #social-nav a {
+   font-size: 50px;
+  }
+
 }
 
 
