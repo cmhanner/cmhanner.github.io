@@ -36,6 +36,14 @@ body {
 }
 
 
+#hamburger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: var(--secondaryColor);
+  cursor: pointer;
+}
 
 #Title {
   background-color: var(--secondaryColor);
@@ -956,6 +964,22 @@ body {
    color:white;
 }
 
+@media only screen and (max-width: 1200px) {
+
+  .ListTable td[data-label="Date Added"],
+  .ListTable th[data-label="Date Added"] {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  /* also hide Industry */
+  .ListTable td:nth-child(4),
+  .ListTable th:nth-child(4) {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 768px) {
 
   html, body {
@@ -965,6 +989,8 @@ body {
     overflow-x: hidden;
 
   }
+
+  
 
   #Title {
     width: 100%;
@@ -1018,15 +1044,23 @@ body {
 
   }
 
+  #hamburger {
+    display: block;
+  }
+
   /*Page Changer*/
 
 
   #page-changer {
-   display: flex;
+   display: none;
     height: auto;
     width: 100vh;
     align-items: center;
     padding: 10px;
+  }
+
+  #page-changer.open {
+    display: flex;
   }
 
   #page-changer ul {
