@@ -897,11 +897,33 @@ body {
   
 }
 
+#contact h2 {
+  text-align: center;
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor);
+  padding: 10px;
+   border: 2px solid var(--primaryColor);
+  border-radius: 5px;
+}
+
 #contact img {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 10px auto;
+  border: 2px solid var(--primaryColor);
+  border-radius: 10px;
+  box-shadow:0 2px 5px var(--secondaryColor);
+}
+
+#contact p {
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  padding: 5px;
+   border: 2px solid var(--primaryColor);
+  border-radius: 10px;
+  box-shadow:0 2px 5px var(--secondaryColor);
 }
 
 .Why {
