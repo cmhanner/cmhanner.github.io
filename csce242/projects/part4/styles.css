@@ -20,6 +20,8 @@ body {
   align-items: center;
   justify-content: space-evenly;
   box-shadow: 0 2px 5px #0E0F33;
+  width: 100%;
+  max-width: 100vw;
     
 }
 
@@ -33,6 +35,12 @@ body {
     /* align-items: center; */
     width: 100%;
     max-width: 100vw;
+}
+
+#img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 
@@ -132,9 +140,9 @@ body {
     background-color: var(--thirdColor);
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: auto;
     width: fit-content;
-  border:var(--pageBorder);
+    border:var(--pageBorder);
 }
 
 #page-changer ul {
@@ -964,18 +972,59 @@ body {
    color:white;
 }
 
-@media only screen and (max-width: 1200px) {
 
-  .ListTable td[data-label="Date Added"],
+/*My laptop is 1466*/
+@media only screen and (max-width: 1500px) {
+
+  #button-list {
+    display: flex;
+    width: 100%;
+  }
+
+  .ListTable {
+    width: 100%;           
+    max-width: 100%;      
+    margin: auto;     
+    text-align: center;
+    box-shadow: 0 2px 5px #0E0F33;
+  }
+
+  .ListTable td[data-label="Date Added: "],
+  .ListTable th[data-label="Date Added"] {
+    display: none;
+  }
+
+  .ListTable td[data-label="Industry: "],
+  .ListTable th[data-label= "Industry: "] {
+    display: none;
+  }
+
+  .list-page-layout {
+    gap: 2px;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #button-list {
+    display: flex;
+    width: 100%;
+  }
+
+  .ListTable td[data-label="Date Added: "],
   .ListTable th[data-label="Date Added"] {
     display: none;
   }
 }
 
 @media (max-width: 992px) {
+  #button-list {
+    display: flex;
+    
+  }
   /* also hide Industry */
-  .ListTable td:nth-child(4),
-  .ListTable th:nth-child(4) {
+  .ListTable td[data-label="Date Added: "],
+  .ListTable th[data-label="Date Added"] {
     display: none;
   }
 }
