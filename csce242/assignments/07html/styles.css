@@ -1,0 +1,177 @@
+/*Assignment 7*/
+:root {
+    --main-background-color: white;
+    --day-night-background-color: lightblue;
+    --title-color: rgb(15, 15, 101);
+    --subtitle-color: #d6435c;
+    
+}
+
+body {
+    background-color: var(--main-background-color);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content {
+    width: 100%;
+    background-color: var(--day-night-background-color);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid rgb(147, 147, 70);
+    box-shadow: 0 2px 5px rgb(147, 147, 70);
+    margin-top: 20px;
+    
+}
+
+#draw-scene {
+    cursor: pointer;
+}
+
+.scene {
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 50px;
+}
+
+.sun {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+    margin: 20px;
+    position: absolute;
+    right: 50px;
+    top: -80px;
+}
+
+.moon {
+    height: 90px;
+    width: 70px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 20px;
+    position: absolute;
+    right: 50px;
+    top: -75px;
+}
+
+/*Cloud Source: https://codepen.io/jeyakarthika/pen/AappZV */
+ /* body {
+	background: #ACEAFF;
+}  */
+
+
+#cloud {
+  align-items: center;
+  height: 50px;
+  width: 100px;
+  background: linear-gradient(#f2f9fe 5%, #d6f0fd 100%);
+  border-radius: 100px;
+  position: relative;
+  margin: 40px auto;
+}
+
+/*Outline Parts of the Cloud*/
+/* #cloud, #cloud:before, #cloud:after {
+  border: 1px solid red;
+} */
+
+#cloud:after, #cloud:before {
+  content: "";
+  position: absolute;
+  background: #f2f9fe;
+  z-index: 0;
+}
+
+#cloud:after {
+  width: 25px;
+  height: 25px;
+  top: -21px;
+  left: 45px;
+  border-radius: 100px;
+}
+
+#cloud:before {
+  width: 30px;
+  height: 30px;
+  top: -20px;
+  right: 50px;
+  border-radius: 200px;
+}
+
+.shadow {
+  width: 300px;
+  position: absolute;
+  bottom: -10px;
+  left: 20px;  
+  background: #000;
+  z-index: 0;
+  -webkit-box-shadow: 0 0 25px 8px rgba(0,0,0,0.4);
+  box-shadow: 0 0 25px 3px rgba(0,0,0,0.3);
+  border-radius: 50%;
+}
+
+
+#tree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* position: relative; */
+
+}
+
+.leaves {
+  height: 70px;
+  width: 70px;
+  background-color: green;
+  border-radius: 50%;
+  /* position: absolute; */
+  bottom: 0;
+  left: 15px;
+}
+
+
+
+.trunk {
+ height: 25px;
+  width: 50px;
+  background-color: brown;
+  rotate: 90deg;
+  /* position: absolute; */
+  top: 20px;
+}
+
+header {
+    text-align:  center;
+}
+
+h1 {
+    color: var(--title-color);
+}
+
+h2 {
+    color: var(--subtitle-color);
+}
+
+footer {
+    text-align: center;
+    color:var(--title-color);
+    padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    #content {
+        gap: 0px;
+    }
+
+
+}

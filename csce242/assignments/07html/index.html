@@ -12,19 +12,36 @@
             <header>
                 <h1>Assignment 9</h1>
                 <h2>Loops</h2>
-                
+
+                <!--When clicked 6 identical clouds appear
+                    6 identical trees will appear
+                    A sun or moon will appear, depending on the time of day.-->
+                    
                 <button id = "draw-scene" aria-label="draw">Draw Scene</button>
             </header>
 
-            <!--https://codepen.io/jeyakarthika/pen/AappZV-->
-            <div id = "clouds">
-                <span class='shadow'></span>
-            </div>
+            <div class = "scene">
 
-            <div id = "tree">
-                <span class = 'leaves'></span>
-                <span class = 'trunk'></span>
+                <div id = "sun-moon">
+                    <div class = "sun"></div>
+                    <div class = "moon"></div>
+                </div>
+
+                <div id = "cloud-tree">
+
+                    <!--https://codepen.io/jeyakarthika/pen/AappZV-->
+                    <div id = "cloud">
+                        <span class='shadow'></span>
+                    </div>
+
+
+                    <div id = tree>
+                        <div class="leaves"></div> <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_shapes_circle-->
+                        <div class = "trunk"></div> <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_shapes_rectangle-->
+                    </div>
+                </div>
             </div>
+           
                
                 <!-- <div id = "exercise-2-form">
                     <h3>Our Digital Clock</h3>
