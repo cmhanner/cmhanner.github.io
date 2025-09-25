@@ -103,6 +103,8 @@ document.getElementById("btn-mood-ring").onclick = () => {
         btnStartCount.disabled = false;
     }
 
+    let totalDonations = 0;
+
     const goal = 1000;
     document.getElementById("goal-span").innerHTML = goal;
 
@@ -118,6 +120,7 @@ document.getElementById("btn-mood-ring").onclick = () => {
             errorSpan.innerHTML = "* Invalid Amount";
         }
 
+        totalDonations += parseFloat(donation);
         const donationPercent = donation / goal * 100;
 
         if (donationPercent >= 100) {
