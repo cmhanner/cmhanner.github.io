@@ -63,13 +63,21 @@ body {
     top: -75px;
 }
 
+#cloud-tree {
+    gap: 5px;
+}
+
 /*Cloud Source: https://codepen.io/jeyakarthika/pen/AappZV */
  /* body {
 	background: #ACEAFF;
 }  */
 
+.clouds-in-row {
+    display: flex;
+    flex-direction: row;;
+}
 
-#cloud {
+.cloud {
   align-items: center;
   height: 50px;
   width: 100px;
@@ -80,18 +88,19 @@ body {
 }
 
 /*Outline Parts of the Cloud*/
-/* #cloud, #cloud:before, #cloud:after {
+#cloud, #cloud:before, #cloud:after {
   border: 1px solid red;
-} */
+}
 
-#cloud:after, #cloud:before {
+.cloud:after, .cloud:before {
   content: "";
   position: absolute;
   background: #f2f9fe;
   z-index: 0;
+  box-shadow: 0 2px 2px #e8eef3;
 }
 
-#cloud:after {
+.cloud:after {
   width: 25px;
   height: 25px;
   top: -21px;
@@ -99,7 +108,7 @@ body {
   border-radius: 100px;
 }
 
-#cloud:before {
+.cloud:before {
   width: 30px;
   height: 30px;
   top: -20px;
@@ -115,31 +124,33 @@ body {
   background: #000;
   z-index: 0;
   -webkit-box-shadow: 0 0 25px 8px rgba(0,0,0,0.4);
-  box-shadow: 0 0 25px 3px rgba(0,0,0,0.3);
+  box-shadow: 5px 10px 25px 3px rgba(0,0,0,0.3);
   border-radius: 50%;
 }
 
-
-#tree {
+.trees-in-row {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* position: relative; */
-
+    flex-direction: row;
+   
 }
 
-.leaves {
+
+
+/*Circle*/
+/*<!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_shapes_circle-->*/
+.leaves { 
   height: 70px;
   width: 70px;
   background-color: green;
   border-radius: 50%;
   /* position: absolute; */
   bottom: 0;
-  left: 15px;
+  /* left: 15px; */
 }
 
 
-
+/*Rectangle*/
+/*<!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_shapes_rectangle-->*/
 .trunk {
  height: 25px;
   width: 50px;
