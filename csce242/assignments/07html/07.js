@@ -20,7 +20,7 @@ if (isNight) {
 
 
 } else {
-    dayORnight.style.backgroundColor = "skyblue"; //  change to "day"
+    dayORnight.style.backgroundColor = "lightblue"; //  change to "day"
     moon.style.display = "none"; //  hide the moon
 }
 

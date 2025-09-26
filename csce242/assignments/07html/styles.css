@@ -17,7 +17,7 @@ body {
 
 #content {
     width: 100%;
-    
+    background-color: var(--day-night-background-color);
     margin: auto;
     display: flex;
     flex-direction: column;
