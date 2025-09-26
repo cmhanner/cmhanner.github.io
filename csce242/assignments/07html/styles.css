@@ -17,7 +17,7 @@ body {
 
 #content {
     width: 100%;
-    background-color: var(--day-night-background-color); /*will change to black when its certain time*/
+    
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -82,7 +82,7 @@ body {
   align-items: center;
   height: 50px;
   width: 100px;
-  background: linear-gradient(#f2f9fe 5%, #d6f0fd 100%);
+  background: linear-gradient(#dde4e9 5%, #d6f0fd 100%);
   border-radius: 100px;
   position: relative;
   margin: 40px auto;
@@ -96,7 +96,7 @@ body {
 .cloud:after, .cloud:before {
   content: "";
   position: absolute;
-  background: #f2f9fe;
+  background: #f2f9fed1;
   z-index: 0;
   box-shadow: 0 2px 2px #e8eef3;
 }
@@ -133,6 +133,12 @@ body {
     display: flex;
     flex-direction: row;
    
+}
+
+.tree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
