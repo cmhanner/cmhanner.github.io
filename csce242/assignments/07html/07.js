@@ -8,6 +8,21 @@ const cloudsRow = document.querySelector(".clouds-in-row");
 const treeRow = document.querySelector(".trees-in-row");
 
 //  Check time of day
+const dayORnight = document.getElementById("content");
+const moon = document.querySelector(".moon");
+const now = new Date();
+const hours = now.getHours();
+const isNight = hours < 6 || hours > 18; //  between 6pm and 6am
+
+if (isNight) {
+    dayORnight.style.backgroundColor = "black"; //  change to "night"
+    moon.style.display = "block"; //  show the moon
+
+
+} else {
+    dayORnight.style.backgroundColor = "skyblue"; //  change to "day"
+    moon.style.display = "none"; //  hide the moon
+}
 
 
 drawButton.addEventListener("click", () => {

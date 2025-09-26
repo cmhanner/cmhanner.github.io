@@ -2,7 +2,7 @@
 :root {
     --main-background-color: white;
     --day-night-background-color: lightblue;
-    --title-color: rgb(15, 15, 101);
+    --title-color: rgb(62, 62, 167);
     --subtitle-color: #d6435c;
     
 }
@@ -17,12 +17,12 @@ body {
 
 #content {
     width: 100%;
-    background-color: var(--day-night-background-color);
+    background-color: var(--day-night-background-color); /*will change to black when its certain time*/
     margin: auto;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    border: 1px solid rgb(147, 147, 70);
+    border: 1px solid var(--title-color);
     box-shadow: 0 2px 5px rgb(147, 147, 70);
     margin-top: 20px;
     
@@ -53,13 +53,14 @@ body {
 }
 
 .moon {
+    display: none; /*will change when time changes*/
     height: 90px;
     width: 70px;
     background-color: black;
     border-radius: 50%;
     margin: 20px;
     position: absolute;
-    right: 50px;
+    right: 48px;
     top: -75px;
 }
 
@@ -181,7 +182,7 @@ footer {
 @media only screen and (max-width: 768px) {
 
     #content {
-        gap: 0px;
+        display: flex;
     }
 
 
