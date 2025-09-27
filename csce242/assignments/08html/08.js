@@ -18,10 +18,11 @@ window.onload = function () {  //  https://stackoverflow.com/questions/520812/ho
     const imgSpot = document.querySelectorAll('.image-spot'); // Grabs all the image spots 
     const popUp = document.getElementById('popup'); // Grabs the popup element
     const popUpTitle = document.getElementById('popup-title'); // Grabs the popup title element
-    const popUpImg = document.getElementById('popup-img'); // Grabs the popup image element
+    const popUpImg = document.getElementById('popup-image'); // Grabs the popup image element
     const popUpClose = document.getElementById('close'); // Grabs the popup close button
 
 
+    //  Load before images into their spots
     //  item and index
     beforeImages.forEach((dog, i) => { 
 
@@ -31,18 +32,27 @@ window.onload = function () {  //  https://stackoverflow.com/questions/520812/ho
         img.title = "Please adopt " + dog.name;
         imgSpot[i].appendChild(img); // Append the image to the corresponding spot
 
-        img.addEventListener('click', () => {
+        //  On click show after image
+        img.addEventListener('click', (e) => { //  adding a e to get image info when clicked for popup
             console.log(dog.name + " clicked");
-            popUpTitle.textContent = dog.name + " after adoption"; // Set the popup title
             popUpImg.src = afterImages[i].src;
-            popUp.classList.remove('hidden'); // Show the popup
+            popUpTitle.textContent = dog.name + " after adoption"; // Set the popup title
+            popUp.classList.remove('hidden'); // Show the 
+            
+             //  target gets the specific image clicked
+            const popUpposition = e.target.getBoundingClientRect(); // Get the position of the clicked image
+            popUp.style.top = (popUpposition.top + window.scrollY) + 'px'; // Position the popup vertically
+            popUp.style.left = (popUpposition.left + window.scrollX) + 'px'; // Position the popup horizontally
 
         });
 
-        popUpClose.addEventListener('click', () => {
-            popUp.classList.add('hidden'); // Hide the popup
-        });
-        
+       
+
+    });
+
+    // Close popup
+    popUpClose.addEventListener('click', () => {
+        popUp.classList.add('hidden'); // Hide the popup
     });
 
     
