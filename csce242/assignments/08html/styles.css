@@ -49,6 +49,10 @@ img {
     width: auto;
 }
 
+.image-title {
+    background-color: var(--subtitle-color);
+}
+
 header {
     text-align:  center;
 }
