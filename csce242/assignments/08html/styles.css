@@ -43,7 +43,7 @@ main {
     position: fixed;
     top: 0;
     left: 0;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
 }
@@ -84,6 +84,7 @@ img {
 
 .image-title {
     background-color: var(--subtitle-color);
+    font-size: 30px;
 }
 
 header {

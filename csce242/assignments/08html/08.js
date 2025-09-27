@@ -20,6 +20,7 @@ window.onload = function () {  //  https://stackoverflow.com/questions/520812/ho
     const popUpTitle = document.getElementById('popup-title'); // Grabs the popup title element
     const popUpImg = document.getElementById('popup-image'); // Grabs the popup image element
     const popUpClose = document.getElementById('close'); // Grabs the popup close button
+    const imgHover = document.getElementById('dog-hover');
 
 
     //  Load before images into their spots
@@ -29,7 +30,8 @@ window.onload = function () {  //  https://stackoverflow.com/questions/520812/ho
         const img = document.createElement('img'); // Create an img element
         img.src = dog.src; // Set the source of the image
         img.alt = "Before Adoption: " + dog.name;
-        img.title = "Please adopt " + dog.name;
+        imgHover.textContent = "Please adopt " + dog.name;
+        // img.title = "Please adopt " + dog.name;
         imgSpot[i].appendChild(img); // Append the image to the corresponding spot
 
         //  On click show after image
@@ -52,6 +54,7 @@ window.onload = function () {  //  https://stackoverflow.com/questions/520812/ho
 
     // Close popup
     popUpClose.addEventListener('click', () => {
+        console.log("X clicked");
         popUp.classList.add('hidden'); // Hide the popup
     });
 
