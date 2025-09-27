@@ -34,7 +34,14 @@ main {
     justify-content: space-evenly;
 }
 
+/*Popup Style*/
+.hidden {
+    display: none;
+}
 
+.popup {
+    display: flex;
+}
 
 main div {
     background-color: var(--image-area-color);
