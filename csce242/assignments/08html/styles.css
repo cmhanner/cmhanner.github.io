@@ -55,20 +55,26 @@ main {
     border-radius: 10px;
     padding: 40px;
     position: relative;
+    box-shadow: 0 2px 5px var(--title-color);
 }
 
 #popup-content img {
     max-width: 100%;;
 }
 
+/*Close button on pop ups*/
 #close {
     cursor: pointer;
     position: absolute;
     top: 10px;
     right: 10px;
     color: var(--subtitle-color);
+    font-weight: bold;
+    font-size: 20px;
 }
 
+
+/*Image Spot divs*/
 main div {
     background-color: var(--image-area-color);
     border-radius: 10px;
@@ -80,11 +86,34 @@ main div {
 img {
     height: 400px;
     width: auto;
+    cursor: pointer;
 }
 
-.image-title {
+/*Contains image and caption from JS*/
+/*W3: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity*/
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+/*Caption Style from JS*/
+.caption {
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    color: white;
     background-color: var(--subtitle-color);
-    font-size: 30px;
+    text-align: center;
+    width: 90%;
+    padding: 20px;
+    font-weight: bold;
+    opacity: 0; /*Hides until hover*/ 
+}
+
+.image-wrapper:hover .caption {
+    opacity: 0.8;
 }
 
 header {
@@ -97,6 +126,10 @@ h1 {
 
 h2 {
     color: var(--subtitle-color);
+}
+
+p {
+    color: var(--title-color);
 }
 
 footer {
