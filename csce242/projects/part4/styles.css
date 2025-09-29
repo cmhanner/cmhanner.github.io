@@ -138,11 +138,14 @@ body {
 
 #page-changer {
     background-color: var(--thirdColor);
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     height: auto;
-    width: fit-content;
+    width: fit-content; */
     border:var(--pageBorder);
+    min-width: 200px;
+    max-width: 240px;
+    flex: 0 0 220px;
 }
 
 #page-changer ul {
@@ -266,6 +269,7 @@ body {
 }
 
 .dashboard-apps li {
+  display: block;
   background-color: grey;
   padding: 30px;
   border-radius: 10px;
@@ -1107,7 +1111,7 @@ body {
   #page-changer {
    display: none;
     height: auto;
-    width: 100vh;
+    width: 100%;
     align-items: center;
     padding: 10px;
   }
