@@ -450,11 +450,12 @@ body {
 /*Database Table*/                                      /*Database Table*/
 
 .table-style  {
-   width: 100vh;
-   text-align: center;
-   justify-content: center;
-    margin: 50px;
-    box-shadow: 0 2px 5px #0E0F33;
+   width: 100%;
+   max-width: 100%;
+   /* text-align: center;
+   justify-content: center; */
+   margin: 20px auto;
+   box-shadow: 0 2px 5px #0E0F33;
     
 }
 
