@@ -1,0 +1,51 @@
+[
+    {
+        "_id": 1,
+        "name": "Bank App",
+        "company": "BankerGuy",
+        "industry": "finance",
+        "reviews": 2,
+        "link_to_app": "thisisalink.com",
+        "description": "a app for banking",
+        "img": "default-finance.jpg"
+        
+
+    },
+    {
+        "_id": 2,
+        "name": "Food App",
+        "company": "FoodGuy",
+        "industry": "resturaunt",
+        "reviews": 1,
+        "link_to_app": "thisisalink.com",
+        "description": "a app for food",
+        "img": "default-restraunt.jpg"
+        
+
+    },
+    {
+        "_id": 3,
+        "name": "Manufacturing App",
+        "company": "ManufacturingGuy",
+        "industry": "inustrial",
+        "reviews": 2,
+        "link_to_app": "thisisalink.com",
+        "description": "a app for manufacturing",
+        "img": "default-manufacturing.jpg"
+        
+
+    },
+    {
+        "_id": 4,
+        "name": "Automotive App",
+        "company": "CarGuy",
+        "industry": "automotive",
+        "reviews": 3,
+        "link_to_app": "thisisalink.com",
+        "description": "a app for cars",
+        "img": "default-automotive.jpg"
+        
+
+    },
+
+]
