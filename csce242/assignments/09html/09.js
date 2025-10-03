@@ -23,6 +23,8 @@ class Art {
         const img = this.artImage(this.image);
         section.append(img);
 
+        section.addEventListener("click", () => ArtModal(this));
+
         return section;
 
     
@@ -31,9 +33,12 @@ class Art {
     artImage (filename) {
         const img = document.createElement("img");
         img.src = `images/${filename}`;
+        img.alt = `${this.name} + by + ${this.artist}`;
         return img;
 
     }
+
+    
 
     
 } //  class for art
@@ -47,4 +52,19 @@ art.push(new Art("Avengers 700", "Alex Ross", "avengers-700.webp", false));
 //  on page load
  const artList = document.getElementById("art-list");
  art.forEach( a => artList.append(a.item)); 
+
+ function ArtModal (artObj) {
+    const modal = document.getElementById("modal-id");
+    const modalContent = document.querySelector(".w3-modal-content");
+
+    const h3 = document.createElement("h3");
+    h3.textContent = artObj.name;
+    modalContent.append(h3);
+
+    const img = artObj.artImage(artObj.image);
+    modalContent.append(img);
+
+    modal.style.display = "block";
+
+}
 
