@@ -62,20 +62,20 @@ art.push(new Art("Batman Tribute NYCC", "Alex Ross", "batman.webp", false));
 
  function ArtModal (artObj) {
     const modal = document.getElementById("modal-id");
-    const modalContent = document.querySelector(".w3-modal-content");
+    const modalBody = document.getElementById("model-body");
     const closeButton = document.getElementById("modal-close");
 
    
-    // modalContent.innerHTML = "";
+    modalBody,innerHtml = "";
     const h3 = document.createElement("h3");
     h3.textContent = artObj.name;
-    modalContent.append(h3);
+    modalBody.append(h3);
 
     
-    modalContent.append(artObj.description());
+    modalBody.append(artObj.description());
 
     const img = artObj.artImage(artObj.image);
-    modalContent.append(img);
+    modalBody.append(img);
 
     
 
