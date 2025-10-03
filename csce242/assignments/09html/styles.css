@@ -27,6 +27,16 @@ body {
     
 }
 
+.w3-card-4 {
+    padding: 30px;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.w3-display-topright {
+    border-radius: 10px;
+}
+
 main {
     display: flex;
     flex-direction: row;
