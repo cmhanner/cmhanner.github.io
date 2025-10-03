@@ -18,13 +18,14 @@ class Art {
     }
 
     //  pickign the frame or unframed per modal
-    getFrame(forModal = false) {
-        const file = (forModal && this.framed && this.imageFramed) 
+    getFrame(forModal = false) { //  always unframe, unless modal calls will be true
+        const file = (forModal && this.framed && this.imageFramed)  
         ? this.imageFramed : this.imageUnframed;
         return this.artImage(file);
     }
 
-    //  returns only the title and the image for the object
+    //  returns only the title and the unframed image for the object as a card
+   
     get item() {
         //  the modal that contains the section
 
@@ -36,9 +37,10 @@ class Art {
         section.append(h2);
 
         //  image
-        // const img = this.artImage(this.image);
+    
         section.append(this.getFrame(false)); //  so image is unframed before modal
 
+         //  when modal clicked, it'll show details of art object and framed image
         section.addEventListener("click", () => ArtModal(this));
 
         return section;
@@ -47,7 +49,7 @@ class Art {
     }
 
     
-
+    //  returns the description of by
     description () {
         const p = document.createElement("p");
         p.textContent = `By: ${this.artist}`;
@@ -60,34 +62,36 @@ class Art {
 } //  class for art
 
 const art = [];
-art.push(new Art("Wolverine Hulk 340", "Alex Ross", "non-framed-wolverine.webp", "framed-wolverine.png", true));
+art.push(new Art("Wolverine Hulk 340", "Alex Ross", "non-framed-wolverine.png", "framed-wolverine.webp", true));
 art.push(new Art("Spiderman Torment", "Alex Ross", "spiderman.webp", null, false));
 art.push(new Art("Superman Powerful", "Alex Ross", "Superman.webp", null, false))
 art.push(new Art("Avengers 700", "Alex Ross", "avengers-700.webp", null, false));
 art.push(new Art("Batman Tribute NYCC", "Alex Ross", "batman.webp", null, false));
 
-//  on page load
+//  on page load will loop through array and display the card
  const artList = document.getElementById("art-list");
  art.forEach( a => artList.append(a.item)); 
 
  function ArtModal (artObj) {
     const modal = document.getElementById("modal-id");
-    const modalBody = document.getElementById("model-body");
+    const modalBody = document.getElementById("modal-body");
     const closeButton = document.getElementById("modal-close");
 
-   //  clears the old modal
+   //  clears the old modal so they don't stack
    modalBody.replaceChildren();
 
+   //  Title inside modal
     const h3 = document.createElement("h3");
     h3.textContent = artObj.name;
     modalBody.append(h3);
 
-    
+    //  calls description
     modalBody.append(artObj.description());
 
+    // calls image in modal and checks to see if framed
     const img = artObj.getFrame(true);
     // const img = artObj.artImage(artObj.image);
-    // modalBody.append(img);
+    modalBody.append(img);
 
     //  closes the modal out
     closeButton.addEventListener('click', () => {
@@ -98,5 +102,5 @@ art.push(new Art("Batman Tribute NYCC", "Alex Ross", "batman.webp", null, false)
 
     modal.style.display = "block";
 
-    }
+ }
 
