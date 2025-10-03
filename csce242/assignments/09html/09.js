@@ -11,7 +11,7 @@ class Art {
     //  returns only the title and the image for the object
     get item() {
         //  the modal that contains the section
-        // const modalContent = document.querySelector(".w3-modal-content");
+
         const section = document.createElement("section");
         section.classList.add("art-card");
         //  name
@@ -50,9 +50,9 @@ class Art {
 } //  class for art
 
 const art = [];
-art.push(new Art("X-Men Wolverine Hulk 340", "Alex Ross", "wolverine.webp", true));
+art.push(new Art("Wolverine Hulk 340", "Alex Ross", "wolverine.webp", true));
 art.push(new Art("Spiderman Torment", "Alex Ross", "spiderman.webp", false));
-art.push(new Art("Superman More Powerful", "Alex Ross", "Superman.webp", false))
+art.push(new Art("Superman Powerful", "Alex Ross", "Superman.webp", false))
 art.push(new Art("Avengers 700", "Alex Ross", "avengers-700.webp", false));
 art.push(new Art("Batman Tribute NYCC", "Alex Ross", "batman.webp", false));
 
@@ -65,8 +65,9 @@ art.push(new Art("Batman Tribute NYCC", "Alex Ross", "batman.webp", false));
     const modalBody = document.getElementById("model-body");
     const closeButton = document.getElementById("modal-close");
 
-   
-    modalBody,innerHtml = "";
+   //  clears the old modal
+   modalBody.replaceChildren();
+
     const h3 = document.createElement("h3");
     h3.textContent = artObj.name;
     modalBody.append(h3);
@@ -77,8 +78,7 @@ art.push(new Art("Batman Tribute NYCC", "Alex Ross", "batman.webp", false));
     const img = artObj.artImage(artObj.image);
     modalBody.append(img);
 
-    
-
+    //  closes the modal out
     closeButton.addEventListener('click', () => {
         modal.style.display = 'none';
     });

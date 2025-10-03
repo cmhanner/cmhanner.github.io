@@ -15,7 +15,7 @@ body {
 }
 
 #content {
-    width: 100%;
+    width: 90%;
     background-color: beige;
     margin: auto;
     display: flex;
@@ -24,24 +24,75 @@ body {
     border: 1px solid var(--title-color);
     box-shadow: 0 2px 5px rgb(147, 147, 70);
     margin-top: 20px;
+    padding: 10px;
     
 }
 
 .w3-card-4 {
+    display: flex;
+    flex-direction: center;
     padding: 30px;
     width: fit-content;
     border-radius: 10px;
+    background: #d9236f;
+    background: radial-gradient(circle, rgba(217, 35, 111, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+.w3-card-4 h3 {
+    background-color: aliceblue;
+    width: fit-content;
+    align-items: center;
+    font-weight: bold;
+    padding: 5px;
+     border-radius: 5px;
+}
+
+.w3-card-4 p {
+    background-color: aliceblue;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+
 }
 
 .w3-display-topright {
     border-radius: 10px;
 }
 
+section {
+    
+    background: #EEAECA; /*https://cssgradient.io/*/
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    padding-bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid var(--title-color);
+   
+   
+}
+
+section h2 {
+    color: var(--title-color);
+    font-weight: bold;
+    background-color: aliceblue;
+}
+
 main {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    gap:10px;
 }
+
+main img {
+    
+    border-radius: 5px;
+    width: 75%;
+}
+
+main img:hover {
+    cursor: pointer;
+}
+
 
 header {
     text-align:  center;
@@ -49,10 +100,12 @@ header {
 
 h1 {
     color: var(--title-color);
+    font-weight: bold;
 }
 
-h2 {
+#subtitle {
     color: var(--subtitle-color);
+     font-weight: bold;
 }
 
 p {
