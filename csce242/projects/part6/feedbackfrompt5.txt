@@ -1,0 +1,7 @@
+-5% Padding/margin issues (Add/Edit page in mobile resolution)
+
+-5% Header bar moves (keep page titles to one line, will most likely resolve the issue) - Me: Changed name of Prospect List to List, Changed About/Contact to just About, reflected that in page changer. 
+
+-5% Horizontal scroll present in the inbetween of fullscreen and mobile resolution
+
+-5% Text not aligned (see Home page App Prospector being lower than the other text present in the same section)
