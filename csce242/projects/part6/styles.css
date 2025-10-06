@@ -29,7 +29,7 @@ body {
   flex-direction: row; /* to display in row*/
   gap: 10px; /* put space in between contents in header*/
   align-items: center;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   box-shadow: 0 2px 5px #0E0F33;
   
     
@@ -49,7 +49,7 @@ body {
 #img {
   max-width: 100%;
   height: auto;
-  display: block;
+  /* display: block; */
 }
 
 
@@ -126,6 +126,8 @@ body {
 }
 
 #button-list a {
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
     color: var(--secondaryColor);
     background-color: var(--primaryColor);
