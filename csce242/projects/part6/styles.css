@@ -1274,7 +1274,11 @@ body {
   .add-edit-area {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
+    margin: auto;
+    margin-bottom: 10px;
+   
   
   }
 
@@ -1282,6 +1286,8 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    width: 75%;
+   
   }
 
   .bottom-row {
