@@ -29,7 +29,8 @@ body {
   flex-direction: row; /* to display in row*/
   gap: 10px; /* put space in between contents in header*/
   align-items: center;
-  /* justify-content: space-evenly; */
+  justify-content: space-evenly;
+  margin: auto;
   box-shadow: 0 2px 5px #0E0F33;
   
     

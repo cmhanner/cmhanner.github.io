@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "name": "Bank App",
+        "image": ,
+        "company": "Da Bank",
+        "industry": "Finance",
+        "reviews": "2",
+        "link": "thebankapp.com",
+        "developer": "WeDevelop",
+        "note": "this banking app is doing bad"
+
+    }
+]
