@@ -94,6 +94,10 @@ main {
 
 }
 
+#breweries {
+        flex-wrap: wrap;
+    }
+
 .links {
     background:#D3DDEA;
 }
