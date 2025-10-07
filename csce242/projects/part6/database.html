@@ -91,87 +91,18 @@
                 </div>
 
                 <div class = "database-table">
-                    <table class = "table-style">
+                    <table class = "table-style" id = "appsTable">
+                    <thead>
                         <tr>
-                            <th data-label="Favorite: ">Favorite</th>
-                            <th data-label="Name: ">Name</th>
-                            <th data-label="Company: ">Company</th>
-                            <th data-label="Industry: ">Industry</th>
-                            <th data-label="Reviews: ">Reviews</th>
-                            <th data-label="Developer: ">Developer</th>
-                            <th data-label="Options: ">Options</th>
+                            <th>App </th>
+                            <th>Company </th>
+                            <th>Rating</th>
+                            <th>Industry</th>
+                            <th>Options</th>
                         </tr>
-                        <tr>
-                            <td data-label="Favorite: " class = "table-star"><button>&star;</button></td>
-                            <td data-label="Name: ">Car App</td>
-                            <td data-label="Company: ">Car Company</td>
-                            <td data-label="Industry: ">Automotive</td>
-                            <td data-label="Reviews: ">&star;</td>
-                            <td data-label="Developer: ">ChanceHimself</td>
-                            <td data-label="Options: " class = "options">
-                                <button title = "Add to a List">➕</button>
-                                <button title = "Edit App">📝</button>
-                                <button title = "About App">ℹ️</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td data-label="Favorite: " class = "table-star"><button>&star;</button></td>
-                            <td data-label="Name: ">Bank App</td>
-                            <td data-label="Company: ">Bank Company</td>
-                            <td data-label="Industry: ">Finance</td>
-                            <td data-label="Reviews: ">&star;</td>
-                            <td data-label="Developer: ">ChanceHimself</td>
-                            <td data-label="Options: " class = "options">
-                                <button title = "Add to a List">➕</button>
-                                <button title = "Edit App">📝</button>
-                                <button title = "About App">ℹ️</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td data-label="Favorite: " class = "table-star"><button>&star;</button></td>
-                            <td data-label="Name: ">Food App</td>
-                            <td data-label="Company: ">Food Company</td>
-                            <td data-label="Industry: ">Resturaunt</td>
-                            <td data-label="Reviews: ">&star;&star;</td>
-                            <td data-label="Developer: ">ChanceHimself</td>
-                            <td data-label="Options: " class = "options">
-                                <button title = "Add to a List">➕</button>
-                                <button title = "Edit App">📝</button>
-                                <button title = "About App">ℹ️</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td data-label="Favorite: " class = "table-star"><button>&star;</button></td>
-                            <td data-label="Name: ">Soda App</td>
-                            <td data-label="Company: ">Soda Company</td>
-                            <td data-label="Industry: ">Beverage</td>
-                            <td data-label="Reviews: ">&star;</td>
-                            <td data-label="Developer: ">ChanceHimself</td>
-                            <td data-label="Options: " class = "options">
-                                <button title = "Add to a List">➕</button>
-                                <button title = "Edit App">📝</button>
-                                <button title = "About App">ℹ️</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td data-label="Favorite: " class = "table-star"><button>&star;</button></td>
-                            <td data-label="Name: ">Game App</td>
-                            <td data-label="Company: ">Game Company</td>
-                            <td data-label="Industry: ">Gaming</td>
-                            <td data-label="Reviews: ">&star;&star;</td>
-                            <td data-label="Developer: ">ChanceHimself</td>
-                            <td data-label="Options: " class = "options">
-                                <button title = "Add to a List">➕</button>
-                                <button title = "Edit App">📝</button>
-                                <button title = "About App">ℹ️</button>
-                            </td>
-                        </tr>
-                        <tr> <!--Default row-->
-                            <td colspan = "6">
-                                No apps found. Try adding one!
-                            </td>
+                    </thead>
+                        <tbody id = "apps-table-body"></tbody>
 
-                        </tr>
                     </table>
                 </div> <!--Database Table-->
                     <div id = "buttonsForPages">

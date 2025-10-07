@@ -522,6 +522,12 @@ body {
   background-color: var(--thirdColor);
 }
 
+#button-wrap {
+ display: flex;
+ gap: 5px;
+ flex-direction: column;
+}
+
 /*Add or Edit Page*/
 
 .add-edit-area {
