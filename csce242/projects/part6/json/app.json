@@ -1,14 +1,106 @@
 [
     {
-        "id": 1,
+        "_id": 1,
         "name": "Bank App",
-        "image": ,
+        "image": "images_json/finance-image",
         "company": "Da Bank",
         "industry": "Finance",
         "reviews": "2",
-        "link": "thebankapp.com",
         "developer": "WeDevelop",
-        "note": "this banking app is doing bad"
+        "note": "This banking app is doing bad",
+        "app_store_url": "https://apps.apple.com/us/app/...",
+        "website_url": "https://thebankapp.com"
+
+    },
+    {
+        "_id": 2,
+        "name": "Business App",
+        "image": "images_json/business-image",
+        "company": "Busy Business",
+        "industry": "Consulting",
+        "reviews": "34",
+        "developer": "Busy Bees Develop",
+        "note": "Users complain about old UI",
+        "app_store_url": "https://apps.apple.com/us/app/...",
+        "website_url": "https://thebusinessapp.com"
+
+    },
+    {
+        "_id": 3,
+        "name": "Car App",
+        "image": "images_json/car-image",
+        "company": "Vroom Vrrom",
+        "industry": "Automotive",
+        "reviews": "47",
+        "developer": "Car Code Guys",
+        "note": "The app crashes when I click something",
+        "app_store_url": "https://apps.apple.com/us/app/...",
+        "website_url": "https://thecarapp.com"
+
+    },
+    {
+        "_id": 4,
+        "name": "Food App",
+        "image": "images_json/restraunt-image",
+        "company": "The Dining Gals",
+        "industry": "Food",
+        "reviews": "87",
+        "developer": "Bytes",
+        "note": "This app is doing everything right",
+        "app_store_url": "https://apps.apple.com/us/app/...",
+        "website_url": "https://thefoodapp.com"
+
+    },
+    {
+        "_id": 5,
+        "name": "Fitness App",
+        "image": "images_json/fitness-image",
+        "company": "Strong Folk",
+        "industry": "Fitness",
+        "reviews": "42",
+        "developer": "Foundational Code",
+        "note": "I like how it keeps track of my calories, but  the timer needs work",
+        "app_store_url": "https://apps.apple.com/us/app/...",
+        "website_url": "https://thefitnessapp.com"
+
+    },
+    {
+        "_id": 6,
+        "name": "Logistics App",
+        "image": "images_json/logistics-image",
+        "company": "Major Trucking",
+        "industry": "Logistics",
+        "reviews": "236",
+        "developer": "Rotten Apple",
+        "note": "App looks very old could use a overhaul",
+        "app_store_url": "https://apps.apple.com/us/app/...",
+        "website_url": "https://thelogisticsapp.com"
+
+    },
+    {
+        "_id": 7,
+        "name": "Shopping App",
+        "image": "images_json/shopbag-image",
+        "company": "Shoppy Stuff",
+        "industry": "Retail",
+        "reviews": "89",
+        "developer": "Broken Windows",
+        "note": "Doesn't save my information properly",
+        "app_store_url": "https://apps.apple.com/us/app/...",
+        "website_url": "https://theshoppingsapp.com"
+
+    },
+    {
+        "_id": 8,
+        "name": "Travel App",
+        "image": "images_json/travel-image",
+        "company": "Coast 2 Coast",
+        "industry": "Travel",
+        "reviews": "420",
+        "developer": "Niquidita",
+        "note": "The app doesn't send proper notifications",
+        "app_store_url": "https://apps.apple.com/us/app/...",
+        "website_url": "https://thetravelingapp.com"
 
     }
 ]
