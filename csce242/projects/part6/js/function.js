@@ -7,13 +7,22 @@ document.getElementById('hamburger').addEventListener('click', function() {
 const getApps = async() => {
     const url = "https://cmhanner.github.io/csce242/projects/part6/json/app.json";
 
+    //  To always return a array since I'm filtering and sotrting data
     try {
-        const response = await fetch(url);
-        return response.json();
-
+        const response = await fetch(url); //  returns a response object, wait for the url/HTTP to respond with headers + body
+        const data = await response.json(); //  returns values as JS values, wait for body to be read and JSON-parse it
         
+      
+      const apps = Array.isArray(data) //  Checks if the data is in a array or top level array
+      ? data //  if true we return data or the array of apps
+      : Array.isArray(data?.apps) //  Else: checks if data.apps exist and is it a array? (inner array)
+      ? data.apps  //  if true return the inner array of apps
+      : []; 
+
+      return apps; 
     } catch (error) {
-        console.log("Issue fetching App json");
+        console.log("Issue fetching App json", error);
+        return []; //  On error, return empty list so it doesn't crash
     }
 
 };
@@ -40,6 +49,11 @@ const getOptions = (app) => {
 const showApps = async () => {
   const apps = await getApps();
   const tableBody = document.querySelector("#appsTable tbody");
+
+  if (!tableBody) {
+    console.log("No table exist");
+    return;
+  }
   
   apps.forEach((app) => {
       const row = document.createElement('tr');
