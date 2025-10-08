@@ -5,7 +5,7 @@ document.getElementById('hamburger').addEventListener('click', function() {
 });
 
 const getApps = async() => {
-    const url = "https://cmhanner.github.io/csce242/projects/part6/json/app.json";
+    const url = "https://cmhanner.github.io/csce242/projects/part6/app.json";
 
     //  To always return a array since I'm filtering and sotrting data
     try {
@@ -49,7 +49,7 @@ const getOptions = (app) => {
 };
 
 
-//  Get images to be displayed on pages if Page Ask
+//  Get images to be displayed inside table content
 const getImages = (app) => {
   const imageDiv = document.createElement('div');
   imageDiv.id = "display-image"
@@ -62,7 +62,7 @@ const getImages = (app) => {
   img.onerror = () => {
     console.error("Image not found:", img.src);
   };
-console.log("Trying image:", img.src);
+  console.log("Trying image:", img.src);
 
   imageDiv.append(img);
   return imageDiv;
@@ -73,30 +73,38 @@ const showApps = async () => {
   const apps = await getApps();
 
   //  Displaying "Last" Apps on Home Screen
-  const appHome = document.querySelector(".app-overview");
 
-  apps.forEach((app) => {
-    const img = document.getElementById("#home-app-img");
-    const appName = document.getElementById("#app-name");
-    const appCompany = document.getElementById("#app-company");
-    const appRatings = document.getElementById("#app-ratings");
+  const appCards = document.querySelectorAll(".dashboard-apps .app-overview");
+  const n = Math.min(appCards.length, apps.length);  //  how many home cards exist and how many app objes are there
 
-    img.append(getImages(app));
-    appName.textContent(app.name);
-    appCompany.textContent(app.company);
-    appRatings.textContent(app.rating);
+  for (let i=0; i< n; i++)  { //  only fulfills amount of dashboard spaces available
+    const app = apps[i];
+    const card = appCards[i];
 
-    appHome.appendChild(img, appName, appCompany, appRatings);
+    const img = card.querySelector(".home-app-img");
+    const appName = card.querySelector(".app-name");
+    const appCompany = card.querySelector(".app-company");
+    const appRatings = card.querySelector(".app-ratings");
+
+    if (img) {
+      img.src = app.image;
+      img.alt = app.name;
+    }
+
+    if (appName) appName.textContent = app.name ?? "—";
+    if (appCompany) appCompany.textContent = app.company ?? "—";
+    if (appRatings) appRatings.textContent = app.rating ?? "—";
 
 
 
-  });
+  };
+  
 
   //Displaying on Database Table
   const tableBody = document.querySelector("#appsTable tbody");
 
   if (!tableBody) {
-    console.log("No table exist");
+    console.log("No table exist on this page.");
     return;
   }
   
@@ -129,6 +137,8 @@ const showApps = async () => {
 
       tableBody.appendChild(row);
   });
+
+ 
 
   
 }
