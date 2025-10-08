@@ -197,6 +197,10 @@ const showApps = async () => {
       appIndustry.textContent = app.industry;
       row.appendChild(appIndustry);
 
+      const appDeveloper = document.createElement('td');
+      appDeveloper.textContent = app.developer;
+      row.appendChild(appDeveloper);
+
       const appOptions = document.createElement('td');
       appOptions.append(getOptions(app));
       row.appendChild(appOptions);
@@ -245,9 +249,7 @@ async function showMyList() {
       appIndustry.textContent = app.industry;
       row.appendChild(appIndustry);
 
-      const appDeveloper = document.createElement('td');
-      appDeveloper.textContent = app.developer;
-      row.appendChild(appDeveloper);
+      
 
       const appOptions = document.createElement('td');
       appOptions.append(getOptions(app));
