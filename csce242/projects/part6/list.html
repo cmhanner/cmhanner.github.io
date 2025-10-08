@@ -143,91 +143,19 @@
                         
 
                             <table class = "table-style">
+                                <thead>
                                 <tr>
-                                    <th data-label="Favorite: ">Favorite</th>
-                                    <th data-label="Name: ">Name</th>
-                                    <th data-label="Company: ">Company</th>
-                                    <th data-label="Industry: ">Industry</th>
-                                    <th data-label="Reviews: ">Reviews</th>
-                                    <th data-label="Developer: ">Developer</th>
-                                    <th data-label="Options: ">Options</th>
-                                    <th data-label="Date Added">Date Added</th>
+                                    <th>Image</th>
+                                    <th>Name</th>
+                                    <th>Company</th>
+                                    <th>Industry</th>
+                                    <th>Ratings</th>
+                                    <th>Developer</th>
+                                    <th>Options</th>
                                 </tr>
-                                <tr>
-                                    <td data-label="Favorite: " class = "table-star"><button>&star;</button></td>
-                                    <td data-label="Name: ">Car App</td>
-                                    <td data-label="Company: ">Car Company</td>
-                                    <td data-label="Industry: ">Automotive</td>
-                                    <td data-label="Reviews: ">&star;</td>
-                                    <td data-label="Developer: ">ChanceHimself</td>
-                                    <td data-label="Options: " class = "options">
-                                        <button title = "Remove from List">➖</button>
-                                        <button title = "Add to a List">➕</button>
-                                        <button title = "Edit App">📝</button>
-                                        <button title = "About App">ℹ️</button>
-                                    </td>
-                                    <td data-label="Date Added: ">9/20/2025</td>
-                                </tr>
-                                <tr>
-                                    <td data-label="Favorite: " class = "table-star"><button>&star;</button></td>
-                                    <td data-label="Name: ">Bank App</td>
-                                    <td data-label="Company: ">Bank Company</td>
-                                    <td data-label="Industry: ">Finance</td>
-                                    <td data-label="Reviews: ">&star;</td>
-                                    <td data-label="Developer: ">ChanceHimself</td>
-                                    <td data-label="Options: " class = "options">
-                                        <button title = "Remove from List">➖</button>
-                                        <button title = "Add to a List">➕</button>
-                                        <button title = "Edit App">📝</button>
-                                        <button title = "About App">ℹ️</button>
-                                    </td>
-                                    <td data-label="Date Added: ">9/20/2025</td>
-                                </tr>
-                                <tr>
-                                    <td data-label="Favorite: " class = "table-star"><button>&star;</button></td>
-                                    <td data-label="Name: ">Food App</td>
-                                    <td data-label="Company: ">Food Company</td>
-                                    <td data-label="Industry: ">Resturaunt</td>
-                                    <td data-label="Reviews: ">&star;&star;</td>
-                                    <td data-label="Developer: ">ChanceHimself</td>
-                                    <td data-label="Options: " class = "options">
-                                        <button title = "Remove from List">➖</button>
-                                        <button title = "Add to a List">➕</button>
-                                        <button title = "Edit App">📝</button>
-                                        <button title = "About App">ℹ️</button>
-                                    </td>
-                                    <td data-label="Date Added: ">9/20/2025</td>
-                                </tr>
-                                <tr>
-                                    <td data-label="Favorite: " class = "table-star"><button>&star;</button></td>
-                                    <td data-label="Name: ">Soda App</td>
-                                    <td data-label="Company: ">Soda Company</td>
-                                    <td data-label="Industry: ">Beverage</td>
-                                    <td data-label="Reviews: ">&star;</td>
-                                    <td data-label="Developer: ">ChanceHimself</td>
-                                    <td data-label="Options: " class = "options">
-                                        <button title = "Remove from List">➖</button>
-                                        <button title = "Add to a List">➕</button>
-                                        <button title = "Edit App">📝</button>
-                                        <button title = "About App">ℹ️</button>
-                                    </td>
-                                    <td data-label="Date Added: ">9/20/2025</td>
-                                </tr>
-                                <tr>
-                                    <td data-label="Favorite: " class = "table-star"><button>&star;</button></td>
-                                    <td data-label="Name: ">Game App</td>
-                                    <td data-label="Company: ">Game Company</td>
-                                    <td data-label="Industry: ">Gaming</td>
-                                    <td data-label="Reviews: ">&star;&star;</td>
-                                    <td data-label="Developer: ">ChanceHimself</td>
-                                    <td data-label="Options: " class = "options">
-                                        <button title = "Remove from List">➖</button>
-                                        <button title = "Add to a List">➕</button>
-                                        <button title = "Edit App">📝</button>
-                                        <button title = "About App">ℹ️</button>
-                                    </td>
-                                    <td data-label="Date Added: ">9/20/2025</td>
-                                </tr>
+                                </thead>
+                                <tbody id = "apps-list-body"></tbody>
+                                
                                 <tr> <!--Default row-->
                                     <td colspan = "8">
                                         <button id = "bottom-of-list-add" title = "Add App"> ➕ </button>
