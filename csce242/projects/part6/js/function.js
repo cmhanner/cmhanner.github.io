@@ -53,7 +53,7 @@ const getApps = async() => {
  }
 
  //  Check if a id/app is currently in the saved list
- //  
+ //  Number verifies the JSON and JS are reading a number and not a string
  function inList(id) {
     const ids = getListIds(); //  read current List
     return ids.includes(Number(id)); //  true if found
