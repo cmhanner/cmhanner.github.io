@@ -27,6 +27,7 @@ const getApps = async() => {
 
 };
 
+//  Get Button Options for Table/List Data
 const getOptions = (app) => {
   const buttonWrap = document.createElement("div");
   buttonWrap.id = "button-wrap"
@@ -46,6 +47,26 @@ const getOptions = (app) => {
   return buttonWrap;
 };
 
+
+//  Get images to be displayed on pages if Page Ask
+const getImages = (app) => {
+  const imageDiv = document.createElement('div');
+  imageDiv.classNmae = "display-image"; //  when displaying images of json in boxes
+
+  const img = document.createElement('img');
+  
+  img.src = app.image;
+  img.alt = app.name;
+  img.onerror = () => {
+    console.error("Image not found:", img.src);
+  };
+console.log("Trying image:", img.src);
+
+  imageDiv.append(img);
+  return imageDiv;
+}
+
+//  Show Apps in Table format
 const showApps = async () => {
   const apps = await getApps();
   const tableBody = document.querySelector("#appsTable tbody");
@@ -57,6 +78,10 @@ const showApps = async () => {
   
   apps.forEach((app) => {
       const row = document.createElement('tr');
+
+      const appImage = document.createElement('td');
+      appImage.append(getImages(app));
+      row.appendChild(appImage);
 
       const appName = document.createElement('td');
       appName.textContent = app.name;
