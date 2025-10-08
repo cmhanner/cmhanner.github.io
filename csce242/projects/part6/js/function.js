@@ -34,6 +34,7 @@ const getOptions = (app) => {
   const addButton = document.createElement("button");
   const editButton = document.createElement("button");
   const aboutButton = document.createElement("button");
+  const removeButton = document.createElement("button");
 
   addButton.title = "Add to a List";
   editButton.title = "Edit App";
@@ -51,6 +52,7 @@ const getOptions = (app) => {
 //  Get images to be displayed on pages if Page Ask
 const getImages = (app) => {
   const imageDiv = document.createElement('div');
+  imageDiv.id = "display-image"
   imageDiv.classNmae = "display-image"; //  when displaying images of json in boxes
 
   const img = document.createElement('img');
@@ -69,6 +71,28 @@ console.log("Trying image:", img.src);
 //  Show Apps in Table format
 const showApps = async () => {
   const apps = await getApps();
+
+  //  Displaying "Last" Apps on Home Screen
+  const appHome = document.querySelector(".app-overview");
+
+  apps.forEach((app) => {
+    const img = document.getElementById("#home-app-img");
+    const appName = document.getElementById("#app-name");
+    const appCompany = document.getElementById("#app-company");
+    const appRatings = document.getElementById("#app-ratings");
+
+    img.append(getImages(app));
+    appName.textContent(app.name);
+    appCompany.textContent(app.company);
+    appRatings.textContent(app.rating);
+
+    appHome.appendChild(img, appName, appCompany, appRatings);
+
+
+
+  });
+
+  //Displaying on Database Table
   const tableBody = document.querySelector("#appsTable tbody");
 
   if (!tableBody) {

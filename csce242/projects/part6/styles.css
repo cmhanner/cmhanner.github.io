@@ -522,10 +522,26 @@ body {
   background-color: var(--thirdColor);
 }
 
+/*From JS*/
 #button-wrap {
  display: flex;
- gap: 5px;
+ gap: 10px;
  flex-direction: column;
+ 
+}
+
+#button-wrap button{ 
+ cursor: pointer;
+
+}
+
+#button-wrap button:hover {
+  background-color: var(--thirdColor);
+}
+
+#display-image img {
+  width: 144px;
+  height: 144px;
 }
 
 /*Add or Edit Page*/
