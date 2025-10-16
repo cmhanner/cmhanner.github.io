@@ -81,12 +81,35 @@ a {
     color: rebeccapurple;
     font-weight: bold;
     text-decoration: none; /*removes underline from links*/
+    display: flex;
+    flex-direction: column;
 }
 
 
 #main-nav li:hover { /*when we hover over the assignment block*/
     background:rgb(168, 191, 21);
     color:#09b7a5;
+}
+
+#server-assignment li {
+    gap: 2px;
+    padding: 5px;
+    
+    
+}
+
+#server-assignment a {
+    font-size: 20px;
+    display: block;
+    text-decoration: underline;
+    
+}
+
+#server-assignment a:hover {
+    display: block;
+    color:black;
+    background: beige;
+    
 }
 
 /*Project Nav*/
