@@ -1,0 +1,170 @@
+<!--Project Part 6: Prospect Page-->
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>App Prospecter: Prospect</title>
+    <link rel = "stylesheet" href = "styles.css">
+</head>
+    <body>
+        <header id = "main-header"> <!--Top Navigation Bar-->
+
+                <button id="hamburger">☰</button>
+                <h2 id = "Title">List</h2>
+                
+                <div id = "search-bar-part">
+                    <form id = "search-bar" action = "#" method = "get">
+                        <button type = "submit" >🔍</button>
+                        <input type = "text" placeholder = "app name..." >
+                    </form>
+                </div>
+
+              <h1 id = "main-logo">
+                   <img src="images/logo.svg" alt="App Prospecter Logo" id="main-logo-img"> 
+                   App Prospecter
+               </h1>
+
+
+                <div id = "button-list">
+                    <nav>
+                        <ul>
+                            
+                            <li><a href = "#" >⚙️ Settings</a></li>
+                            <li><a href = "#" >👤 Login</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+        </header> <!--Top Navigation Bar-->
+        <div id = "content">
+            
+                <div id = "page-changer">
+                    <nav>
+                        <ul>
+                            <li><a href = "index.html" >&#8962 Home</a></li>
+                            <li><a href = "database.html" >&#9923 Database</a></li>
+                            <li><a href = "addEdit.html" >&#9998 Add / Edit</a></li>
+                        <li><a href = "#" > = List</a></li>
+                            <li><a href = "about.html" >? About</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class = "list-page-layout">
+
+                    <div id = "savedList">
+                        <h3>Saved List</h3>
+                        <nav>
+                            <ul>
+                                <li><a href = "#"> ⭐ Favorites</a></li>
+                                <li><a href = "#"> 📉 Low Rated Apps</a></li>
+                                <li><a href = "#"> 🏦 Banking Apps</a></li>
+                                <li><a href = "#"> 🚮 Apps by Bad Company</a></li>
+                                <li><a href = "#"> <button>➕ New List</button></a></li>
+                            </ul>
+                        </nav>
+
+                    </div> <!--Saved List-->
+
+                    <div id = CurrentList>
+
+                         
+
+
+                        <div class = "List-Info">
+                            <h2 id = "ListSelected">List Selected: </h2>
+                            <h3 id = "displayedList">📉 Low Rated Apps</h3>
+                            <form action = "/submit_description" method = "post">
+                                <label for = "list_description">List Description:</label><br>
+                                <textarea id = "list_description" name = "list_text" rows = "5" cols="40"></textarea><br>
+                                <input type = "submit" value = "Save" disabled>
+                            </form>
+                        </div>
+
+                        <div class = "list-search-bar">
+                            <form id = "search-bar" action = "#" method = "get">
+                                <button type = "submit" >🔍</button>
+                                <input type = "text" placeholder = "find app in list...">
+                            </form>
+                        </div>
+
+                        <div class = "list-filter">
+                            <label for="filter">Filter by:</label>
+                                <select id="filter" name="filter"> <!--The dropdown itself-->
+                                    <option value="Select">-- Select Industry --</option>
+                                    <option value="automotive">Automotive</option>
+                                    <option value="finance">Finance</option>
+                                    <option value="restaurant">Restaurant</option>
+                                    <option value="gaming">Gaming</option>
+                                    <option value="fitness">Fitness</option>
+                                </select>
+                                <select id="filter" name="filter"> <!--The dropdown itself-->
+                                    <option value="Select">-- Select Reviews --</option>
+                                    <option value="5star">&star;&star;&star;&star;&star;</option>
+                                    <option value="4star">&star;&star;&star;&star;</option>
+                                    <option value="3star">&star;&star;&star;</option>
+                                    <option value="2star">&star;&star;</option>
+                                    <option value="1star">&star;</option>
+                                </select>
+                                <select id="filter" name="filter"> <!--The dropdown itself-->
+                                    <option value="Select">-- Select Developer --</option>
+                                    <option value="placetext">Krumware</option>
+                                    <option value="placetext">ChanceHimself</option>
+                                </select>
+                        </div> <!--Filter-->
+
+                        <div class = "list-sort">
+                            <label for="sort">Sort by:</label>
+                            <select id="sort" name="sort">
+                                <option value="name">Name</option>
+                                <option value="reviews">Reviews</option>
+                                <option value="developer">Developer</option>
+                            </select>
+                        </div>
+
+
+                        
+
+                    </div> <!--Current List-->
+
+                   
+
+                    
+                    <div class = "ListTable">
+
+                        <div class = "list-summary">
+                            <p>Showing 5 of 5 apps</p>
+                        </div>
+
+                        <div id = "buttonsForPages">
+                            <button> << Previous Page</button>
+                            <button>Next Page >> </button>
+                        </div>
+
+                        
+
+                            <table class = "table-style">
+                                <thead>
+                                <tr>
+                                    <th>Image</th>
+                                    <th>Name</th>
+                                    <th>Company</th>
+                                    <th>Ratings</th>
+                                    <th>Industry</th>
+                                    <th>Options</th>
+                                </tr>
+                                </thead>
+                                <tbody id = "apps-list-body"></tbody>
+                                
+                                <tr> <!--Default row-->
+                                    <td colspan = "8">
+                                        <button id = "bottom-of-list-add" title = "Add App"> ➕ </button>
+                                    </td>
+
+                                </tr>
+                            </table>
+                    </div> <!--List Table-->
+                </div><!--List-Page-Layout-->
+         </div> <!--Content Div-->
+         <script src = "js/function.js"></script>
+    </body>
+</html>
