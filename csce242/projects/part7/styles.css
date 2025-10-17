@@ -1005,6 +1005,7 @@ body {
   flex-direction: column;
   background-color: rgb(90, 89, 89);
   text-align: center;
+ 
 }
 
 .Feedback textarea {
@@ -1023,13 +1024,18 @@ body {
   
 }
 
-/* #contact-result {
-  display: hidden;
-  color: white;
+
+
+#contact-result {
+  display: none;
+  color: black;
+  font-weight: bold;
   background-color: var(--secondaryColor);
   padding: 10px;
   width: fit-content;
-} */
+  border: 2px var(--primaryColor);
+  border-radius: 5px;
+}
 
 #map {
   border: 2px var(--secondaryColor);
