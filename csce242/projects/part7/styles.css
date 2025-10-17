@@ -1001,8 +1001,43 @@ body {
 }
 
 .Feedback {
-    background-color: rgb(90, 89, 89);
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(90, 89, 89);
+  text-align: center;
+}
+
+.Feedback textarea {
+  width: 300px;
+}
+
+#contact-submit-btn {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  
+}
+
+#contact-submit-btn:hover {
+  background-color: var(--thirdColor);
+  
+}
+
+/* #contact-result {
+  display: hidden;
+  color: white;
+  background-color: var(--secondaryColor);
+  padding: 10px;
+  width: fit-content;
+} */
+
+#map {
+  border: 2px var(--secondaryColor);
+  border-radius: 5px;
+  width: 500px;
+  height: 500px;
+  background-color: var(--primaryColor);
+  padding: 2px;
 }
 
 .Feedback #social-nav a {
@@ -1397,6 +1432,10 @@ body {
   #contact > div {
     width: 100%;
     border-radius: 10px;
+  }
+
+  #map {
+    width: 100%;
   }
 
   .Feedback #social-nav a {
